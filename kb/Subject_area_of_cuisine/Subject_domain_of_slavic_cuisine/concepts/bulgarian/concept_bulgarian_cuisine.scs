@@ -14,6 +14,8 @@ subject_domain_of_bulgarian_cuisine
     ->rrel_maximum_studied_object_class:
         concept_bulgarian_cuisine;
     ->rrel_not_maximum_studied_object_class:
+    	concept_bul_mish_mash;
+    	concept_bul_banitsa;
         concept_bul_shopskiy_salat;
         concept_bul_stuffed_peppers;
         concept_bul_gabrovo_pancakes;
