@@ -1,0 +1,56 @@
+concept_grn_lobio
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [lobio] (*<-lang_en;;*);
+    => nrel_main_idtf: [лобио] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (лобио)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Лобио — грузинское блюдо, а также общее название для фасоли (как зелёной, стручковой, так и в зёрнах).] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_cilantro;;
+                <-concept_ground_coriander;;
+                <-concept_red_beans;;
+                <-concept_onion;;
+                <-concept_garlic;;
+                <-concept_red_wine_vinegar;;
+                <-concept_sea_salt;;
+                <-concept_vegetable_oil;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (лобио)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/lobio.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        =>nrel_main_idtf: [30 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 251_kk(*
+        =>nrel_main_idtf:[251 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:1_g(*
+        =>nrel_main_idtf:[1 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:42_g(*
+        =>nrel_main_idtf:[42 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:19_g(*
+        =>nrel_main_idtf:[19 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/lobio.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

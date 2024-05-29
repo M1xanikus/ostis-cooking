@@ -1,0 +1,59 @@
+concept_azrb_kyukyu
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [kyukyu] (*<-lang_en;;*);
+    => nrel_main_idtf: [кюкю] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (кюкю)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Кюкю - все ингредиенты тщательно перемешиваются и взбиваются, чтобы получилось воздушное блюдо.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_coriander;;
+                <-concept_spinach;;
+                <-concept_parsley;;
+                <-concept_green_onion;;
+                <-concept_mint;;
+                <-concept_chicken_egg;;
+                <-concept_yogurt;;
+                <-concept_thyme;;
+                <-concept_cherry_tomatoes;;
+                <-concept_butter;;
+                <-concept_garlic;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (кюкю)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kyukyu.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        =>nrel_main_idtf: [30 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 3_portion (*
+        =>nrel_main_idtf: [3 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 421_kk(*
+        =>nrel_main_idtf:[421 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:29_g(*
+        =>nrel_main_idtf:[29 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:11_g(*
+        =>nrel_main_idtf:[11 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:27_g(*
+        =>nrel_main_idtf:[27 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/kyukyu.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

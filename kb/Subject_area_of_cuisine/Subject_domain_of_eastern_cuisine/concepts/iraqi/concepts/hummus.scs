@@ -1,0 +1,58 @@
+concept_irq_hummus
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [hummus] (*<-lang_en;;*);
+    => nrel_main_idtf: [xумус] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (xумус)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Хумус – это традиционная арабская закуска, приготовленная из нутового пюре с добавлением кунжутной пасты, оливкового масла, лимонного сока и чеснока. ] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_chickpeas;;
+                <-concept_garlic;;
+                <-concept_olive_oil;;
+                <-concept_cumin;;
+                <-concept_tahini;;
+                <-concept_salt;;
+                <-concept_paprika;;
+                <-concept_pete;;
+                <-concept_pine_nuts;;
+                <-concept_lemon;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (xумус)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/hummus.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 240_min (*
+        =>nrel_main_idtf: [240 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 12_portion (*
+        =>nrel_main_idtf: [12 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 674_kk(*
+        =>nrel_main_idtf:[674 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:17_g(*
+        =>nrel_main_idtf:[17 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:108_g(*
+        =>nrel_main_idtf:[108 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:22_g(*
+        =>nrel_main_idtf:[22 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/hummus.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

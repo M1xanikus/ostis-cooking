@@ -1,0 +1,54 @@
+concept_uzb_pilaf_with_chicken
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [uzbek pilaf with chicken] (*<-lang_en;;*);
+    => nrel_main_idtf: [узбекский плов с курицей] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (узбекский плов с курицей)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [плов — блюдо восточной кухни, основу которого составляет варёный рис (в исключительных случаях — другая крупа или мелкие макаронные изделия). ] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_chicken_breast;;
+                <-concept_jasmine_rice;;
+                <-concept_onion;;
+                <-concept_carrot;;
+                <-concept_garlic;;
+                <-concept_pices_for_pilaf;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (узбекский плов с курицей)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/pilaf.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 130_min (*
+        =>nrel_main_idtf: [130 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 437_kk(*
+        =>nrel_main_idtf:[437 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:2_g(*
+        =>nrel_main_idtf:[2 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:77_g(*
+        =>nrel_main_idtf:[77 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:28_g(*
+        =>nrel_main_idtf:[28 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/pilaf.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

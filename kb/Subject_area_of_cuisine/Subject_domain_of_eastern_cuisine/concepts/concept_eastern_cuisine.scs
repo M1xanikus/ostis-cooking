@@ -1,0 +1,9 @@
+concept_eastern_cuisine
+    <-sc_node_not_relation;
+    <-concept_cuisine;
+    =>nrel_specifics: [основной ингридиент - мясо, чаще всего баранина и козлятина. также богата на рис, бобы, кисломолочные продукты, овощи и фрукты.](* <-lang_ru;; *);
+    ->rrel_key_sc_element:...(*
+        <-definition;;
+        => nrel_idtf: [Опр. (восточная кухня)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: [восточная кухня - совокупность блюд арабско-мусульманского и кавказского народов.] (* <-lang_ru;; *);;   *);;
+    *);;
