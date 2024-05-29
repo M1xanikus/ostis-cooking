@@ -1,0 +1,58 @@
+concept_cookie_bussu_la_tmessu
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Cookie Bussu la tmessu ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Печенье Буссу ла тмессу ] (*<-lang_ru;;*);;
+
+concept_cookie_bussu_la_tmessu
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_butter;;
+            -> concept_sesame;;
+            -> concept_flour;;
+            -> concept_powdered_sugar;;
+            -> concept_baking_powder;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Cookie Bussu la tmessu ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/cookie_bussu_la_tmessu.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_cookie_bussu_la_tmessu
+     => nrel_cooking_time: 45_min (*
+        =>nrel_main_idtf: [45 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 1329_kk(*
+        =>nrel_main_idtf:[1329 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:94_g(*
+        =>nrel_main_idtf:[94 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:101_g(*
+        =>nrel_main_idtf:[101 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:21_g(*
+        =>nrel_main_idtf:[21 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_cookie_bussu_la_tmessu
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/cookie_bussu_la_tmessu.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

@@ -1,0 +1,64 @@
+concept_fitirashi
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Fitirashi ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Фитираши ] (*<-lang_ru;;*);;
+
+concept_fitirashi
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_meat;;
+            -> concept_ground_meat;;
+            -> concept_pasta;;
+            -> concept_onion;;
+            -> concept_vegetable_oil;;
+            -> concept_butter;; 
+            -> concept_egg;; 
+            -> concept_lemon;; 
+            -> concept_cinnamon;;
+            -> concept_salt;; 
+            -> concept_pepper;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Фитираши ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/fitirashi.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_fitirashi
+     => nrel_cooking_time: 60_min (*
+        =>nrel_main_idtf: [60 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 1237_kk(*
+        =>nrel_main_idtf:[1237 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:68_g(*
+        =>nrel_main_idtf:[68 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:352_g(*
+        =>nrel_main_idtf:[352 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:174_g(*
+        =>nrel_main_idtf:[174 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_fitirashi
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/fitirashi.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

@@ -1,0 +1,62 @@
+concept_biscuit_cookies_crokey
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Biscuit cookies Crokey ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Бисквитное печенье Кроки ] (*<-lang_ru;;*);;
+
+concept_biscuit_cookies_crokey
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_egg;;
+            -> concept_sunflower_oil;;
+            -> concept_sugar;;
+            -> concept_baking_powder;;
+            -> concept_vanilla;;
+            -> concept_flour;; 
+            -> concept_cocoa_powder;; 
+            -> concept_apricot_jam;; 
+            -> concept_water;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Бисквитное печенье Кроки ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/biscuit_cookies_crokey.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_biscuit_cookies_crokey
+     => nrel_cooking_time: 45_min (*
+        =>nrel_main_idtf: [45 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 360_kk(*
+        =>nrel_main_idtf:[360 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:12_g(*
+        =>nrel_main_idtf:[12 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:55_g(*
+        =>nrel_main_idtf:[55 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:7_g(*
+        =>nrel_main_idtf:[7 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_biscuit_cookies_crokey
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/biscuit_cookies_crokey.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

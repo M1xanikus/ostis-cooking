@@ -1,0 +1,64 @@
+concept_pan_cupcake
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Pan cupcake ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Пан-кекс ] (*<-lang_ru;;*);;
+
+concept_pan_cupcake
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_pork;;
+            -> concept_peanut_paste;;
+            -> concept_zucchini;;
+            -> concept_sweet_pepper;;
+            -> concept_carrot;;
+            -> concept_onions;; 
+            -> concept_tomato_sauce;; 
+            -> concept_vegetable_oil;; 
+            -> concept_water;;
+            -> concept_salt;; 
+            -> concept_hot_pepper;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Пан-кекс ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/pan_cupcake.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_pan_cupcake
+     => nrel_cooking_time: 150_min (*
+        =>nrel_main_idtf: [150 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 402_kk(*
+        =>nrel_main_idtf:[402 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:24_g(*
+        =>nrel_main_idtf:[24 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:40_g(*
+        =>nrel_main_idtf:[40 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:6_g(*
+        =>nrel_main_idtf:[6 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_pan_cupcake
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/pan_cupcake.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

@@ -1,0 +1,55 @@
+concept_rooibos_tea
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Rooibos tea ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Чай ройбуш ] (*<-lang_ru;;*);;
+
+concept_rooibos_tea
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_red_rooibos;;
+            -> concept_water;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Чай ройбуш ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/rooibos_tea.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_rooibos_tea
+     => nrel_cooking_time: 35_min (*
+        =>nrel_main_idtf: [35 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 1_kk(*
+        =>nrel_main_idtf:[1 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:0_g(*
+        =>nrel_main_idtf:[0 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:0_g(*
+        =>nrel_main_idtf:[0 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:1_g(*
+        =>nrel_main_idtf:[1 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_rooibos_tea
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/rooibos_tea.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;
