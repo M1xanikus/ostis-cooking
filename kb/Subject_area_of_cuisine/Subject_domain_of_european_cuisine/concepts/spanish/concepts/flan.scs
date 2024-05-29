@@ -1,0 +1,63 @@
+concept_flan
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [flan] (*<-lang_en;;*);
+	=> nrel_main_idtf: [флан] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (флан)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Флан - это популярный десерт, который изначально был известен в Испании, но со временем стал популярным во многих странах. Он представляет собой нежный десерт] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			-> concept_milk;;
+                	-> concept_egg;;
+                	-> concept_cinnamon_stick;;
+                	-> concept_sugar;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (флан)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/flan.txt";;*);;
+	*);;
+	*);
+	=> nrel_portion_number: 6_portion 
+	(*
+		=>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+	=> nrel_cooking_time: 90_min 
+	(*
+		=>nrel_main_idtf: [90 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+
+	=> nrel_kkal: 217_kk
+	(*
+		=>nrel_main_idtf: [217 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 5_g
+	(*
+		=>nrel_main_idtf: [5 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 38_g
+	(*
+		=>nrel_main_idtf: [38 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 5_g
+	(*
+		=>nrel_main_idtf: [5 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/flan.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

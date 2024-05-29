@@ -1,0 +1,65 @@
+concept_krumsafsaffel
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [krumsafsaffel] (*<-lang_en;;*);
+	=> nrel_main_idtf: [Крамсафсаффель] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (Крамсафсаффель)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [опр. (Крамсафсаффель) - это суп из японской кухни, представляющий собой легкий бульон с овощами и тофу.] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			-> concept_rose_hip;;
+                	-> concept_water;;
+                	-> concept_starch;;
+                	-> concept_sugar;;
+                	-> concept_macaroons;;
+                	-> concept_whipped_cream;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (Крамсафсаффель)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/krumsafsaffel.txt";;*);;
+	*);;
+	*);
+	=> nrel_portion_number: 4_portion 
+	(*
+		=>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+	=> nrel_cooking_time: 60_min 
+	(*
+		=>nrel_main_idtf: [60 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+
+	=> nrel_kkal: 175_kk
+	(*
+		=>nrel_main_idtf: [175 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 0_g
+	(*
+		=>nrel_main_idtf: [0 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 38_g
+	(*
+		=>nrel_main_idtf: [38 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 3_g
+	(*
+		=>nrel_main_idtf: [3 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/krumsafsaffel.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

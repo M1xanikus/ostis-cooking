@@ -1,0 +1,125 @@
+concept_liver_with_apples 
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf: [liver with apples] (*<-lang_en;;*);
+
+	=> nrel_main_idtf: [Печень с яблоками] (*<-lang_ru;;*);
+
+	<- rrel_key_sc_element: ... (*
+
+		<- definition;;
+
+		=> nrel_idtf: [Опр. (Печень с яблоками)] (* <-lang_ru;; *);;
+
+		<= nrel_sc_text_translation: ... (*
+
+			-> rrel_example: [Печень с яблоками — это блюдо, которое готовится из печени, яблок и лука. Это блюдо имеет мягкую и нежную текстуру, и его часто подают в качестве основного блюда.] (* <-lang_ru;; *);;
+
+        	*);;
+
+	*);
+
+
+
+	=> nrel_recipe: ... (*
+
+		-> rrel_ingredients: ... (*
+
+			->concept_liver;;
+
+			->concept_apples;;
+
+			->concept_onion;;
+
+			->concept_sault;;
+
+        		*);;
+
+		-> rrel_instruction: ... (*
+
+			=> nrel_idtf: [Рецепт (Печень с яблоками)] (* <-lang_ru;; *);;
+
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/liver_with_apples.txt";;*);;
+
+	*);;
+
+	*);
+
+	=> nrel_portion_number: 4_portion 
+
+	(*
+
+		=>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+
+		<-concept_portion;;
+
+	*);
+
+	=> nrel_cooking_time: 60_min 
+
+	(*
+
+		=>nrel_main_idtf: [60 минут](* <-lang_ru;; *);;
+
+		<-concept_min;;
+
+	*);
+
+
+
+	=> nrel_kkal: 135_kk
+
+	(*
+
+		=>nrel_main_idtf: [135 ккал](* <-lang_ru;; *);;
+
+		<-concept_kkal;;
+
+	*);
+
+
+
+	=> nrel_fats_content: 8_g
+
+	(*
+
+		=>nrel_main_idtf: [8 грамм](* <-lang_ru;; *);;
+
+		<-concept_g;;
+
+	*);
+
+
+
+	=> nrel_carbohydrates_content: 0_g
+
+	(*
+
+		=>nrel_main_idtf: [0 грамм](* <-lang_ru;; *);;
+
+		<-concept_g;;
+
+	*);
+
+
+
+	=> nrel_protein_content: 11_g
+
+	(*
+
+		=>nrel_main_idtf: [11 грамм](* <-lang_ru;;*);;
+
+		<-concept_g;;
+
+	*);
+
+
+
+    <- rrel_key_sc_element: ... (*
+
+        <- illustration;;
+
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/liver_with_apples.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+
+    *);;

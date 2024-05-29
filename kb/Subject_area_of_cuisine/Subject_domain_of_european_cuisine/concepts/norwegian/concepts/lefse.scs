@@ -1,0 +1,65 @@
+concept_lefse
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [lefse] (*<-lang_en;;*);
+	=> nrel_main_idtf: [лефсе] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (лефсе)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Это традиционные норвежские бутерброды, которые готовятся с использованием селедки в качестве основного ингредиента.] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			-> concept_mashed_potatoes;;
+                	-> concept_flour;;
+                	-> concept_sugar;;
+                	-> concept_cream;;
+                	-> concept_butter;;
+                	-> concept_salt;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (лефсе)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/lefse.txt";;*);;
+	*);;
+	*);
+	=> nrel_portion_number: 8_portion 
+	(*
+		=>nrel_main_idtf: [8 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+	=> nrel_cooking_time: 60_min 
+	(*
+		=>nrel_main_idtf: [60 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+
+	=> nrel_kkal: 200_kk
+	(*
+		=>nrel_main_idtf: [200 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 8_g
+	(*
+		=>nrel_main_idtf: [8 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 30_g
+	(*
+		=>nrel_main_idtf: [30 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 6_g
+	(*
+		=>nrel_main_idtf: [6 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/lefse.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

@@ -1,0 +1,63 @@
+concept_seabass_baked_in_foil
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [Seabass Baked in Foil] (*<-lang_en;;*);
+	=> nrel_main_idtf: [Сибас, запеченный в фольге] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (Сибас, запеченный в фольге)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Это блюдо из сибаса, запеченного в фольге с различными специями и овощами.] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			-> concept_seabass;;
+                	-> concept_olive_oil;;
+                	-> concept_salt;;
+                	-> concept_lemon;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (Сибас, запеченный в фольге)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/seabass_baked_in_foil.txt";;*);;
+	*);;
+	*);
+	=> nrel_portion_number: 4_portion 
+	(*
+		=>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+	=> nrel_cooking_time: 30_min 
+	(*
+		=>nrel_main_idtf: [30 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+
+	=> nrel_kkal: 300_kk
+	(*
+		=>nrel_main_idtf: [300 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 15_g
+	(*
+		=>nrel_main_idtf: [15 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 10_g
+	(*
+		=>nrel_main_idtf: [10 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 25_g
+	(*
+		=>nrel_main_idtf: [25 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/seabass_baked_in_foil.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

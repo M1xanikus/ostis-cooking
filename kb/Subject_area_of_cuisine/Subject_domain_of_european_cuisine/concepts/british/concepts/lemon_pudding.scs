@@ -1,0 +1,70 @@
+concept_lemon_pudding
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [lemon pudding] (*<-lang_en;;*);
+	=> nrel_main_idtf: [лимонный пудинг] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (лимонный пудинг)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Лимонный пудинг - это десерт, приготовленный на основе лимонного сока, сахара, яиц и молочных продуктов, таких как молоко или сливки. Он имеет мягкую и кремовую консистенцию и обладает ярким кислым вкусом лимона.] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			->concept_lemon;;
+			->concept_sugar;;
+			->concept_flour;;
+			->concept_vanilla;;
+			->concept_milk;;
+			->concept_flour;;
+			->concept_cinnamon;;
+			->concept_egg;;
+			->concept_butter;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (лимонный пудинг)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/lemon_pudding.txt";;*);;
+	*);;
+	*);
+
+	=> nrel_cooking_time: 30_min 
+	(*
+		=>nrel_main_idtf: [30 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+	
+	=> nrel_portion_number: 4_portion 
+	(*
+		=>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+
+	=> nrel_kkal: 430_kk
+	(*
+		=>nrel_main_idtf: [430 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 19_g
+	(*
+		=>nrel_main_idtf: [19 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 52_g
+	(*
+		=>nrel_main_idtf: [52 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 12_g
+	(*
+		=>nrel_main_idtf: [12 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/lemon_pudding.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

@@ -1,0 +1,65 @@
+concept_norwegian_sandwiches_with_herring
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [Norwegian sandwiches with herring] (*<-lang_en;;*);
+	=> nrel_main_idtf: [Норвежские бутерброды с селедкой] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (Норвежские бутерброды с селедкой)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Это традиционные норвежские бутерброды, которые готовятся с использованием селедки в качестве основного ингредиента.] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			-> concept_herring;;
+                	-> concept_baguette;;
+                	-> concept_butter;;
+                	-> concept_green_salad;;
+                	-> concept_lemon;;
+                	-> concept_cucumber;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (Норвежские бутерброды с селедкой)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/norwegian_sandwiches_with_herring.txt";;*);;
+	*);;
+	*);
+	=> nrel_portion_number: 4_portion 
+	(*
+		=>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+	=> nrel_cooking_time: 15_min 
+	(*
+		=>nrel_main_idtf: [15 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+
+	=> nrel_kkal: 250_kk
+	(*
+		=>nrel_main_idtf: [250 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 15_g
+	(*
+		=>nrel_main_idtf: [15 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 20_g
+	(*
+		=>nrel_main_idtf: [20 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 12_g
+	(*
+		=>nrel_main_idtf: [12 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/norwegian_sandwiches_with_herring.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

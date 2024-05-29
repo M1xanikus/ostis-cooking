@@ -15,9 +15,14 @@ subject_domain_of_british_cuisine
 
 subject_domain_of_british_cuisine
     ->rrel_not_maximum_studied_object_class:
+    	concept_mashed_potatoes;
 	concept_apple_crumble;
 	concept_sticky_toffee;
 	concept_classic_sponge_cake;
+	concept_english_pancakes;
+	concept_lemon_pudding;
+	concept_nut_pudding;
+	concept_watermelon_jelly;
 	concept_classic_roast_beef;;
 
 concept_british_cuisine
