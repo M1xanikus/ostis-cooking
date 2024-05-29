@@ -1,0 +1,62 @@
+concept_melktert
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Melktert ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Мельктерт ] (*<-lang_ru;;*);;
+
+concept_melktert
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_flour;;
+            -> concept_sugar;;
+            -> concept_salt;;
+            -> concept_butter;;
+            -> concept_egg;;
+            -> concept_milk;; 
+            -> concept_cinnamon;; 
+            -> concept_cardamom;; 
+            -> concept_corn_starch;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Мельктерт ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/melktert.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_melktert
+     => nrel_cooking_time: 80_min (*
+        =>nrel_main_idtf: [80 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 1955_kk(*
+        =>nrel_main_idtf:[1955 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:72_g(*
+        =>nrel_main_idtf:[72 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:294_g(*
+        =>nrel_main_idtf:[294 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:49_g(*
+        =>nrel_main_idtf:[49 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_melktert
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/melktert.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

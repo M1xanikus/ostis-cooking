@@ -1,0 +1,68 @@
+concept_koshari
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Koshari ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Кошари ] (*<-lang_ru;;*);;
+
+concept_koshari
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_chickpeas;;
+            -> concept_lentils;;
+            -> concept_rice;;
+            -> concept_spaghetti;;
+            -> concept_onion;;
+            -> concept_tomato;; 
+            -> concept_garlic;; 
+            -> concept_tomato_sauce;; 
+            -> concept_vinegar;;
+            -> concept_salt;; 
+            -> concept_pepper;;
+            -> concept_hot_pepper;;
+            -> concept_cumin;;
+            -> concept_coriander;;
+            -> concept_olive_oil;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Кошари ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/koshari.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_koshari
+     => nrel_cooking_time: 60_min (*
+        =>nrel_main_idtf: [60 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 259_kk(*
+        =>nrel_main_idtf:[259 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:7_g(*
+        =>nrel_main_idtf:[7 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:42_g(*
+        =>nrel_main_idtf:[42 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:7_g(*
+        =>nrel_main_idtf:[7 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_koshari
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/koshari.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

@@ -1,0 +1,62 @@
+concept_moroccan_coconut_cookies
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Moroccan coconut cookies ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Марокканское кокосовое печенье ] (*<-lang_ru;;*);;
+
+concept_moroccan_coconut_cookies
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_egg;;
+            -> concept_sugar;;
+            -> concept_lemon_zest;;
+            -> concept_apricot_jam;;
+            -> concept_coconut_flakes;;
+            -> concept_semolina;; 
+            -> concept_baking_powder;; 
+            -> concept_vegetable_oil;; 
+            -> concept_powdered_sugar;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Марокканское кокосовое печенье ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/moroccan_coconut_cookies.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_moroccan_coconut_cookies
+     => nrel_cooking_time: 40_min (*
+        =>nrel_main_idtf: [40 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 450_kk(*
+        =>nrel_main_idtf:[450 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:32_g(*
+        =>nrel_main_idtf:[32 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:38_g(*
+        =>nrel_main_idtf:[38 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:7_g(*
+        =>nrel_main_idtf:[7 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_moroccan_coconut_cookies
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/moroccan_coconut_cookies.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

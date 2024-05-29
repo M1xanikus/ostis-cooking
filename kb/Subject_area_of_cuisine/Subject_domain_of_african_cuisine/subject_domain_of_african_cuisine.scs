@@ -48,17 +48,69 @@ subject_domain_of_african_cuisine
     concept_harira; //ethiopia
     concept_morrocan_white_fish_in_jar;//morroco
     concept_morrocan_soup_with_chickpeas;//morroco
-    concept_morrocan_chicken;//morroco
-    concept_morrocan_cod_with_couscous;//morroco
+    concept_morrocan_chicken; // morroco
+    concept_morrocan_cod_with_couscous; // morroco
     concept_lamb_tagine_with_prunes; // ghana
     concept_quails_with_ginger; // algerian
     concept_harira_with_lamb; //ethiopia
-    concept_lamb_tagine_with_ginger; //ghana
-    concept_couscous_with_lamb; //algerian
-    concept_moroccan_tea;//morroco
-    concept_morrocan_couscous_with_spices;//morroco
+    concept_lamb_tagine_with_ginger; // ghana
+    concept_couscous_with_lamb; // algerian
+    concept_moroccan_tea; // morroco
+    concept_morrocan_couscous_with_spices;// morroco
     concept_almond_biscuits_with_anise; // southafrica
     concept_bissara; // southafrica
+    concept_mskuta; // algerian
+    concept_tigadegena; // ghana
+    concept_tamiya; // egypt
+    concept_falafel; // egypt
+    concept_mezelmen; // algerian
+    concept_fitirashi; // algerian
+    concept_pan_cupcake; // ghana
+    concept_harissa; // algerian
+    concept_chicken_yassa; //senegal
+    concept_date_bread_jamila; // algerian
+    concept_basbusa; // egypt
+    concept_rooibos_tea; // southafrica
+    concept_moroccan_coconut_cookies; // morroco
+    concept_zaaluk; // morroco 
+    concept_shakalaka; // southafrica 
+    concept_jolof; //nigerian
+    concept_fytyr; // egypt
+    concept_rfissa; // morroco
+    concept_khraime; // algerian 
+    concept_biltong;  // southafrica 
+    concept_hibiscus_cairo; // egypt  
+    concept_melktert;  // southafrica 
+    concept_lamb_maghreb; // algerian
+    concept_milibred;  // southafrica
+    concept_soup_pumpkins; // southafrica
+    concept_makhuda;  // algerian
+    concept_egyptian_dukka; // egypt
+    concept_pie_muna;  // algerian
+    concept_biscuit_cookies_crokey;  // algerian
+    concept_cookie_bussu_la_tmessu; // algerian 
+    concept_charek; // algerian
+    concept_algerian_burek; // algerian 
+    concept_batbuts;  // morroco
+    concept_donuts_koeksister;  // southafrica
+    concept_shorba_freak;  // algerian 
+    concept_donuts_mahamri;  // algerian
+    concept_tajin_zitun;  // algerian
+    concept_zigini;   // ethiopia
+    concept_khmiss_fylfyl_hlyua;  // algerian
+    concept_fried_pies_fetkuk;  // southafrica
+    concept_tagine_hlu;  // algerian
+    concept_braybridges;  // southafrica
+    concept_ful_medames; // egypt
+    concept_koshari;  // egypt
+    concept_chermoula;  // algerian
+    concept_shinj; // morroco 
+    concept_mhansha;  // morroco
+    concept_makrud;  // tunis
+    concept_hegazeya;  // egypt
+    
+
+     
 
 
 =>nrel_private_subject_domain:
@@ -68,6 +120,8 @@ subject_domain_of_african_cuisine
     subject_domain_of_moroccan_cuisine;
     subject_domain_of_southafrican_cuisine;
     subject_domain_of_ethiopian_cuisine;
+    subject_domain_of_nigerian_cuisine;
+    subject_domain_of_tunisian_cuisine;
     subject_domain_of_ghanaian_cuisine;
     subject_domain_of_somali_cuisine;;
 
@@ -86,6 +140,9 @@ subject_domain_of_moroccan_cuisine
         concept_morrocan_ragu;
         concept_morrocan_ragu_with_pumpkin;
         concept_caesar_in_moroccan;
+        concept_batbuts;
+        concept_shinj;
+        concept_mhansha;
         concept_moroccan_chickpeas_with_eggplant;
         concept_morrocan_ghuriba_cookies;
         concept_morrocan_quail_with_honey;
@@ -94,7 +151,10 @@ subject_domain_of_moroccan_cuisine
         concept_morrocan_chicken;
         concept_morrocan_cod_with_couscous;
         concept_moroccan_tea;
+        concept_rfissa;
+        concept_moroccan_coconut_cookies;
         concept_harsha;
+        concept_zaaluk;
         concept_morrocan_couscous_with_spices;;
         
 
@@ -125,6 +185,7 @@ subject_domain_of_senegal_cuisine
         concept_couscous_with_chicken_and_shafran;
         concept_salted_lemons;
         concept_bobotie;
+        concept_chicken_yassa;
         concept_tajine_with_chicken_and_salt_lemons;;   
         
 concept_senegal_cuisine
@@ -166,7 +227,16 @@ subject_domain_of_southafrican_cuisine
         concept_southafrican_cuisine;
     ->rrel_not_maximum_studied_object_class:
         concept_grilled_chicken_with_peanut_butter;
+        concept_donuts_koeksister;
         concept_strawberry_mix; 
+        concept_rooibos_tea;
+        concept_soup_pumpkins;
+        concept_biltong;
+        concept_melktert;
+        concept_braybridges;
+        concept_shakalaka;
+        concept_milibred;
+        concept_fried_pies_fetkuk;
         concept_almond_biscuits_with_anise;
         concept_bissara;;
 
@@ -189,8 +259,17 @@ subject_domain_of_egypt_cuisine
         concept_egypt_cuisine;
     ->rrel_not_maximum_studied_object_class:
         concept_mallavi;
-        concept_matbucha; 
+        concept_matbucha;
+        concept_tamiya;
+        concept_hegazeya;
+        concept_hibiscus_cairo;
+        concept_falafel;
+        concept_fytyr;
+        concept_basbusa;
+        concept_ful_medames;
         concept_bulgur;
+        concept_koshari;
+        concept_egyptian_dukka;
         concept_oriental_chicken_couscous;
         concept_asida;;  
 
@@ -216,11 +295,30 @@ subject_domain_of_algerian_cuisine
         concept_semolina_cookies;
         concept_coconut_soup;
         concept_algerian_salad;
+        concept_lamb_maghreb; 
         concept_couscous_with_lamb;
-        concept_quails_with_ginger; 
+        concept_quails_with_ginger;
+        concept_biscuit_cookies_crokey; 
         concept_lamb_with_spices_in_pumpkin;
         concept_maghrebian_chicken_thighs;
+        concept_chermoula;
         concept_pastila;
+        concept_khmiss_fylfyl_hlyua;
+        concept_cookie_bussu_la_tmessu;
+        concept_mskuta;
+        concept_makhuda;
+        concept_charek;
+        concept_pie_muna;
+        concept_algerian_burek;
+        concept_mezelmen;
+        concept_tajin_zitun;
+        concept_khraime; 
+        concept_fitirashi;
+        concept_shorba_freak;
+        concept_harissa;
+        concept_donuts_mahamri;
+        concept_date_bread_jamila;
+        concept_tagine_hlu;
         concept_roast_leg_of_lamb;;
 
 
@@ -244,6 +342,7 @@ subject_domain_of_ethiopian_cuisine
     ->rrel_not_maximum_studied_object_class:
         concept_harira_with_lamb;
         concept_harira;
+        concept_zigini; 
         concept_kenyan_tea_with_milk;
         concept_masala;;
 
@@ -269,6 +368,8 @@ subject_domain_of_ghanaian_cuisine
         concept_lentils_with_vegetables;
         concept_guinean_chicken;
         concept_thina;
+        concept_tigadegena;
+        concept_pan_cupcake;
         concept_potato_with_olives;;    
 
 
@@ -277,4 +378,44 @@ concept_ghanaian_cuisine
     =>nrel_main_idtf:[ганская кухня](*<-lang_ru;;*);
     =>nrel_main_idtf:[ghanaian cuisine](*<-lang_en;;*);
     <-concept_cuisine;
-    <-concept_african_cuisine;;     
+    <-concept_african_cuisine;; 
+
+
+subject_domain_of_nigerian_cuisine
+    =>nrel_main_idtf:[Предметная область нигерейской кухни] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Subject domain of nigerian cuisine] (* <-lang_en;;*);
+	<-subject_domain; 
+	<-subject_domain_of_african_cuisine; 
+    ->rrel_maximum_studied_object_class:
+        concept_nigerian_cuisine;
+    ->rrel_not_maximum_studied_object_class:
+        concept_jolof;;    
+
+
+concept_nigerian_cuisine
+    <-sc_node_not_relation;
+    =>nrel_main_idtf:[нигерейская кухня](*<-lang_ru;;*);
+    =>nrel_main_idtf:[nigerian cuisine](*<-lang_en;;*);
+    <-concept_cuisine;
+    <-concept_african_cuisine;;
+
+subject_domain_of_tunisian_cuisine
+    =>nrel_main_idtf:[Предметная область тунисской кухни] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Subject domain of tunisian cuisine] (* <-lang_en;;*);
+	<-subject_domain; 
+	<-subject_domain_of_african_cuisine; 
+    ->rrel_maximum_studied_object_class:
+        concept_tunisian_cuisine;
+    ->rrel_not_maximum_studied_object_class:
+        concept_makrud;;    
+
+
+concept_tunisian_cuisine
+    <-sc_node_not_relation;
+    =>nrel_main_idtf:[тунисская кухня](*<-lang_ru;;*);
+    =>nrel_main_idtf:[tunisian cuisine](*<-lang_en;;*);
+    <-concept_cuisine;
+    <-concept_african_cuisine;; 
+
+
+    

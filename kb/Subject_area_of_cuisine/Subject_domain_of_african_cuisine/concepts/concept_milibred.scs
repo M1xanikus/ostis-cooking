@@ -1,0 +1,60 @@
+concept_milibred
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Milibred ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Милибред ] (*<-lang_ru;;*);;
+
+concept_milibred
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_flour;;
+            -> concept_corn_flour;;
+            -> concept_milk_corn;;
+            -> concept_yeast;;
+            -> concept_sugar;;
+            -> concept_salt;; 
+            -> concept_vegetable_oil;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Милибред ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/milibred.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_milibred
+     => nrel_cooking_time: 70_min (*
+        =>nrel_main_idtf: [70 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 1245_kk(*
+        =>nrel_main_idtf:[1245 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:5_g(*
+        =>nrel_main_idtf:[5 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:272_g(*
+        =>nrel_main_idtf:[272 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:31_g(*
+        =>nrel_main_idtf:[31 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_milibred
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/milibred.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

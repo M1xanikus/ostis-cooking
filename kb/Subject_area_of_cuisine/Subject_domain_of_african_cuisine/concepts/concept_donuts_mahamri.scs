@@ -1,0 +1,60 @@
+concept_donuts_mahamri
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Donuts Mahamri ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Пончики Махамри ] (*<-lang_ru;;*);;
+
+concept_donuts_mahamri
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_flour;;
+            -> concept_yeast;;
+            -> concept_coconut_milk;;
+            -> concept_water;;
+            -> concept_sugar;;
+            -> concept_cardamom;; 
+            -> concept_salt;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Пончики Махамри ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/donuts_mahamri.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_donuts_mahamri
+     => nrel_cooking_time: 210_min (*
+        =>nrel_main_idtf: [210 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 245_kk(*
+        =>nrel_main_idtf:[245 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:5_g(*
+        =>nrel_main_idtf:[5 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:44_g(*
+        =>nrel_main_idtf:[44 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:6_g(*
+        =>nrel_main_idtf:[6 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_donuts_mahamri
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/donuts_mahamri.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

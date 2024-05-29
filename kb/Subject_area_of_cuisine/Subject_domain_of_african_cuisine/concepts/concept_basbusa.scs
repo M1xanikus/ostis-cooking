@@ -1,0 +1,65 @@
+concept_basbusa
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Basbusa ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Басбуса ] (*<-lang_ru;;*);;
+
+concept_basbusa 
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_orange;;
+            -> concept_lemon;;
+            -> concept_sugar;;
+            -> concept_butter;;
+            -> concept_egg;;
+            -> concept_yogurt;; 
+            -> concept_cream;; 
+            -> concept_semolina;; 
+            -> concept_water;;
+            -> concept_salt;; 
+            -> concept_coconut_flakes;;
+            -> concept_baking_powder;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Басбуса ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/basbusa.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_basbusa
+     => nrel_cooking_time: 60_min (*
+        =>nrel_main_idtf: [60 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 344_kk(*
+        =>nrel_main_idtf:[344 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:10_g(*
+        =>nrel_main_idtf:[10 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:57_g(*
+        =>nrel_main_idtf:[57 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:5_g(*
+        =>nrel_main_idtf:[5 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_basbusa 
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/basbusa.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

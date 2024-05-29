@@ -1,0 +1,61 @@
+concept_charek
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Charek ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Чарек ] (*<-lang_ru;;*);;
+
+concept_charek
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_flour;;
+            -> concept_margarine;;
+            -> concept_powdered_sugar;;
+            -> concept_baking_powder;;
+            -> concept_peanut;;
+            -> concept_egg;; 
+            -> concept_vanillin;; 
+            -> concept_honey;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Чарек ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/charek.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_charek
+     => nrel_cooking_time: 45_min (*
+        =>nrel_main_idtf: [45 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 403_kk(*
+        =>nrel_main_idtf:[403 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:24_g(*
+        =>nrel_main_idtf:[24 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:34_g(*
+        =>nrel_main_idtf:[34 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:11_g(*
+        =>nrel_main_idtf:[11 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_charek
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/charek.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;
