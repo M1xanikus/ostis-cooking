@@ -1,0 +1,88 @@
+concept_dango 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Данго ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Dango ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Данго) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Данго - японские клёцки или колобки из клейких сортов риса. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_rice_flour;; // рисовая мука
+                -> concept_water;;
+                -> concept_sugar;;
+                -> concept_starch;; // крахмал
+                -> concept_soy_sauce;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Данго)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/dango.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 5_portion (*
+        =>nrel_main_idtf: [5 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 495_kk(*
+        =>nrel_main_idtf:[495 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:8_g(*
+        =>nrel_main_idtf:[8 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:1_g(*
+        =>nrel_main_idtf:[1 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:114_g(*
+        =>nrel_main_idtf:[114 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/dango.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
+
+
+
+
+
+/*sc_node_not_relation -> concept_dango;;
+
+concept_dango 
+    => nrel_main_idtf: [ Данго ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Dango ] (*<-lang_en;;*);;
+
+concept_dango
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение ( Данго ) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Данго - японские клёцки или колобки из клейких сортов риса. ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            -> concept_rice_flour;; // рисовая мука
+            -> concept_water;;
+            -> concept_sugar;;
+            -> concept_starch;; // крахмал
+            -> concept_soy_sauce;;
+        *);;
+    *);
+
+    -> rrel_instruction: ... (*
+        => nrel_idtf: [Рецепт (Данго)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/dango.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/dango.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;*/

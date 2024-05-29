@@ -1,0 +1,90 @@
+concept_misoshiru 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Мисосиру ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Misoshiru ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Мисосиру) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Мисосиру - это блюдо японской кухни, суп с растворённой в нём пастой мисо. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_water;;
+                -> concept_dashi_powder;; // порошок даши (dashinomoto)
+                -> concept_miso_pasta;;
+                -> concept_tofu;;
+                -> concept_wakame_seaweed;;
+                -> concept_green_onions;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Мисосиру)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/misoshiru.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 63_kk(*
+        =>nrel_main_idtf:[63 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:6_g(*
+        =>nrel_main_idtf:[6 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:2_g(*
+        =>nrel_main_idtf:[2 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:6_g(*
+        =>nrel_main_idtf:[6 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/misoshiru.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
+
+
+
+
+
+/*sc_node_not_relation -> concept_misoshiru;;
+
+concept_misoshiru 
+    => nrel_main_idtf: [ Мисосиру ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Misoshiru ] (*<-lang_en;;*);;
+
+concept_misoshiru
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение ( Мисосиру ) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Мисосиру - это блюдо японской кухни, суп с растворённой в нём пастой мисо ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            -> concept_water;;
+            -> concept_dashi_powder;; // порошок даши (dashinomoto)
+            -> concept_miso_pasta;;
+            -> concept_tofu;;
+            -> concept_wakame_seaweed;;
+            -> concept_green_onions;;
+        *);;
+    *);
+
+     -> rrel_instruction: ... (*
+        => nrel_idtf: [Рецепт (Мисосиру)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/misoshiru.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/misoshiru.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;*/

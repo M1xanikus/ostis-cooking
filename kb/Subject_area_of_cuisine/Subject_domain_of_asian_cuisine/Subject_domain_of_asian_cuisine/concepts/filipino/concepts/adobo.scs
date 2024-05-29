@@ -1,0 +1,57 @@
+concept_adobo
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Адобо ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Adobo ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Адобо) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Адобо - это популярное филиппинское блюдо, которое включает мясо, морепродукты или овощи, маринованные в уксусе, соевом соусе, чесноке, лавровом листе и черном перце, которые обжаривают в масле и варят на медленном огне в маринаде. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_chicken_ham;;
+                -> concept_coconut_vinegar;;
+                -> concept_soy_sauce;;
+                -> concept_garlic;;
+                -> concept_laurel_leaf;;
+                -> concept_ground_dried_garlic;;
+                -> concept_black_pepper_peas;;
+                -> concept_vegetable_oil;;
+                -> concept_ground_black_pepper;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Адобо)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/adobo.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 90_min (*
+        => nrel_main_idtf: [90 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 591_kk(*
+        =>nrel_main_idtf:[591 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:55_g(*
+        =>nrel_main_idtf:[55 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:37_g(*
+        =>nrel_main_idtf:[37 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:7_g(*
+        =>nrel_main_idtf:[7 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/adobo.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

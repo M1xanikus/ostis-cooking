@@ -1,0 +1,56 @@
+concept_lab_salad
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Салат Лаб ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Lab Salad ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Салат Лаб) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Это традиционный тайский салат из мяса, трав и овощей, заправленный острым соусом. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_ground_meat;;
+		-> concept_mint;;
+		-> concept_cilantro;;
+		-> concept_shallot;;
+		-> concept_lime_juice;;
+		-> concept_fish_sauce;;
+		-> concept_chili_pepper;;
+		-> concept_rice;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Салат Лаб)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/lab_salad.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 20_min (*
+        => nrel_main_idtf: [20 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 250_kk(*
+        =>nrel_main_idtf:[250 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:18_g(*
+        =>nrel_main_idtf:[18 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:12_g(*
+        =>nrel_main_idtf:[12 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:8_g(*
+        =>nrel_main_idtf:[8 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/lab_salad.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

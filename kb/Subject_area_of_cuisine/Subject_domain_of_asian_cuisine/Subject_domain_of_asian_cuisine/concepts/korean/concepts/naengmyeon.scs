@@ -1,0 +1,63 @@
+concept_naengmyeon 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Нэнмён ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Naengmyeon ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Нэнмён) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Нэнмён - это в корейской кухне холодная лапша с водой, разбавленной с соевым соусом и горчицей. . ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_chicken_fillet;;
+                -> concept_beef_fillet;;
+                -> concept_duck_fillet;;
+                -> concept_shrimp_soy_sauce;;
+                -> concept_lime_juice;;
+                -> concept_sugar;;
+                -> concept_egg;;
+                -> concept_cucumber;;
+                -> concept_buckwheat_noodles;;
+                -> concept_tomato_sauce;;
+                -> concept_cilantro;;
+                -> concept_chili_pepper;;
+                -> concept_salt;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Нэнмён)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/naengmyeon.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 376_kk(*
+        =>nrel_main_idtf:[376 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:24_g(*
+        =>nrel_main_idtf:[24 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:10_g(*
+        =>nrel_main_idtf:[10 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:49_g(*
+        =>nrel_main_idtf:[49 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/naengmyeon.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

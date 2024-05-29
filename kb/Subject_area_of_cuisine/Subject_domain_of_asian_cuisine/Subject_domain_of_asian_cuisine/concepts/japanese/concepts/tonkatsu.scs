@@ -1,0 +1,57 @@
+concept_tonkatsu 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Тонкацу ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Tonkatsu ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Тонкацу) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Тонкацу - это блюдо японской кухни, зажаренная во фритюре свиная отбивная. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_pork_loin;;
+                -> concept_egg;;
+                -> concept_panko_breadcrumbs;;
+                -> concept_wheat_flour;;
+                -> concept_salt;;
+                -> concept_ground_black_pepper;;
+                -> concept_tonkatsu_sauce;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Тонкацу)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/tonkatsu.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 2_portion (*
+        =>nrel_main_idtf: [2 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 750_kk(*
+        =>nrel_main_idtf:[750 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:27_g(*
+        =>nrel_main_idtf:[27 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:48_g(*
+        =>nrel_main_idtf:[48 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:54_g(*
+        =>nrel_main_idtf:[54 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/tonkatsu.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

@@ -1,0 +1,69 @@
+concept_bento 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Бэнто ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Bento ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Бэнто) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Бэнто - это японский термин для однопорционной упакованной еды. Традиционно бэнто включает в себя рис, рыбу или мясо и один или несколько видов нарезанных сырых или маринованных овощей в одной коробке с крышкой. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_chicken_breast;;
+                -> concept_tuna_fillet;;
+                -> concept_red_sweet_pepper;;
+                -> concept_broccoli_cabbage;;
+                -> concept_carrot;;
+                -> concept_sushi_rice;;
+                -> concept_rice_abborio;;
+                -> concept_mayonnaise;;
+                -> concept_chili_sauce;;
+                -> concept_garlic;;
+                -> concept_tempura_flour;;
+                -> concept_avocado;;
+                -> concept_egg;;
+                -> concept_chili_pepper;;
+                -> concept_chives;;
+                -> concept_romen_salad;;
+                -> concept_salt;;
+                -> concept_vegetable_oil;;
+                -> concept_fresh_pepper;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Бэнто)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/bento.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 20_min (*
+        => nrel_main_idtf: [20 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 1_portion (*
+        =>nrel_main_idtf: [1 порция](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 11020_kk(*
+        =>nrel_main_idtf:[11020 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:153_g(*
+        =>nrel_main_idtf:[153 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:1052_g(*
+        =>nrel_main_idtf:[1052 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:226_g(*
+        =>nrel_main_idtf:[226 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/bento.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

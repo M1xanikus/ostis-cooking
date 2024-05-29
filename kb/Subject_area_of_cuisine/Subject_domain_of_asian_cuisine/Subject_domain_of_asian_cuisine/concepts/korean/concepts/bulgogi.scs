@@ -1,0 +1,57 @@
+concept_bulgogi
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Пулькоги ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Bulgogi ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Пулькоги) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Пулькоги - это блюдо корейской кухни, род барбекю, обычно готовится из тонких маринованных ломтиков говядины или свинины. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_beef_tenderloin;;
+                -> concept_chinese_pears;;
+                -> concept_onion;;
+                -> concept_ginger;;
+                -> concept_green_onions;;
+                -> concept_soy_sauce;;
+                -> concept_brown_sugar;;
+                -> concept_sesame_oil;;
+                -> concept_garlic;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Пулькоги)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/bulgogi.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 60_min (*
+        => nrel_main_idtf: [60 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 401_kk(*
+        =>nrel_main_idtf:[401 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:25_g(*
+        =>nrel_main_idtf:[25 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:25_g(*
+        =>nrel_main_idtf:[25 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:20_g(*
+        =>nrel_main_idtf:[20 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/bulgogi.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

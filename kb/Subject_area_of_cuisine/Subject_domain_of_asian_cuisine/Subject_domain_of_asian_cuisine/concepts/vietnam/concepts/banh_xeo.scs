@@ -1,0 +1,69 @@
+concept_banh_xeo
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Бань-сео ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Banh xeo ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Бань-сео) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Бань-сео - это популярные вьетнамские хрустящие рисовые блины с начинкой. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_fish_sauce;;
+                -> concept_lime_juice;;
+                -> concept_sugar;;
+                -> concept_chili_pepper;;
+                -> concept_garlic;;
+                -> concept_rice_flour;;
+                -> concept_corn_flour;;
+                -> concept_coconut_milk;;
+                -> concept_turmeric;;
+                -> concept_pork;;
+                -> concept_shrimps;;
+                -> concept_soybean_sprouts;;
+                -> concept_vegetable_oil;;
+                -> concept_green_salad;;
+                -> concept_fresh_mint;;
+                -> concept_cilantro;;
+                -> concept_onion;;
+                -> concept_ground_black_pepper;;
+                -> concept_salt;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Бань-сео)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/banh_xeo.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 40_min (*
+        => nrel_main_idtf: [40 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 761_kk(*
+        =>nrel_main_idtf:[761 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:36_g(*
+        =>nrel_main_idtf:[36 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:39_g(*
+        =>nrel_main_idtf:[39 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:67_g(*
+        =>nrel_main_idtf:[67 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/banh_xeo.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

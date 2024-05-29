@@ -1,0 +1,69 @@
+concept_banh_mi
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Бань-ми ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Banh mi ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Бань-ми) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Бань-ми - это короткий багет с тонкой хрустящей корочкой и мягкой воздушной текстурой во вьетнамской кухне. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_pork_ham;;
+                -> concept_vegetable_oil;;
+                -> concept_chicken_liver;;
+                -> concept_french_baguette;;
+                -> concept_onion;;
+                -> concept_cilantro;;
+                -> concept_fresh_mint;;
+                -> concept_orange_juice;;
+                -> concept_fish_sauce;;
+                -> concept_brown_sugar;;
+                -> concept_garlic;;
+                -> concept_green_onions;;
+                -> concept_mayonnaise;;
+                -> concept_ketchup;;
+                -> concept_soy_sauce;;
+                -> concept_sesame_oil;;
+                -> concept_chili_pepper;;
+                -> concept_white_cabbage;;
+                -> concept_carrot;;
+                -> concept_cucumber;;
+                -> concept_salt;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Бань-ми)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/banh_mi.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 60_min (*
+        => nrel_main_idtf: [60 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 2_portion (*
+        =>nrel_main_idtf: [2 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 1317_kk(*
+        =>nrel_main_idtf:[1317 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:43_g(*
+        =>nrel_main_idtf:[43 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:91_g(*
+        =>nrel_main_idtf:[91 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:85_g(*
+        =>nrel_main_idtf:[85 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/banh_mi.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

@@ -1,0 +1,102 @@
+concept_omurice 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Омурайсу ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Omurice ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Омурайсу) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Омурайсу - японское блюдо, состоящее из жареного риса, покрытого или завернутого в омлет, и украшенное кетчупом. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_onion;; // репчатый лук (обычный)
+                -> concept_chicken;;
+                -> concept_green_peas;; // зеленый горошек
+                -> concept_soy_sauce;; // соевый соус
+                -> concept_boiled_jasmine_rice;; // вареный жасминовый рис
+                -> concept_ketchup;;
+                -> concept_soy_sauce;;
+                -> concept_vegetable_oil;; // растительное масло
+                -> concept_egg;; // куриное яйцо
+                -> concept_cream;; // сливки
+                -> concept_parsley;; // петрушка
+                -> concept_salt;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Омурайсу)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/omurice.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 25_min (*
+        => nrel_main_idtf: [25 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 2_portion (*
+        =>nrel_main_idtf: [2 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 1324_kk(*
+        =>nrel_main_idtf:[1324 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:57_g(*
+        =>nrel_main_idtf:[57 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:156_g(*
+        =>nrel_main_idtf:[156 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:44_g(*
+        =>nrel_main_idtf:[44 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);     
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/omurice.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
+
+
+
+
+/*sc_node_not_relation -> concept_omurice;;
+
+concept_omurice 
+    => nrel_main_idtf: [ Омурайсу ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Omurice ] (*<-lang_en;;*);;
+
+concept_omurice
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение ( Омурайсу ) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Омурайсу - японское блюдо, состоящее из жареного риса, покрытого или завернутого в омлет, и украшенное кетчупом. ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            -> concept_onion;; // репчатый лук (обычный)
+            -> concept_chicken;;
+            -> concept_green_peas;; // зеленый горошек
+            -> concept_soy_sauce;; // соевый соус
+            -> concept_boiled_jasmine_rice;; // вареный жасминовый рис
+            -> concept_ketchup;;
+            -> concept_soy_sauce;;
+            -> concept_vegetable_oil;; // растительное масло
+            -> concept_egg;; // куриное яйцо
+            -> concept_cream;; // сливки
+            -> concept_parsley;; // петрушка
+            -> concept_salt;;
+        *);;
+        ->rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Омурайсу)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/omurice.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/omurice.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;*/

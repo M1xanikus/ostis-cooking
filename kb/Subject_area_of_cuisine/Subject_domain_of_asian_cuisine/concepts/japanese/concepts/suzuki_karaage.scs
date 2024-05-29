@@ -1,0 +1,68 @@
+concept_suzuki_karaage
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Судзуки-карааге ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Suzuki karaage ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Судзуки-карааге) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Словом «судзуки» японцы называют не только машины и мотоциклы, но и рыбу, которую у нас привыкли называть сибасом. В данном случае это сибас во фритюре. ] (* <-lang_ru;; *);;
+        *);;
+    *);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_seabass;;
+                -> concept_oyster_mushrooms;;
+                -> concept_garlic;;
+                -> concept_tosaka_algae;;
+                -> concept_green_onions;;
+                -> concept_;;
+                -> concept_starch;;
+                -> concept_sugar;; 
+                -> concept_myrin;;  
+                -> concept_sake;;  
+                -> concept_lemon_juice;;
+                -> concept_soy_sauce;;
+                -> concept_oil;;
+                -> concept_daikon;;
+                -> concept_lemon;;
+                -> concept_parsley;;
+                -> concept_salt;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Судзуки-карааге)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/suzuki_karaage.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 25_min (*
+        => nrel_main_idtf: [25 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 1_portion (*
+        =>nrel_main_idtf: [1 порция](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 1035_kk(*
+        =>nrel_main_idtf:[1035 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:101_g(*
+        =>nrel_main_idtf:[101 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:34_g(*
+        =>nrel_main_idtf:[34 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:73_g(*
+        =>nrel_main_idtf:[73 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/suzuki_karaage.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
+
+

@@ -1,0 +1,60 @@
+concept_biryani
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Бирьяни ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Biryani ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Бирьяни) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Бирьяни - это индийский пряный рис с добавлением мяса, рыбы, яиц или овощей. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_garlic;;
+                -> concept_ginger;;
+                -> concept_dried_chili_pepper;;
+                -> concept_cumin;;
+                -> concept_cardamom;;
+                -> concept_nutmeg;;
+                -> concept_yogurt;;
+                -> concept_lamb;;
+                -> concept_melted_oil;;
+                -> concept_laurel_leaf;;
+                -> concept_basmati_rice;;
+                -> concept_salt;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Бирьяни)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/biryani.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 100_min (*
+        => nrel_main_idtf: [100 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 1419_kk(*
+        =>nrel_main_idtf:[1419 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:55_g(*
+        =>nrel_main_idtf:[55 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:88_g(*
+        =>nrel_main_idtf:[88 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:102_g(*
+        =>nrel_main_idtf:[102 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/biryani.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

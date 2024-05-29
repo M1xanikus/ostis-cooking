@@ -1,0 +1,58 @@
+concept_funchose
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Фунчоза ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Funchose ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Фунчоза) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Блюдо, которое готовится из сухой лапши с приправами из маринованного перца и джусая, моркови, редьки, лука и других овощей. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_ground_black_pepper;;
+                -> concept_starch_noodles;;
+                -> concept_soy_sauce;;
+                -> concept_radish;;
+                -> concept_pork;;
+                -> concept_carrot;;
+                -> concept_onion;;
+                -> concept_garlic;;
+                -> concept_vegetable_oil;;
+                -> concept_salt;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Фунчоза)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/funchose.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 593_kk(*
+        =>nrel_main_idtf:[593 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:18_g(*
+        =>nrel_main_idtf:[18 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:11_g(*
+        =>nrel_main_idtf:[11 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:115_g(*
+        =>nrel_main_idtf:[115 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/funchose.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

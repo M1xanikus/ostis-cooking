@@ -1,0 +1,59 @@
+concept_roti_john 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Роти-джон ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Roti john ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Роти-джон) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Роти-джон - это бутерброд с омлетом, который, как полагают, впервые был приготовлен в Сингапуре в 1960-х или 1970-х годах. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_french_baguette;;
+                -> concept_ground_beef;;
+                -> concept_onion;;
+                -> concept_green_chili_pepper;;
+                -> concept_red_chili_pepper;;
+                -> concept_green_onions;;
+                -> concept_egg;;
+                -> concept_vegetable_oil;;
+                -> concept_salt;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Роти-джон)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/roti_john.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 15_min (*
+        => nrel_main_idtf: [15 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 1_portion (*
+        =>nrel_main_idtf: [1 порция](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 3170_kk(*
+        =>nrel_main_idtf:[3170 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:139_g(*
+        =>nrel_main_idtf:[139 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:166_g(*
+        =>nrel_main_idtf:[166 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:275_g(*
+        =>nrel_main_idtf:[275 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/roti_john.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

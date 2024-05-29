@@ -1,0 +1,60 @@
+concept_som_tam
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Сом там ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Som tam ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Сом там) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Сом там - это салат из зеленой папайи северо-восточного Таиланда. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_green_papaya;;
+                -> concept_peanuts;;
+                -> concept_garlic;;
+                -> concept_hot_pepper;;
+                -> concept_dried_shrimps;;
+                -> concept_palm_sugar;;
+                -> concept_cherry_tomato;;
+                -> concept_lime;;
+                -> concept_fish_sauce;;
+                -> concept_green_beans;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Сом там)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/som_tam.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 20_min (*
+        => nrel_main_idtf: [20 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 178_kk(*
+        =>nrel_main_idtf:[178 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:5_g(*
+        =>nrel_main_idtf:[5 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:4_g(*
+        =>nrel_main_idtf:[4 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:30_g(*
+        =>nrel_main_idtf:[30 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/som_tam.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+
