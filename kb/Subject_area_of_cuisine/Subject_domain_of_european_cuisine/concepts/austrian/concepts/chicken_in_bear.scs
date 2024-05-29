@@ -1,0 +1,73 @@
+concept_chicken_in_bear
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [chicken in bear] (*<-lang_en;;*);
+	=> nrel_main_idtf: [курица в пиве] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (курица в пиве)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [курица в пиве - курица запекается в пиве от того получается очень нежное мясо] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			->concept_chicken;;
+			->concept_potato;;
+			->concept_dark_bear;;
+			->concept_egg;;
+			->concept_bread;;
+			->concept_salt;;
+			->concept_milk;;
+			->concept_butter;;
+			->concept_garlic;;
+			->concept_sunflower_oil;;
+			->concept_thyme;;
+			->concept_ground_black_pepper;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (куриная отбивная в кляре)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/chicken_in_bear.txt";;*);;
+	*);;
+	*);
+
+	=> nrel_cooking_time: 70_min 
+	(*
+		=>nrel_main_idtf: [70 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+	
+	=> nrel_portion_number: 4_portion 
+	(*
+		=>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+
+	=> nrel_kkal: 1641_kk
+	(*
+		=>nrel_main_idtf: [1641 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 110_g
+	(*
+		=>nrel_main_idtf: [110 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 65_g
+	(*
+		=>nrel_main_idtf: [65 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 93_g
+	(*
+		=>nrel_main_idtf: [93 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/chicken_in_bear.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
