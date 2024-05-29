@@ -1,0 +1,68 @@
+concept_pho_bo
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Фо-бо ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Pho bo ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Фо-бо) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Фо-бо - это блюдо вьетнамской кухни, суп с лапшой, в который при сервировке добавляют говядину или курятину, а иногда — кусочки жареной рыбы или рыбные шарики. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_beef_bones;;
+                -> concept_onion;;
+                -> concept_ginger;;
+                -> concept_anise;;
+                -> concept_carnation;;
+                -> concept_cinnamon_sticks;;
+                -> concept_cardamom;;
+                -> concept_fish_sauce;;
+                -> concept_sugar;;
+                -> concept_beef_rib_eye;;
+                -> concept_beef_tenderloin;;
+                -> concept_green_onions;;
+                -> concept_cilantro;;
+                -> concept_fresh_mint;;
+                -> concept_hot_pepper;;
+                -> concept_legume_sprouts;;
+                -> concept_lime;;
+                -> concept_rice_noodles;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Фо-бо)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/pho_bo.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 5_h (*
+        => nrel_main_idtf: [5 часов](* <- lang_ru;; *);;
+        <- concept_hour;;
+    *);
+
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 723_kk(*
+        =>nrel_main_idtf:[723 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:63_g(*
+        =>nrel_main_idtf:[63 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:25_g(*
+        =>nrel_main_idtf:[25 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:64_g(*
+        =>nrel_main_idtf:[64 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/pho_bo.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

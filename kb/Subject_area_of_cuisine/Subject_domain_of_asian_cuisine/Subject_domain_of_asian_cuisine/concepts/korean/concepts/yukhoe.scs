@@ -1,0 +1,60 @@
+concept_yukhoe 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Юкхе ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Yukhoe ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Юкхе) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Юкхе - это блюдо из сырого мяса в корейской кухне. Чаще всего его делают из говядины, но могут быть разные виды и куски мяса ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_beef_tenderloin;;
+                -> concept_chinese_pears;;
+                -> concept_egg_yolk;;
+                -> concept_fried_sesame;;
+                -> concept_green_onions;;
+                -> concept_soy_sauce;;
+                -> concept_sesame_oil;;
+                -> concept_liquid_honey;;
+                -> concept_garlic;;
+                -> concept_salt;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Юкхе)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/yukhoe.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 25_min (*
+        => nrel_main_idtf: [25 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 2_portion (*
+        =>nrel_main_idtf: [2 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 703_kk(*
+        =>nrel_main_idtf:[703 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:46_g(*
+        =>nrel_main_idtf:[46 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:50_g(*
+        =>nrel_main_idtf:[50 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:17_g(*
+        =>nrel_main_idtf:[17 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/yukhoe.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

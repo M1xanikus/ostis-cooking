@@ -1,0 +1,63 @@
+concept_maguro_sarada 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Магуро-сарада ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Maguro sarada ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Магуро-сарада) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Магуро-сарада - это японский салат из свежего тунца с овощами и кунжутной заправкой. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_tuna;;
+                -> concept_radish;;
+                -> concept_sweet_pepper;;
+                -> concept_green_onions;;
+                -> concept_carrot;;
+                -> concept_salad_leaves_mixture;;
+                -> concept_sesame_oil;;
+                -> concept_soy_sauce;;
+                -> concept_mirin;;
+                -> concept_lime_juice;;
+                -> concept_sesame;;
+                -> concept_vegetable_oil;;
+                -> concept_ground_red_pepper;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Магуро-сарада)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/maguro_sarada.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 20_min (*
+        => nrel_main_idtf: [20 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 1_portion (*
+        =>nrel_main_idtf: [1 порция](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 455_kk(*
+        =>nrel_main_idtf:[455 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:20_g(*
+        =>nrel_main_idtf:[20 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:36_g(*
+        =>nrel_main_idtf:[36 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:11_g(*
+        =>nrel_main_idtf:[11 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/maguro_sarada.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

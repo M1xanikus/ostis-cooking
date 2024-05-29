@@ -1,0 +1,57 @@
+concept_onigiri 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Онигири ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Onigiri ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Онигири) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Онигири - это блюдо японской кухни из пресного риса, слепленного в виде треугольника или шара. Обычно в онигири кладут начинку и заворачивают в лист сушёных водорослей нори. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_sushi_rice;;
+                -> concept_water;;
+                -> concept_salt;;
+                -> concept_dry_nori_seaweed;;
+                -> concept_canned_tuna;;
+                -> concept_mayonnaise;;
+                -> concept_soy_sauce;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Онигири)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/onigiri.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 90_min (*
+        => nrel_main_idtf: [90 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 12_portion (*
+        =>nrel_main_idtf: [12 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 154_kk(*
+        =>nrel_main_idtf:[154 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:7_g(*
+        =>nrel_main_idtf:[7 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:1_g(*
+        =>nrel_main_idtf:[1 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:29_g(*
+        =>nrel_main_idtf:[29 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/onigiri.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

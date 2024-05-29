@@ -1,0 +1,56 @@
+concept_mochi 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Моти ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Mochi ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Моти) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Моти - это  японский вид рисового теста. Моти делается из истолчённого в пасту клейкого риса, особого известного с давнего времени сорта мотигомэ, который при долгом толчении и смачивании приобретает сладкий вкус. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_rice_flour;;
+                -> concept_water;;
+                -> concept_sugar;;
+                -> concept_vinegar;;
+                -> concept_chocolate;;
+                -> concept_fruit;;   
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Моти)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/mochi.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 60_min (*
+        => nrel_main_idtf: [60 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 660_kk(*
+        =>nrel_main_idtf:[660 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:8_g(*
+        =>nrel_main_idtf:[8 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:9_g(*
+        =>nrel_main_idtf:[9 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:136_g(*
+        =>nrel_main_idtf:[136 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/mochi.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

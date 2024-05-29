@@ -1,0 +1,65 @@
+concept_okonomiyaki 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Окономияки ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Okonomiyaki ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Окономияки) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Окономияки - это большие капустные оладушки, которые японцы часто готовят дома. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_tempura_mix;;
+                -> concept_dashi_powder;;
+                -> concept_wheat_flour;;
+                -> concept_salt;;
+                -> concept_sugar;;
+                -> concept_white_cabbage;;
+                -> concept_green_onions;;
+                -> concept_pork_brisket;;
+                -> concept_marinated_ginger;;
+                -> concept_okonomiyaki_sauce;;
+                -> concept_mayonnaise;;
+                -> concept_tuna;;
+                -> concept_egg;;
+                -> concept_water;;
+                -> concept_vegetable_oil;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Окономияки)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/okonomiyaki.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 40_min (*
+        => nrel_main_idtf: [40 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 1660_kk(*
+        =>nrel_main_idtf:[1660 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:19_g(*
+        =>nrel_main_idtf:[19 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:159_g(*
+        =>nrel_main_idtf:[159 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:40_g(*
+        =>nrel_main_idtf:[40 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/okonomiyaki.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

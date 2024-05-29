@@ -1,0 +1,57 @@
+concept_buckwheat_noodles_with_teriyaki_chicken
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Гречневая лапша с курицей-терияки ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Buckwheat noodles with teriyaki chicken ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Гречневая лапша с курицей-терияки) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Это блюдо сочетает в себе ароматную гречневую лапшу с нежной курицей в соусе терияки, приправленное овощами. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_buckwheat_noodles;;
+                -> concept_pepper;;
+                -> concept_chicken_fillet;;
+                -> concept_chili_pepper;;
+                -> concept_champignons;;
+                -> concept_onion;;
+                -> concept_corn;;
+                -> concept_honey_teriyaki;;
+                -> concept_vegetable_oil;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Гречневая лапша с курицей-терияки)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/buckwheat_noodles_with_teriyaki_chicken.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 363_kk(*
+        =>nrel_main_idtf:[363 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:26_g(*
+        =>nrel_main_idtf:[26 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:2_g(*
+        =>nrel_main_idtf:[2 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:61_g(*
+        =>nrel_main_idtf:[61 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/buckwheat_noodles_with_teriyaki_chicken.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

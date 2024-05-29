@@ -1,0 +1,61 @@
+concept_lentil_soup
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Чечевичный суп ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Lentil soup ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Чечевичный суп) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Чечевичный суп - это сытная густая похлебка с чечевицей в качестве основного ингредиента. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_red_lentils;;
+                -> concept_greenbrown_lentils;;
+                -> concept_tomato;;
+                -> concept_garlic;;
+                -> concept_onion;;
+                -> concept_carrot;;
+                -> concept_olive_oil;;
+                -> concept_ground_black_pepper;;
+                -> concept_sea_salt;;
+                -> concept_saffron;;
+                -> concept_dried_basil;;
+                -> concept_dried_oregano;;
+                -> concept_dried_tarragon;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Чечевичный суп)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/lentil_soup.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 40_min (*
+        => nrel_main_idtf: [40 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 189_kk(*
+        =>nrel_main_idtf:[189 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:11_g(*
+        =>nrel_main_idtf:[11 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:3_g(*
+        =>nrel_main_idtf:[3 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:27_g(*
+        =>nrel_main_idtf:[27 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/lentil_soup.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

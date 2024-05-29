@@ -1,0 +1,66 @@
+concept_chicken_tikka_masala
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Курица тикка-масала ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Chicken tikka masala ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Курица тикка-масала) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Курица тикка-масала - блюдо индийской кухни, состоящее из кусочков курицы и густого острого соуса. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_sunflower_oil;;
+                -> concept_cumin;;
+                -> concept_laurel_leaf;;
+                -> concept_black_cardamom_seeds;;
+                -> concept_green_cardamom_seeds;;
+                -> concept_cinnamon;;
+                -> concept_carnation;;
+                -> concept_onion;;
+                -> concept_tomato;;
+                -> concept_ground_coriander;;
+                -> concept_garlic;;
+                -> concept_chili_pepper;;
+                -> concept_turmeric;;
+                -> concept_chicken_fillet;;
+                -> concept_green_pepper;;
+                -> concept_cream;; // 33%
+                -> concept_garam_masala;;
+                -> concept_lemon_juice;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Курица тикка-масала)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/chicken_tikka_masala.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 1_h (*
+        => nrel_main_idtf: [1 час](* <- lang_ru;; *);;
+        <- concept_hour;;
+    *);
+
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 235_kk(*
+        =>nrel_main_idtf:[235 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:11_g(*
+        =>nrel_main_idtf:[11 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:14_g(*
+        =>nrel_main_idtf:[14 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:18_g(*
+        =>nrel_main_idtf:[18 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/chicken_tikka_masala.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

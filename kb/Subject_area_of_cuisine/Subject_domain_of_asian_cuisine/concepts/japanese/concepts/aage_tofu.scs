@@ -1,0 +1,62 @@
+concept_aage_tofu
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Агэ-тофу ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Aage tofu ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Агэ-тофу) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Блюдо японской кухни, представляет собой обжаренный во фритюре сыр тофу, с золотистой хрустящей корочкой снаружи и нежной пышной серединкой. ] (* <-lang_ru;; *);;
+        *);;
+    *);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_tofu;;
+                -> concept_wheat_flour;;
+                -> concept_soy_sauce;;
+                -> concept_vegetable_oil;;
+                -> concept_lemon_juice;;
+                -> concept_sesame_oil;;
+                -> concept_sugar;;
+                -> concept_cilantro;; 
+                -> concept_red_bow;;  
+                -> concept_garlic;;  
+                -> concept_cherry_tomatoes;;    
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Агэ-тофу)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/aage_tofu.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 15_min (*
+        => nrel_main_idtf: [15 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 1_portion (*
+        =>nrel_main_idtf: [1 порция](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 1042_kk(*
+        =>nrel_main_idtf:[1042 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:29_g(*
+        =>nrel_main_idtf:[29 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:81_g(*
+        =>nrel_main_idtf:[81 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:50_g(*
+        =>nrel_main_idtf:[50 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/aage_tofu.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
+
+

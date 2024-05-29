@@ -1,0 +1,56 @@
+concept_pan_bagna
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Пан-банья ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Pan Bagna ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Пан-банья) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [  Это традиционный тайский сэндвич, состоящий из булочки, наполненной овощами, анчоусами и оливковым маслом. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_bread;;
+		-> concept_tomatoes;;
+		-> concept_onion;;
+		-> concept_bell_pepper;;
+		-> concept_anchovies;;
+		-> concept_olive_oil;;
+		-> concept_olives;;
+		-> concept_basil;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Пан-банья)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/pan_bagna.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 20_min (*
+        => nrel_main_idtf: [20 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 350_kk(*
+        =>nrel_main_idtf:[350 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:12_g(*
+        =>nrel_main_idtf:[12 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:20_g(*
+        =>nrel_main_idtf:[20 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:30_g(*
+        =>nrel_main_idtf:[30 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/pan_bagna.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

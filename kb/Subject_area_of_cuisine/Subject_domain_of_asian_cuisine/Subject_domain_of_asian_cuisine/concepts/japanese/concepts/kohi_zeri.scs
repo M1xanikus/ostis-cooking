@@ -1,0 +1,59 @@
+concept_kohi_zeri 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Кохи-зелли ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Kohi zeri ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Кохи-зелли) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Кохи-зелли - это десерт из желатина и кофе. ] (* <-lang_ru;; *);;
+        *);;
+    *);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_sugar;;
+                -> concept_espresso;;
+                -> concept_gelatin;;
+                -> concept_cream;;
+                -> concept_vanilla;;
+                -> concept_fresh_mint;;
+                -> concept_strawberries;;
+                -> concept_whipped_cream;;   
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Кохи-зелли)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kohi_zeri.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 20_min (*
+        => nrel_main_idtf: [20 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 1_portion (*
+        =>nrel_main_idtf: [1 порция](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 490_kk(*
+        =>nrel_main_idtf:[490 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:10_g(*
+        =>nrel_main_idtf:[10 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:35_g(*
+        =>nrel_main_idtf:[35 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:33_g(*
+        =>nrel_main_idtf:[33 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/kohi_zeri.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

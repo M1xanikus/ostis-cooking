@@ -1,0 +1,60 @@
+concept_teriyaki 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Терияки ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Teriyaki ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Терияки) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Терияки - это традиционный японский способ обжарки с использованием распространённого в японской кухне сладкого соуса. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_chicken_fillet;;
+                -> concept_soy_sauce;;
+                -> concept_brown_sugar;;
+                -> concept_ginger;;
+                -> concept_onion;;
+                -> concept_garlic;;
+                -> concept_sake;;
+                -> concept_vegetable_oil;;
+                -> concept_sesame;;
+                -> concept_green_onions;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Терияки)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/teriyaki.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 383_kk(*
+        =>nrel_main_idtf:[383 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:37_g(*
+        =>nrel_main_idtf:[37 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:14_g(*
+        =>nrel_main_idtf:[14 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:20_g(*
+        =>nrel_main_idtf:[20 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/teriyaki.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

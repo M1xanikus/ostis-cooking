@@ -1,0 +1,61 @@
+concept_yache_pibimbap
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Яче пибимпап ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Yache Pibimbap ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Яче пибимпап) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Это корейское блюдо, представляющее собой рис, смешанный с различными овощами, мясом и яичным желтком. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_rice;;
+		-> concept_beef;;
+		-> concept_spinach;;
+		-> concept_carrot;;
+		-> concept_bean_sprouts;;
+		-> concept_mushrooms;;
+		-> concept_egg_yolk;;
+		-> concept_sesame_oil;;
+		-> concept_soy_sauce;;
+		-> concept_garlic;;
+		-> concept_ginger;;
+		-> concept_salt;;
+		-> concept_pepper;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Яче пибимпап)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/yache_pibimbap.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 450_kk(*
+        =>nrel_main_idtf:[450 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:25_g(*
+        =>nrel_main_idtf:[25 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:18_g(*
+        =>nrel_main_idtf:[18 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:45_g(*
+        =>nrel_main_idtf:[45 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/yache_pibimbap.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

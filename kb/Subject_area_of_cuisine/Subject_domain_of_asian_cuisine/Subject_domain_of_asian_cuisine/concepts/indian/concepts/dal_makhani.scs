@@ -1,0 +1,58 @@
+concept_dal_makhani
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Дал-макхани ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Dal makhani ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Дал-макхани) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Дал-макхани - сытная похлебка из бобовых с множеством специй и сливками, одно из главных блюд индийской кухни. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_black_mash;;
+                -> concept_vegetable_oil;;
+                -> concept_garlic_paste;;
+                -> concept_ginger_paste;;
+                -> concept_ground_chili_pepper;;
+                -> concept_tomato_puree;;
+                -> concept_butter;;
+                -> concept_cream;;
+                -> concept_salt;;
+                -> concept_sugar;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Дал-макхани)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/dal_makhani.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 6_h (*
+        => nrel_main_idtf: [6 часов](* <- lang_ru;; *);;
+        <- concept_hour;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 865_kk(*
+        =>nrel_main_idtf:[865 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:31_g(*
+        =>nrel_main_idtf:[31 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:52_g(*
+        =>nrel_main_idtf:[52 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:67_g(*
+        =>nrel_main_idtf:[67 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/dal_makhani.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

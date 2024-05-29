@@ -1,0 +1,59 @@
+concept_tandoori_chicken_and_roti_canai
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Курица тандури и роти чанай ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Tandoori Chicken and Roti Canai ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Курица тандури и роти чанай) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Это блюдо сочетает в себе ароматную курицу, приготовленную в тандури, с традиционной малайзийской лепешкой роти чанай. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_chicken;;
+		-> concept_yogurt;;
+		-> concept_lemon_juice;;
+		-> concept_garlic;;
+		-> concept_ginger;;
+		-> concept_garam_masala;;
+		-> concept_flour;;
+		-> concept_water;;
+		-> concept_ghee;;
+		-> concept_salt;;
+		-> concept_curry_sauce;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Курица тандури и роти чанай)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/tandoori_chicken_and_roti_canai.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 60_min (*
+        => nrel_main_idtf: [60 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 450_kk(*
+        =>nrel_main_idtf:[450 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:35_g(*
+        =>nrel_main_idtf:[35 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:20_g(*
+        =>nrel_main_idtf:[20 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:30_g(*
+        =>nrel_main_idtf:[30 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/tandoori_chicken_and_roti_canai.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

@@ -1,0 +1,55 @@
+concept_kaya
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Кайя ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Kaya ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Кайя) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Кайя - это джем из кокосов, яиц и сахара. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_coconut_milk;;
+                -> concept_egg_yolk;;
+                -> concept_palm_sugar;;
+                -> concept_sugar;;
+                -> concept_salt;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Кайя)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kaya.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 15_min (*
+        => nrel_main_idtf: [15 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 10_portion (*
+        =>nrel_main_idtf: [10 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 89_kk(*
+        =>nrel_main_idtf:[89 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:1_g(*
+        =>nrel_main_idtf:[1 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:5_g(*
+        =>nrel_main_idtf:[5 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:10_g(*
+        =>nrel_main_idtf:[10 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/kaya.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

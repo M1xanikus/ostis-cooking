@@ -1,0 +1,64 @@
+concept_kimchi 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Кимчхи ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Kimchi ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Кимчхи) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Кимчхи́ — блюдо корейской кухни, представляющее собой остро приправленные квашеные овощи, в первую очередь, пекинскую капусту. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_beijing_cabbage;;
+                -> concept_salt;;
+                -> concept_water;;
+                -> concept_rice_flour;;
+                -> concept_brown_sugar;;
+                -> concept_daikon;;
+                -> concept_carrot;;
+                -> concept_green_onions;;
+                -> concept_garlic;;
+                -> concept_ginger;;
+                -> concept_onion;;
+                -> concept_fish_sauce;;
+                -> concept_salted_shrimps;;
+                -> concept_ground_red_korean_pepper;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Кимчхи)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kimchi.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 60_min (*
+        => nrel_main_idtf: [60 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 53_kk(*
+        =>nrel_main_idtf:[53 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:3_g(*
+        =>nrel_main_idtf:[3 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:0_g(*
+        =>nrel_main_idtf:[0 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:10_g(*
+        =>nrel_main_idtf:[10 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/kimchi.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

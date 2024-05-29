@@ -1,0 +1,56 @@
+concept_pak_choi_salad
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Салат пак-чой ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Pak choi salad ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Салат пак-чой) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Салат пак-чой - это легкий китайский салат из тофу и листьев пак-чоя. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_pak_choi;;
+                -> concept_veshenki;;
+                -> concept_tofu;;
+                -> concept_wheat_flour;;
+                -> concept_chili_pepper;;
+                -> concept_garlic;;
+                -> concept_oyster_sauce;;
+                -> concept_vegetable_oil;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Салат пак-чой)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/pak_choi_salad.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 15_min (*
+        => nrel_main_idtf: [15 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 2_portion (*
+        =>nrel_main_idtf: [2 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 466_kk(*
+        =>nrel_main_idtf:[466 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:14_g(*
+        =>nrel_main_idtf:[14 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:28_g(*
+        =>nrel_main_idtf:[28 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:40_g(*
+        =>nrel_main_idtf:[40 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/pak_choi_salad.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

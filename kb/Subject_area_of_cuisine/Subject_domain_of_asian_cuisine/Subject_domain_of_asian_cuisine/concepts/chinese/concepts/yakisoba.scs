@@ -1,0 +1,56 @@
+concept_yakisoba
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Якисоба ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Yakisoba ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Якисоба) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Якисоба - это жареная лапша в соусе в китайском стиле. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_chicken_fillet;;
+                -> concept_carrot;;
+                -> concept_olive_oil;;
+                -> concept_soy_sauce;;
+                -> concept_buckwheat_noodles;;
+                -> concept_sweet_pepper;;
+                -> concept_onion;;
+                -> concept_balsamic_vinegar;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Якисоба)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/yakisoba.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 3_portion (*
+        =>nrel_main_idtf: [3 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 829_kk(*
+        =>nrel_main_idtf:[829 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:46_g(*
+        =>nrel_main_idtf:[46 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:22_g(*
+        =>nrel_main_idtf:[22 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:109_g(*
+        =>nrel_main_idtf:[109 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/yakisoba.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

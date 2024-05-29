@@ -1,0 +1,60 @@
+concept_laksa
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Лакса ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Laksa ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Лакса) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Это острый кокосовый суп с лапшой, морепродуктами и пряными специями, популярный в Малайзии и Сингапуре. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_rice_noodles;;
+		-> concept_shrimp;;
+		-> concept_concept_pie_with_salmon_and_brynza;;
+		-> concept_bean_sprouts;;
+		-> concept_laksa_leaves;;
+		-> concept_coconut_milk;;
+		-> concept_shrimp_paste;;
+		-> concept_chili_pepper;;
+		-> concept_garlic;;
+		-> concept_shallots;;
+		-> concept_turmeric;;
+		-> concept_shrimp;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Лакса)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/laksa.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 45_min (*
+        => nrel_main_idtf: [45 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 350_kk(*
+        =>nrel_main_idtf:[350 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:20_g(*
+        =>nrel_main_idtf:[20 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:15_g(*
+        =>nrel_main_idtf:[15 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:40_g(*
+        =>nrel_main_idtf:[40 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/laksa.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

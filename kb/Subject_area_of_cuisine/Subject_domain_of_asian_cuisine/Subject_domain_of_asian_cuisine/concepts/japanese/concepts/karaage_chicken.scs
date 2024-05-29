@@ -1,0 +1,66 @@
+concept_karaage_chicken 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Курица карааге ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Karaage chicken ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Курица карааге) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Курица карааге - это обжаренные кусочки курицы с хрустящей корочкой по-японски. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_chicken_hips;;
+                -> concept_ginger;;
+                -> concept_garlic;;
+                -> concept_soy_sauce;;
+                -> concept_sake;;
+                -> concept_mirin;;
+                -> concept_sugar_syrup;;
+                -> concept_green_onions;;
+                -> concept_mayonnaise;;
+                -> concept_chili_pepper;;
+                -> concept_butter;;
+                -> concept_cilantro;;
+                -> concept_chicken_broth;;
+                -> concept_oyster_sauce;;
+                -> concept_salt;;
+                -> concept_ground_black_pepper;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Курица карааге)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/karaage_chicken.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 20_min (*
+        => nrel_main_idtf: [20 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 1_portion (*
+        =>nrel_main_idtf: [1 порция](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 613_kk(*
+        =>nrel_main_idtf:[613 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:50_g(*
+        =>nrel_main_idtf:[50 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:36_g(*
+        =>nrel_main_idtf:[36 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:22_g(*
+        =>nrel_main_idtf:[22 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/karaage_chicken.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+
