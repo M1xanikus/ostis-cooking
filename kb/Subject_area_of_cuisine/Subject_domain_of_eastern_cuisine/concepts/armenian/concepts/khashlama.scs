@@ -1,0 +1,59 @@
+concept_arm_khashlama
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [khashlama] (*<-lang_en;;*);
+    => nrel_main_idtf: [хашлама] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (хашлама)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Хашлама — простая наваристая похлебка, которую придумали, по одной из версий, пастухи на Кавказе.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_lamb;;
+                <-concept_tomatoes;;
+                <-concept_onion;;
+                <-concept_sweet_pepper;;
+                <-concept_chili_pepper;;
+                <-concept_dill;;
+                <-concept_parsley;;
+                <-concept_lemon;;
+                <-concept_black_peppercorns;;
+                <-concept_water;;
+                <-concept_salt;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (хашлама)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/khashlama.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 120_min (*
+        =>nrel_main_idtf: [120 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 10_portion (*
+        =>nrel_main_idtf: [10 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 283_kk(*
+        =>nrel_main_idtf:[283 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:20_g(*
+        =>nrel_main_idtf:[20 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:7_g(*
+        =>nrel_main_idtf:[7 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:20_g(*
+        =>nrel_main_idtf:[20 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/khashlama.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

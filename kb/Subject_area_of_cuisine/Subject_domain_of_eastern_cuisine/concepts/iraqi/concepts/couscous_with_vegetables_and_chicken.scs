@@ -1,0 +1,58 @@
+concept_irq_couscous_with_vegetables_and_chicken
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [couscous_with_vegetables_and_chicken] (*<-lang_en;;*);
+    => nrel_main_idtf: [кускус с овощами и курицей] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (кускус с овощами и курицей)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Кускус с овощами и курицей - хороший салат. Подают его, как правило вместе с томатным магрибским супом. Они хорошо сочетаются и курицу из бульона для супа можно использовать в салате.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_couscous;;
+                <-concept_olive_oil;;
+                <-concept_lemon;;
+                <-concept_lime;;
+                <-concept_cherry_tomatoes;;
+                <-concept_tomatoes;;
+                <-concept_chicken;;
+                <-concept_red_onion;;
+                <-concept_parsley;;
+                <-concept_fresh_mint;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (кускус с овощами и курицей)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/couscous.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        =>nrel_main_idtf: [30 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 482_kk(*
+        =>nrel_main_idtf:[482 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:38_g(*
+        =>nrel_main_idtf:[38 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:23_g(*
+        =>nrel_main_idtf:[23 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:13_g(*
+        =>nrel_main_idtf:[13 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/couscous.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

@@ -1,0 +1,58 @@
+concept_grn_chakhokhbili
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [chakhokhbili] (*<-lang_en;;*);
+    => nrel_main_idtf: [чахохбили] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (чахохбили)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Чахохбили - представляет собой кусочки курицы или любой другой домашней птицы.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_chicken;;
+                <-concept_onion;;
+                <-concept_tomatoes;;
+                <-concept_red_chili_pepper;;
+                <-concept_garlic;;
+                <-concept_cilantro;;
+                <-concept_red_basil;;
+                <-concept_khmeli_suneli;;
+                <-concept_salt;;
+                <-concept_ground_black_pepper;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (чахохбили)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/chakhokhbili.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 60_min (*
+        =>nrel_main_idtf: [60 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 421_kk(*
+        =>nrel_main_idtf:[421 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:27_g(*
+        =>nrel_main_idtf:[27 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:13_g(*
+        =>nrel_main_idtf:[13 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:32_g(*
+        =>nrel_main_idtf:[32 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/chakhokhbili.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
