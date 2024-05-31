@@ -1,0 +1,59 @@
+concept_grn_adjarian_khachapuri
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [adjarian_khachapuri] (*<-lang_en;;*);
+    => nrel_main_idtf: [аджарские хачапури] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (аджарские хачапури)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Аджарское хачапури — в форме лодочки с сыром, маслом и яичным желтком в середине. ] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_wheat_flour;;
+                <-concept_milk;;
+                <-concept_butter;;
+                <-concept_dry_yeast;;
+                <-concept_sugar;;
+                <-concept_vegetable_oil;;
+                <-concept_coarse_salt;;
+                <-concept_sulguni_cheese;;
+                <-concept_imereti_cheese;;
+                <-concept_egg;;
+                <-concept_salt;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (аджарские хачапури)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/adjarian_khachapuri.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 90_min (*
+        =>nrel_main_idtf: [90 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 5_portion (*
+        =>nrel_main_idtf: [5 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 1023_kk(*
+        =>nrel_main_idtf:[1023 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:53_g(*
+        =>nrel_main_idtf:[53 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:89_g(*
+        =>nrel_main_idtf:[89 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:49_g(*
+        =>nrel_main_idtf:[49 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/adjarian_khachapuri.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

@@ -1,0 +1,28 @@
+section_subject_domain_of_iraqi_cuisine
+    =>nrel_main_idtf:[Раздел. Предметная область иракской кухни] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Section. Subject domain of iraqi cuisine] (* <-lang_en;;*);
+    =>nrel_idtf:[Раздел базы знаний OSTIS, описывающий иракскую кухню] (* <-lang_ru;;*);
+    =>nrel_idtf:[Section of the OSTIS knowledge base, that describes iraqi cuisine] (* <-lang_en;;*);
+    
+    ->rrel_key_sc_element: subject_domain_of_iraqi_cuisine;;  
+
+
+subject_domain_of_iraqi_cuisine
+    =>nrel_main_idtf:[Предметная область иракской кухни] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Subject domain of iraqi cuisine] (* <-lang_en;;*);
+	<-subject_domain; 
+    ->rrel_maximum_studied_object_class:
+        concept_iraqi_cuisine;
+    ->rrel_not_maximum_studied_object_class:
+        concept_irq_halva;
+        concept_irq_manakish;
+        concept_irq_couscous_with_vegetables_and_chicken;
+        concept_irq_lamb_tagine;
+        concept_irq_hummus;;
+
+concept_iraqi_cuisine
+    <-sc_node_not_relation;
+    =>nrel_main_idtf:[иракская кухня](*<-lang_ru;;*);
+    =>nrel_main_idtf:[iraqi cuisine](*<-lang_en;;*);
+    =>nrel_specifics: [в пище преобладают ячменные и пшеничные лепешки, рис, каша, кислое молоко, овощи, финики.](* <-lang_ru;; *);
+    <-concept_cuisine;;

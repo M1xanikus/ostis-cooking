@@ -1,0 +1,123 @@
+concept_scrambled_eggs_with_basturma
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf: [scrambled egg with basturma] (*<-lang_en;;*);
+
+	=> nrel_main_idtf: [Яичница с бастурмой] (*<-lang_ru;;*);
+
+	<- rrel_key_sc_element: ... (*
+
+		<- definition;;
+
+		=> nrel_idtf: [Опр. (Яичница с бастурмой)] (* <-lang_ru;; *);;
+
+		<= nrel_sc_text_translation: ... (*
+
+			-> rrel_example: [ПЭто вкусное блюдо, которое сочетает в себе яйца, бастурму и топленое масло.] (* <-lang_ru;; *);;
+
+        	*);;
+
+	*);
+
+
+
+	=> nrel_recipe: ... (*
+
+		-> rrel_ingredients: ... (*
+			-> concept_egg;;
+                	-> concept_azrb_basturma;;
+                	-> concept_browned_butter;;
+                	-> concept_salt;;
+                	-> concept_ground_black_peppe;;
+                	-> concept_green;;
+
+        		*);;
+
+		-> rrel_instruction: ... (*
+
+			=> nrel_idtf: [Рецепт (Яичница с бастурмой)] (* <-lang_ru;; *);;
+
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/scrambled_eggs_with_basturma.txt";;*);;
+
+	*);;
+
+	*);
+
+	=> nrel_portion_number: 2_portion 
+
+	(*
+
+		=>nrel_main_idtf: [2 порций](* <-lang_ru;; *);;
+
+		<-concept_portion;;
+
+	*);
+
+	=> nrel_cooking_time: 15_min 
+
+	(*
+
+		=>nrel_main_idtf: [15 минут](* <-lang_ru;; *);;
+
+		<-concept_min;;
+
+	*);
+
+
+
+	=> nrel_kkal: 300_kk
+
+	(*
+
+		=>nrel_main_idtf: [300 ккал](* <-lang_ru;; *);;
+
+		<-concept_kkal;;
+
+	*);
+
+
+
+	=> nrel_fats_content: 22_g
+
+	(*
+
+		=>nrel_main_idtf: [22 грамм](* <-lang_ru;; *);;
+
+		<-concept_g;;
+
+	*);
+
+
+
+	=> nrel_carbohydrates_content: 2_g
+
+	(*
+
+		=>nrel_main_idtf: [2 грамм](* <-lang_ru;; *);;
+
+		<-concept_g;;
+
+	*);
+
+
+
+	=> nrel_protein_content: 12_g
+
+	(*
+
+		=>nrel_main_idtf: [12 грамм](* <-lang_ru;;*);;
+
+		<-concept_g;;
+
+	*);
+
+
+
+    <- rrel_key_sc_element: ... (*
+
+        <- illustration;;
+
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/scrambled_eggs_with_basturma.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+
+    *);;

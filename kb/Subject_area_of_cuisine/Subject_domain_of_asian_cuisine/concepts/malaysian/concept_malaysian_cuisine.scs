@@ -15,6 +15,11 @@ subject_domain_of_malaysian_cuisine
     ->rrel_not_maximum_studied_object_class:
         concept_nasi_goreng;
         concept_kaya;
+        concept_roti_canai;
+        concept_laksa;
+        concept_nasi_lemak;
+        concept_krupuk;
+        concept_ais_kacang;
         concept_curry_laksa;
         concept_roti_john;;
 

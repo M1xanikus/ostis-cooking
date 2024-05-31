@@ -1,0 +1,51 @@
+  concept_bul_strawberry_cream
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [strawberry or raspberry cream] (*<-lang_en;;*);
+    => nrel_main_idtf: [крем из клубники] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (крем из клубники)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [крем из клубники - традиционный болгарский десерт.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                ->concept_strawberry;;
+                ->concept_sugar;; 
+                ->concept_egg_white;;
+                
+            *);;
+            -> rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (крем из клубники)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/strawberry_cream.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 15_min (*
+        =>nrel_main_idtf: [15 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 2_portion (*
+        =>nrel_main_idtf: [2 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 52_kk(*
+        =>nrel_main_idtf:[52 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:0_g(*
+        =>nrel_main_idtf:[0 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:8_g(*
+        =>nrel_main_idtf:[8 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:4_g(*
+        =>nrel_main_idtf:[4 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/strawberry_cream.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

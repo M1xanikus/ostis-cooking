@@ -23,15 +23,22 @@ subject_domain_of_japanese_cuisine
         concept_taiyaki;
         concept_mochi;
         concept_kohi_zeri;
+        concept_teriyaki;
         concept_tori_karaage;
         concept_karaage_chicken;
         concept_misoshiru;
+        concept_aage_tofu;
+        concept_ebi_satoyimo_shinjo;
+        concept_suzuki_karaage;
         concept_omurice;
         concept_oyakodon;
         concept_ramen;
+        concept_salmon_soup;
+        concept_salmon_teriyaki;
         concept_unagi_yanagawa;
         concept_maguro_sarada;
-        concept_sashimi;;
+        concept_sashimi;
+	concept_honey_teriyaki;;
 
 concept_japanese_cuisine
     <-sc_node_not_relation;

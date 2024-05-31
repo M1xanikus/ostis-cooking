@@ -1,0 +1,65 @@
+concept_tangerine_compote
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [tangerine compote] (*<-lang_en;;*);
+	=> nrel_main_idtf: [компот из мандаринов] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (компот из мандаринов)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Компот из мандаринов - это сладкий напиток, приготовленный из мандаринов, сахара и вина. Он имеет яркий и освежающий вкус и аромат мандаринов.] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			->concept_tangerine;;
+			->concept_sugar;;
+			->concept_madeira;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (компот из мандаринов)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/tangerine_compote.txt";;*);;
+	*);;
+	*);
+
+	=> nrel_cooking_time: 140_min 
+	(*
+		=>nrel_main_idtf: [30 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+	
+	=> nrel_portion_number: 6_portion 
+	(*
+		=>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+
+	=> nrel_kkal: 195_kk
+	(*
+		=>nrel_main_idtf: [195 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 0_g
+	(*
+		=>nrel_main_idtf: [0 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 43_g
+	(*
+		=>nrel_main_idtf: [43 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+	
+	=> nrel_protein_content: 1_g
+	(*
+		=>nrel_main_idtf: [1 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/tangerine_compote.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

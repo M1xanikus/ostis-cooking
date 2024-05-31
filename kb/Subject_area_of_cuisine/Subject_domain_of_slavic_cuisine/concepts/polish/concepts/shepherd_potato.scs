@@ -50,7 +50,7 @@ concept_pol_shepherd_potato
     *);     
     <- rrel_key_sc_element: ... (*
         <- illustration;;
-        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/shepherd_potato.png"  (*  => nrel_format: format_jpg;;  *);; *);;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/shepherd_potato.png"  (*  => nrel_format: format_png;;  *);; *);;
     *);;
     
 

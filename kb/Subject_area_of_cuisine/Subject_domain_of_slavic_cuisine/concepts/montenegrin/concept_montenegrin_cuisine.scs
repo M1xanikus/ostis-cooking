@@ -15,7 +15,10 @@ subject_domain_of_montenegrin_cuisine
     ->rrel_maximum_studied_object_class:
         concept_montenegrin_cuisine;
     ->rrel_not_maximum_studied_object_class:
-        concept_mon_heldia;;
+    	concept_mon_black_risotto;
+    	concept_mon_buzara;
+        concept_mon_heldia;
+        concept_mon_plaiscavica;;
         
 
 concept_montenegrin_cuisine

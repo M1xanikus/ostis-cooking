@@ -1,0 +1,53 @@
+concept_salmon_teriyaki
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Лососевый терияки ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Salmon teriyaki ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Лососевый терияки) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Это блюдо представляет собой лосося, приготовленного с соусом медовый терияки. ] (* <-lang_ru;; *);;
+        *);;
+    *);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_salmon_fillet;;
+                -> concept_honey_teriyaki;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Лососевый терияки)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/salmon_teriyaki.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 40_min (*
+        => nrel_main_idtf: [40 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 2_portion (*
+        =>nrel_main_idtf: [2 порция](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 284_kk(*
+        =>nrel_main_idtf:[284 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:40_g(*
+        =>nrel_main_idtf:[40 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:13_g(*
+        =>nrel_main_idtf:[13 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:0_g(*
+        =>nrel_main_idtf:[0 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/salmon_teriyaki.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
+
+

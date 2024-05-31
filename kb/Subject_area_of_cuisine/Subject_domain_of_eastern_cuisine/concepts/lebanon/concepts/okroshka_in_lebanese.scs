@@ -1,0 +1,59 @@
+concept_lbn_okroshka_in_lebanese
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [okroshka_in_lebanese] (*<-lang_en;;*);
+    => nrel_main_idtf: [окрошка по-ливански] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (окрошка по-ливански)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Окрошка по-ливански — традиционный холодный суп ливанской кухни, который готовят в весенне-летний период. ] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_smoked_beef;;
+                <-concept_chickpeas;;
+                <-concept_radish;;
+                <-concept_cucumbers;;
+                <-concept_quail_egg;;
+                <-concept_green_radish;;
+                <-concept_sorrel;;
+                <-concept_dill;;
+                <-concept_bread_kvass;;
+                <-concept_mustard;;
+                <-concept_salt;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (окрошка по-ливански)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/okroshka.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 150_min (*
+        =>nrel_main_idtf: [150 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 198_kk(*
+        =>nrel_main_idtf:[198 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:9_g(*
+        =>nrel_main_idtf:[9 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:17_g(*
+        =>nrel_main_idtf:[17 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:12_g(*
+        =>nrel_main_idtf:[12 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/okroshka.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

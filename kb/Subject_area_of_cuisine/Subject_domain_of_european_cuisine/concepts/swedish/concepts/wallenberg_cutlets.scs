@@ -61,5 +61,5 @@ concept_wallenberg_cutlets
 
     <- rrel_key_sc_element: ... (*
         <- illustration;;
-        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/wallenberg_cutlets.jpeg" (*  => nrel_format: format_jpeg;;  *);;*);;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/wallenberg_cutlets.jpg" (*  => nrel_format: format_jpeg;;  *);;*);;
     *);;

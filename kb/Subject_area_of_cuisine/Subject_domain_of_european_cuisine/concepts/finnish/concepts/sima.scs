@@ -1,0 +1,68 @@
+concept_sima
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [sima] (*<-lang_en;;*);
+	=> nrel_main_idtf: [сима] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (сима)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Сима - это традиционный финский напиток, который готовят из воды, сахара, дрожжей и цитрусовых] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			->mineral_water;;
+			->concept_sugar;;
+			->concept_honey;;
+			->concept_lemon;;
+			->concept_brewer_yeast;;
+			->concept_raisin;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (сима)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/sima.txt";;*);;
+	*);;
+	*);
+
+	=> nrel_cooking_time: 35_min 
+	(*
+		=>nrel_main_idtf: [35 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+	
+	=> nrel_portion_number: 10_portion 
+	(*
+		=>nrel_main_idtf: [10 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+
+	=> nrel_kkal: 412_kk
+	(*
+		=>nrel_main_idtf: [412 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 0_g
+	(*
+		=>nrel_main_idtf: [0 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 104_g
+	(*
+		=>nrel_main_idtf: [104 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+	
+	=> nrel_protein_content: 1_g
+	(*
+		=>nrel_main_idtf: [1 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/sima.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

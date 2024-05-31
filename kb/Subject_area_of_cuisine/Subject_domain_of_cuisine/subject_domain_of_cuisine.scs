@@ -37,18 +37,4 @@ subject_domain_of_cuisine
         nrel_recipe;;
 
    
-subject_domain_of_african_cuisine
-    =>nrel_main_idtf:[Предметная область африканской кухни] (* <-lang_ru;;*);
-    =>nrel_main_idtf:[Subject domain of african cuisine] (* <-lang_en;;*);;
-  
-subject_domain_of_asian_cuisine
-    =>nrel_main_idtf:[Предметная область азиатской кухни] (* <-lang_ru;;*);
-    =>nrel_main_idtf:[Subject domain of asian cuisine] (* <-lang_en;;*);;
 
-subject_domain_of_eastern_cuisine
-    =>nrel_main_idtf:[Предметная область восточной кухни] (* <-lang_ru;;*);
-    =>nrel_main_idtf:[Subject domain of eastern cuisine] (* <-lang_en;;*);;
-
-subject_domain_of_european_cuisine
-    =>nrel_main_idtf:[Предметная область европейской кухни] (* <-lang_ru;;*);
-    =>nrel_main_idtf:[Subject domain of european cuisine] (* <-lang_en;;*);;

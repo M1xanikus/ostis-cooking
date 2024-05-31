@@ -1,0 +1,68 @@
+concept_viennese_waffles
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [viennese waffles] (*<-lang_en;;*);
+	=> nrel_main_idtf: [венские вафли] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (венские вафли)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [напоминающих печенье, венские вафли получаются мягкими, воздушными и объемными. В тесто для венских вафель, как правило, добавляется молоко, от чего тесто более жидкое,] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			->concept_sugar;;
+			->concept_flour;;
+			->concept_egg;;
+			->concept_baking_powder;;
+			->concept_milk;;
+			->concept_vanilla;;
+			->concept_butter;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (венские вафли)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/viennese_waffles.txt";;*);;
+	*);;
+	*);
+
+	=> nrel_cooking_time: 40_min 
+	(*
+		=>nrel_main_idtf: [40 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+	
+	=> nrel_portion_number: 4_portion 
+	(*
+		=>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+
+	=> nrel_kkal: 625_kk
+	(*
+		=>nrel_main_idtf: [625 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 39_g
+	(*
+		=>nrel_main_idtf: [39 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 56_g
+	(*
+		=>nrel_main_idtf: [56 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 13_g
+	(*
+		=>nrel_main_idtf: [13 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/viennese_waffles.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

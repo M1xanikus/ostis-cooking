@@ -1,0 +1,64 @@
+concept_chocolate_balls
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [chocolate balls] (*<-lang_en;;*);
+	=> nrel_main_idtf: [шоколадные шарики] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (шоколадные шарики)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [опр. (шоколадные шарики) - Шоколадные шарики - это десерт, представляющий собой небольшие шары, изготовленные из шоколада и различных добавок] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			-> concept_butter;;
+                	-> concept_almond;;
+                	-> concept_cocoa;;
+			-> concept_shortbread_dough;;
+                	-> concept_boiled_condensed_milk;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (шоколадные шарики)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/chocolate_balls.txt";;*);;
+	*);;
+	*);
+	=> nrel_portion_number: 12_portion 
+	(*
+		=>nrel_main_idtf: [12 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+	=> nrel_cooking_time: 20_min 
+	(*
+		=>nrel_main_idtf: [20 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+
+	=> nrel_kkal: 568_kk
+	(*
+		=>nrel_main_idtf: [568 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 41_g
+	(*
+		=>nrel_main_idtf: [41 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 43_g
+	(*
+		=>nrel_main_idtf: [43 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 9_g
+	(*
+		=>nrel_main_idtf: [9 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/chocolate_balls.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

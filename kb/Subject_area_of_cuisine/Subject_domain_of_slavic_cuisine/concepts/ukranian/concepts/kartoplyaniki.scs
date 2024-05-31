@@ -1,0 +1,55 @@
+  concept_ukr_kartoplyaniki
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [kartoplyaniki] (*<-lang_en;;*);
+    => nrel_main_idtf: [картопляники] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (картопляники)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [картопляники - котлеты из пюре.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                ->concept_potato;;
+                ->concept_onion;; 
+                ->concept_minced_meat;;
+                ->concept_wheat_flour;;
+                ->concept_egg;;
+                ->concept_green;;
+                ->concept_salt;;
+                ->concept_vegetable_oil;;
+            *);;
+            -> rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (баница)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kartoplyaniki.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 60_min (*
+        =>nrel_main_idtf: [60 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 2_portion (*
+        =>nrel_main_idtf: [2 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 1212_kk(*
+        =>nrel_main_idtf:[1212 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:49_g(*
+        =>nrel_main_idtf:[49 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:137_g(*
+        =>nrel_main_idtf:[137 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:58_g(*
+        =>nrel_main_idtf:[58 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/kartoplyaniki.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
