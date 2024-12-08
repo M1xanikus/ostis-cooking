@@ -1,0 +1,51 @@
+  concept_bul_roast_chestnuts
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [roast chestnuts] (*<-lang_en;;*);
+    => nrel_main_idtf: [жареные каштаны] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (жареные каштаны)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [жареные каштаны - традиционное болгарское блюдо из каштанов в основе.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                ->concept_chestnut;;
+                ->concept_salt;;
+                ->concept_spices;;
+
+            *);;
+            -> rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (жареные каштаны)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/roast_chestnuts.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 45_min (*
+        =>nrel_main_idtf: [45 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 141_kk(*
+        =>nrel_main_idtf:[141 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:3_g(*
+        =>nrel_main_idtf:[3 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:26_g(*
+        =>nrel_main_idtf:[26 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:3_g(*
+        =>nrel_main_idtf:[3 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/roast_chestnuts.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

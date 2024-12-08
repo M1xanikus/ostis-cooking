@@ -1,0 +1,60 @@
+concept_czech_south_bohemian_kulaida
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [south bohemian kulaida] (*<-lang_en;;*);
+    => nrel_main_idtf: [южночешская кулайда] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (южночешская кулайда)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [южночешская кулайда - это традиционный южночешский суп.] (* <-lang_ru;; *);;
+        *);; 
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                -> concept_water;;
+                -> concept_frozen_wild_mushrooms;;
+                -> concept_potato;;
+                -> concept_laurel_leaf;;
+                -> concept_butter;;
+                -> concept_wheat_flour;;
+                -> concept_black_pepper_peas;;
+                -> concept_dried_thyme;;
+                -> concept_sour_cream;;
+                -> concept_dill;;
+                -> concept_egg;;
+                
+            *);;
+             -> rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (южночешская кулайда)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/south_bohemian_kulaida.txt";;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 45_min (*
+        =>nrel_main_idtf: [45 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 398_kk(*
+        =>nrel_main_idtf:[398 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:25_g(*
+        =>nrel_main_idtf:[25 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:28_g(*
+        =>nrel_main_idtf:[28 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:16_g(*
+        =>nrel_main_idtf:[16 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);     
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/south_bohemian_kulaida.png"  (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+    

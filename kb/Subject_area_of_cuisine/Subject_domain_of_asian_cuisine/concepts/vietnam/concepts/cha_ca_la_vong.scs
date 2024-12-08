@@ -1,0 +1,60 @@
+concept_cha_ca_la_vong
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Ча-ка Лавонг ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [  Cha Ca La Vong ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Ча-ка Лавонг) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Это вьетнамское блюдо состоит из обжаренных кусочков рыбы, приправленных травами и специями, которые подаются с рисовой лапшой и различными закусками. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                > concept_catfish_fillets;;
+		-> concept_turmeric;;
+		-> concept_garlic;;
+		-> concept_shallots;;
+		-> concept_dill;;
+		-> concept_mint;;
+		-> concept_peanuts;;
+		-> concept_rice_vermicelli;;
+		-> concept_fish_sauce;;
+		-> concept_lime_juice;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Ча-ка Лавонг)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/cha_ca_la_vong.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 45_min (*
+        => nrel_main_idtf: [45 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 320_kk(*
+        =>nrel_main_idtf:[320 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:30_g(*
+        =>nrel_main_idtf:[30 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:12_g(*
+        =>nrel_main_idtf:[12 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:25_g(*
+        =>nrel_main_idtf:[25 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/cha_ca_la_vong.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
+
+

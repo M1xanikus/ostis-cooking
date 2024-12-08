@@ -15,6 +15,12 @@ subject_domain_of_thai_cuisine
     ->rrel_not_maximum_studied_object_class:
         concept_tom_kha_gai;
         concept_pad_thai;
+        concept_pad_kapao;
+        concept_lab_salad;
+        concept_yam_som_o;
+        concept_massaman_curry;
+        concept_asian_fusion_soup;
+        concept_pan_bagna;
         concept_som_tam;
         concept_tom_yam_kung;;
 

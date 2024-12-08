@@ -1,0 +1,63 @@
+concept_marzipan 
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [marzipan] (*<-lang_en;;*);
+	=> nrel_main_idtf: [марципан] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (марципан)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Марципан — это кондитерское изделие, которое готовится из миндаля и сахара. Этот десерт имеет мягкую и нежную текстуру, и его часто используют в качестве начинки для пирожных, тортов, пряников и других кондитерских изделий.] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			->concept_almond;;
+			->concept_powdered_sugar;;
+			->concept_egg_white;;
+			->concept_sault;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (марципан)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/marzipan.txt";;*);;
+	*);;
+	*);
+	=> nrel_portion_number: 4_portion 
+	(*
+		=>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+	=> nrel_cooking_time: 40_min 
+	(*
+		=>nrel_main_idtf: [40 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+
+	=> nrel_kkal: 592_kk
+	(*
+		=>nrel_main_idtf: [592 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 31_g
+	(*
+		=>nrel_main_idtf: [31 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 67_g
+	(*
+		=>nrel_main_idtf: [67 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 15_g
+	(*
+		=>nrel_main_idtf: [15 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/marzipan.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

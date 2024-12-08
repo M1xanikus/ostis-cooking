@@ -13,9 +13,15 @@ subject_domain_of_czech_cuisine
         concept_czech_cuisine;
     ->rrel_not_maximum_studied_object_class: 
         concept_czech_trdelnik;
+        concept_czech_eagle_knee;
+        concept_czech_salmon_in_beer_batter;
+        concept_czech_fried_shrimp_for_beer;
         concept_czech_bramboraki;
         concept_czech_rice_with_mushrooms;
         concept_czech_fried_cheese;
+        concept_czech_baked_pork;
+        concept_czech_sauerkraut_with_mushrooms;
+        concept_czech_onion_soup;
         concept_czech_orange_cupcake;;
 
 concept_czech_cuisine

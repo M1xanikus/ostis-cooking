@@ -1,0 +1,63 @@
+concept_omelette_with_tomatoes
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [omelette with tomatoes] (*<-lang_en;;*);
+	=> nrel_main_idtf: [омлет с помидорами] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (омлет с помидорами)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Омлет с помидорами — это простое и вкусное блюдо, которое готовится из яиц, помидоров и специй. Это отличный выбор для завтрака, ланча или легкого ужина.] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			->concept_egg;;
+			->concept_tomato;;
+			->concept_sunflower_oil;;
+			->concept_salt;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (омлет с помидорами)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/omelette_with_tomatoes.txt";;*);;
+	*);;
+	*);
+	=> nrel_portion_number: 1_portion 
+	(*
+		=>nrel_main_idtf: [1 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+	=> nrel_cooking_time: 180_min 
+	(*
+		=>nrel_main_idtf: [180 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+
+	=> nrel_kkal: 464_kk
+	(*
+		=>nrel_main_idtf: [464 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 38_g
+	(*
+		=>nrel_main_idtf: [38w грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 6_g
+	(*
+		=>nrel_main_idtf: [6 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 24_g
+	(*
+		=>nrel_main_idtf: [24 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/omelette_with_tomatoes.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

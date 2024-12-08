@@ -15,8 +15,13 @@ subject_domain_of_polish_cuisine
 subject_domain_of_polish_cuisine
     ->rrel_not_maximum_studied_object_class:
         concept_pol_white_borsch;
+        concept_pol_fish_zrazas;
+        concept_pol_cucumber_zupa;
         concept_pol_apple_pie;
-        concept_pol_kletski;;
+        concept_pol_kletski;
+        concept_pol_zhurek;
+        concept_pol_mazurek;
+        concept_pol_bigos;;
 
 concept_polish_cuisine
     <-sc_node_not_relation;

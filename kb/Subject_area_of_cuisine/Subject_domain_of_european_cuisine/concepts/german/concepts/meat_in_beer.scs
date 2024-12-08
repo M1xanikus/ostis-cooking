@@ -1,0 +1,66 @@
+concept_meat_in_beer
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [meat in beer] (*<-lang_en;;*);
+	=> nrel_main_idtf: [мясо в пиве] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (мясо в пиве)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Мясо в пиве, — это вкусное и необычное блюдо, пиво придает мясу особый вкус и аромат, и также помогает сделать его более нежным и сочным.] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			->concept_bay_leaf;;
+			->concept_pork;;
+			->concept_bear;;
+			->concept_onion;;
+			->concept_green_pea;;
+			->concept_butter;;
+			->concept_salt;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (мясо в пиве)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/meat_in_beer.txt";;*);;
+	*);;
+	*);
+	=> nrel_portion_number: 4_portion 
+	(*
+		=>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+	=> nrel_cooking_time: 25_min 
+	(*
+		=>nrel_main_idtf: [25 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+
+	=> nrel_kkal: 352_kk
+	(*
+		=>nrel_main_idtf: [352 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 19_g
+	(*
+		=>nrel_main_idtf: [19 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 9_g
+	(*
+		=>nrel_main_idtf: [9 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 25_g
+	(*
+		=>nrel_main_idtf: [25 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/meat_in_beer.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

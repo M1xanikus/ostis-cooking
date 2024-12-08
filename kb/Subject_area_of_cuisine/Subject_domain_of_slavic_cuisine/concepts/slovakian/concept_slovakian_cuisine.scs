@@ -14,7 +14,10 @@ subject_domain_of_slovakian_cuisine
     ->rrel_maximum_studied_object_class:
         concept_slovakian_cuisine;
     ->rrel_not_maximum_studied_object_class:
+    	concept_slo_moravian_schnitzel;
         concept_slo_pasta_with_bacon_cabbage;
+        concept_slo_lokshe;
+        concept_slo_carlsbad_roulade;
         concept_slo_potato_galushki;;
 
 

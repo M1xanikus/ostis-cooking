@@ -1,0 +1,67 @@
+concept_lightly_salted_salmon_in_dill
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [lightly salted salmon in dill] (*<-lang_en;;*);
+	=> nrel_main_idtf: [лосось малосольный в укропе] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (компот из мандаринов)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Малосоленый лосось в укропе - это вкусное и ароматное блюдо, которое многим людям нравится. Укроп добавляет лососине свежести и легкой горчинки, которая подчеркивает его вкус.] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			->concept_sault;;
+			->concept_sugar;;
+			->concept_ground_black_pepper;;
+			->concept_vodka;;
+			->concept_salmon;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (компот из мандаринов)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/lightly_salted_salmon_in_dill.txt";;*);;
+	*);;
+	*);
+
+	=> nrel_cooking_time: 480_min 
+	(*
+		=>nrel_main_idtf: [480 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+	
+	=> nrel_portion_number: 12_portion 
+	(*
+		=>nrel_main_idtf: [12 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+
+	=> nrel_kkal: 154_kk
+	(*
+		=>nrel_main_idtf: [154 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 5_g
+	(*
+		=>nrel_main_idtf: [5 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 4_g
+	(*
+		=>nrel_main_idtf: [4 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+	
+	=> nrel_protein_content: 17_g
+	(*
+		=>nrel_main_idtf: [17 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/lightly_salted_salmon_in_dill.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

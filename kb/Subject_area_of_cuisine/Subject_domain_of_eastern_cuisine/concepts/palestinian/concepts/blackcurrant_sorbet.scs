@@ -1,0 +1,52 @@
+concept_plst_blackcurrant_sorbet
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [blackcurrant_sorbet] (*<-lang_en;;*);
+    => nrel_main_idtf: [черносмородиновый сорбет] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (черносмородиновый сорбет)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Черносмородиновый сорбет — блюдо на основе льда с фруктовыми, овощными и даже рыбными и мясными добавками.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_black_currant;;
+                <-concept_custard;;
+                <-concept_sugar;;
+                <-concept_water;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (черносмородиновый сорбет)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/blackcurrant_sorbet.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 300_min (*
+        =>nrel_main_idtf: [300 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 5_portion (*
+        =>nrel_main_idtf: [5 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 331_kk(*
+        =>nrel_main_idtf:[331 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:1_g(*
+        =>nrel_main_idtf:[1 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:65_g(*
+        =>nrel_main_idtf:[65 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:2_g(*
+        =>nrel_main_idtf:[2 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/blackcurrant_sorbet.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

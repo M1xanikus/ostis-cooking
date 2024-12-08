@@ -1,0 +1,56 @@
+  
+concept_rus_chicken_liver_in_sour_cream
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [chicken liver in sour cream] (*<-lang_en;;*);
+    => nrel_main_idtf: [куриная печень в сметане] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (куриная печень в сметане) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [куриная печень в сметане - куриная печень в сметане.] (* <-lang_ru;; *);;
+        *);;
+        
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                ->concept_chicken_liver;;
+                ->concept_sour_cream;;
+                ->concept_onion;;
+                ->concept_butter;;
+                ->concept_salt;;
+                ->concept_ground_black_pepper;;
+                
+            *);;
+            -> rrel_instruction: ... (*
+            => nrel_idtf: [Рецепт (куриная печень в сметане)] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/chicken_liver_in_sour_cream.txt" (*  => nrel_format: format_txt;;  *);;  *);;
+        *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        =>nrel_main_idtf: [30 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 511_kk(*
+        =>nrel_main_idtf:[511 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:39_g(*
+        =>nrel_main_idtf:[39 грамма](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:8_g(*
+        =>nrel_main_idtf:[8 грамм](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:33_g(*
+        =>nrel_main_idtf:[33 грамм](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/chicken_liver_in_sour_cream.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

@@ -15,6 +15,11 @@ subject_domain_of_turkish_cuisine
 
 subject_domain_of_turkish_cuisine
     ->rrel_not_maximum_studied_object_class:
+    	concept_persimmon_with_chocolate_and_mint;
+    	concept_simit;
+    	concept_almond_liver;
+    	concept_pistachio_ice_cream_with_baklava;
+    	concept_scrambled_eggs_with_basturma;
 	concept_lentil_soup_with_mint;
 	concept_orange_cupcake;
 	concept_kefte;

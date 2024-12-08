@@ -1,0 +1,56 @@
+concept_yam_som_o
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Ям сом o ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Yam Som O ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Ям сом o) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Это тайский салат из помело, креветок, лука-шалота, кинзы и острого соуса. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_pomelo;;
+		-> concept_shrimp;;
+		-> concept_shallot;;
+		-> concept_cilantro;;
+		-> concept_lime_juice;;
+		-> concept_fish_sauce;;
+		-> concept_chili_pepper;;
+		-> concept_sugar;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Ям сом o)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/yam_som_o.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 25_min (*
+        => nrel_main_idtf: [25 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 280_kk(*
+        =>nrel_main_idtf:[280 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:15_g(*
+        =>nrel_main_idtf:[18 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:10_g(*
+        =>nrel_main_idtf:[10 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:20_g(*
+        =>nrel_main_idtf:[20 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/yam_som_o.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

@@ -1,0 +1,57 @@
+concept_kzh_beshbarmak_in_uyghur
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [beshbarmak_in_uyghur] (*<-lang_en;;*);
+    => nrel_main_idtf: [бешбармак по-уйгурски] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (бешбармак по-уйгурски)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Бешбармак — это отварное, мелко нарезанное мясо, смешанное с вареной лапшой и приправленное пряностями с луковым соусом.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_mutton;;
+                <-concept_tomatoes;;
+                <-concept_sweet_pepper;;
+                <-concept_onion;;
+                <-concept_wide_noodles;;
+                <-concept_garlic;;
+                <-concept_ground_black_pepper;;
+                <-concept_large_salt;;
+                <-concept_bay_leaf;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (бешбармак по-уйгурски)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/beshbarmak.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 150_min (*
+        =>nrel_main_idtf: [150 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 855_kk(*
+        =>nrel_main_idtf:[855 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:42_g(*
+        =>nrel_main_idtf:[42 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:69_g(*
+        =>nrel_main_idtf:[69 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:49_g(*
+        =>nrel_main_idtf:[49 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/beshbarmak.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

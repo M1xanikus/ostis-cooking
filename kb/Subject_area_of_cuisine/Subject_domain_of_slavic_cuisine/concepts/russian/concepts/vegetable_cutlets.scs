@@ -1,0 +1,58 @@
+  
+concept_rus_vegetable_cutlets
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [vegetable cutlets] (*<-lang_en;;*);
+    => nrel_main_idtf: [овощные котлеты] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (овощные котлеты) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [овощные котлеты - овощные котлеты из капусты, свеклы и моркови.] (* <-lang_ru;; *);;
+        *);;
+        
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                ->concept_beetroot;;
+                ->concept_carrot;;
+                ->concept_white_cabbage;;
+                ->concept_onion;;
+                ->concept_semolina;;
+                ->concept_breadcrumbs;;
+                ->concept_vegetable_oil;;
+                ->concept_salt;;
+                
+            *);;
+            -> rrel_instruction: ... (*
+            => nrel_idtf: [Рецепт (овощные котлеты)] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/vegetable_cutlets.txt" (*  => nrel_format: format_txt;;  *);;  *);;
+        *);;
+        *);
+    => nrel_cooking_time: 90_min (*
+        =>nrel_main_idtf: [90 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 367_kk(*
+        =>nrel_main_idtf:[367 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:17_g(*
+        =>nrel_main_idtf:[17 грамма](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:49_g(*
+        =>nrel_main_idtf:[49 грамм](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:8_g(*
+        =>nrel_main_idtf:[8 грамм](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/vegetable_cutlets.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

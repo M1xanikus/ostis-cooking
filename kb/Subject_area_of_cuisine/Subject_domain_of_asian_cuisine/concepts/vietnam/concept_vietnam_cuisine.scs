@@ -15,6 +15,12 @@ subject_domain_of_vietnam_cuisine
     ->rrel_not_maximum_studied_object_class:
         concept_pho_bo;
         concept_banh_mi;
+        concept_nem;
+        concept_vietnamese_salad;
+        concept_kao_lau;
+        concept_cha_ca_la_vong;
+        concept_bun_cha;
+        concept_bananas_in_caramel_with_fried_ice_cream;
         concept_banh_xeo;;
 
 concept_vietnam_cuisine

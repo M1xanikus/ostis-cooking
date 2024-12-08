@@ -1,0 +1,64 @@
+concept_gnocchi
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [Gnocchi] (*<-lang_en;;*);
+	=> nrel_main_idtf: [Ньокки] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (Ньокки)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Это традиционное итальянское блюдо, которое представляет собой маленькие картофельные клёцки.] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			-> concept_potato;;
+                	-> concept_flour;;
+                	-> concept_egg;;
+                	-> concept_parmesan_cheese;;
+                	-> concept_salt;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (Ньокки)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/gnocchi.txt";;*);;
+	*);;
+	*);
+	=> nrel_portion_number: 4_portion 
+	(*
+		=>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+	=> nrel_cooking_time: 60_min 
+	(*
+		=>nrel_main_idtf: [60 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+
+	=> nrel_kkal: 250_kk
+	(*
+		=>nrel_main_idtf: [250 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 1_g
+	(*
+		=>nrel_main_idtf: [1 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 52_g
+	(*
+		=>nrel_main_idtf: [52 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 8_g
+	(*
+		=>nrel_main_idtf: [8 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/gnocchi.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

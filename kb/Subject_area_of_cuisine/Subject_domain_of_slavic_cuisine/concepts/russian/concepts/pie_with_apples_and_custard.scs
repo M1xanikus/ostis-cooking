@@ -1,0 +1,56 @@
+  
+concept_rus_pie_with_apples_and_custard
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [pie with apples and custard] (*<-lang_en;;*);
+    => nrel_main_idtf: [пирог с яблоками и заварным кремом] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (медовик) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [пирог с яблоками и заварным кремом - то, что и имеется в виду.] (* <-lang_ru;; *);;
+        *);;
+        
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                ->concept_sugar_powder;;
+                ->concept_baking_mix;;
+                ->concept_custard;;
+                ->concept_apple;;
+                ->concept_ground_cinnamon;;
+                ->concept_almond_petals;;
+                
+            *);;
+            -> rrel_instruction: ... (*
+            => nrel_idtf: [Рецепт (медовик)] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/pie_with_apples_and_custard.txt" (*  => nrel_format: format_txt;;  *);;  *);;
+        *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        =>nrel_main_idtf: [30 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 318_kk(*
+        =>nrel_main_idtf:[318 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:13_g(*
+        =>nrel_main_idtf:[13 грамма](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:48_g(*
+        =>nrel_main_idtf:[48 грамм](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:4_g(*
+        =>nrel_main_idtf:[4 грамм](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/pie_with_apples_and_custard.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

@@ -1,0 +1,62 @@
+concept_gabajou
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Габаджоу ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Gabajou ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Габаджоу) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Блюдо китайской кухни, ломтики свинины, обжаренные в крахмале и поданные в кисло-сладком соусе.  ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_pork;;
+                -> concept_potato_starch;;
+                -> concept_wheat_flour;;
+                -> concept_egg_white;;
+                -> concept_vegetable_oil;;
+                -> concept_carrot;;
+                -> concept_lemon_juice;;
+                -> concept_onions;;
+                -> concept_fresh_ginger;;
+                -> concept_honey;;
+                -> concept_soy_sauce;;
+                -> concept_fresh_ginger;;
+                -> concept_salt;;
+                -> concept_water;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Габаджоу)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/gabajou.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 120_min (*
+        => nrel_main_idtf: [120 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 204_kk(*
+        =>nrel_main_idtf:[204 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:19_g(*
+        =>nrel_main_idtf:[19 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:6_g(*
+        =>nrel_main_idtf:[6 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:19_g(*
+        =>nrel_main_idtf:[19 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/gabajou.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

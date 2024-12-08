@@ -15,6 +15,10 @@ subject_domain_of_irish_cuisine
     ->rrel_maximum_studied_object_class:
         concept_irish_cuisine;
     ->rrel_not_maximum_studied_object_class:
+    	concept_teriyaki_chicken_with_sesame_seeds;
+    	concept_iced_irish_coffee;
+    	concept_irish_stew;
+    	concept_strawberry_meringue_cakes;
 	concept_colcannon;
 	concept_boxty;
 	concept_coddle;

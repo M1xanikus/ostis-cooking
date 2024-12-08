@@ -15,7 +15,14 @@ subject_domain_of_ukranian_cuisine
         concept_ukranian_cuisine;
     ->rrel_not_maximum_studied_object_class:
         concept_ukr_borsch;
+        concept_ukr_lviv_syrnik;
+        concept_ukr_grechaniki;
+        concept_ukr_banosh;
+        concept_ukr_cholodets;
+        concept_ukr_grilled_basturma;
+        concept_ukr_wet_salted_lard;
         concept_ukr_kiev_cutlets;
+        concept_ukr_kartoplyaniki;
         concept_ukr_currant_cookies;;
 
 concept_ukranian_cuisine

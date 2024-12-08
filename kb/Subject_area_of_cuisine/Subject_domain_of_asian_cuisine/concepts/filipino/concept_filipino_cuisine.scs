@@ -14,7 +14,13 @@ subject_domain_of_filipino_cuisine
     ->rrel_maximum_studied_object_class:  concept_filipino_cuisine;
     ->rrel_not_maximum_studied_object_class:
         concept_sinabawang;
-        concept_adobo;;
+        concept_adobo;
+        concept_coconut_rice_pudding;
+        concept_pandesal;
+        concept_filipino_fish_soup;
+        concept_chicken_adobo;
+        concept_chicken_afritada;
+        concept_boracay_cocktail;;
 
 concept_filipino_cuisine
     <-sc_node_not_relation;
