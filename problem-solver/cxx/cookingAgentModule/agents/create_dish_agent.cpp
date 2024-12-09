@@ -178,7 +178,7 @@ ScResult CreateDishAgent::DoProgram(ScAction &action)
         m_context.SetLinkContent(name_of_the_system_dish_link, "concept_"+ ReplaceSpacesWith_(dish_name));
     ScAddr const &arc_for_syst_link_from_dish = m_context.GenerateConnector(
         ScType::ConstCommonArc, concept_dish, name_of_the_system_dish_link);
-    ScAddr const &arc_for_arc_Sfrom_syst_idtf = m_context.GenerateConnector(
+    ScAddr const &arc_for_arc_from_syst_idtf = m_context.GenerateConnector(
         ScType::ConstPermPosArc, ScKeynodes::nrel_system_identifier, arc_for_syst_link_from_dish);
     structure << name_of_the_system_dish_link << arc_for_syst_link_from_dish << arc_for_arc_from_syst_idtf;
 
