@@ -1,0 +1,72 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"ostis-web-platform/sc-machine/sc-memory/sc-memory/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			}
+		]
+	},
+	"id" : "SCsParser::@c353525a38c69b9df4fb",
+	"name" : "SCsParser",
+	"paths" : 
+	{
+		"build" : "ostis-web-platform/sc-machine/sc-memory/sc-memory",
+		"source" : "ostis-web-platform/sc-machine/sc-memory/sc-memory"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-memory/sc-memory/src/scs/scs.g4",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/ostis-web-platform/sc-machine/sc-memory/sc-memory/CMakeFiles/SCsParser",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/ostis-web-platform/sc-machine/sc-memory/sc-memory/CMakeFiles/SCsParser.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,530 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "/home/alexey/ostis/ostis-example-app/bin/extensions/libsc-server-lib.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_compile_definitions",
+			"add_definitions",
+			"project_version",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"ostis-web-platform/sc-machine/sc-tools/sc-server/CMakeLists.txt",
+			"ostis-web-platform/sc-machine/CMakeLists.txt",
+			"ostis-web-platform/sc-machine/macro/project_version.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 88,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 9,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 3,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 20,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 95,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -fcolor-diagnostics -std=c++17 -pthread -O3 -DNDEBUG -DNDEBUG -O3 -fPIC"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "ASIO_STANDALONE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "JSON_DIAGNOSTICS=0"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "JSON_USE_IMPLICIT_CONVERSIONS=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SC_DICTIONARY_FS_MEMORY"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "SC_MACHINE_VERSION=0.9.0-Unlock"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SC_MACHINE_VERSION_MAJOR=0"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SC_MACHINE_VERSION_MINOR=9"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SC_MACHINE_VERSION_PATCH=0"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SC_MACHINE_VERSION_SUFFIX=\"Unlock\""
+				},
+				{
+					"backtrace" : 9,
+					"define" : "SC_OPTIMIZE_SEARCHING_INCOMING_CONNECTORS_FROM_STRUCTURES"
+				},
+				{
+					"define" : "sc_server_lib_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 10,
+					"path" : "/home/alexey/ostis/ostis-example-app/ostis-web-platform/sc-machine/sc-tools/sc-server/src"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/alexey/ostis/ostis-example-app/ostis-web-platform/sc-machine/sc-memory/sc-core/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/alexey/ostis/ostis-example-app/ostis-web-platform/sc-machine/sc-tools/sc-config/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/alexey/ostis/ostis-example-app/ostis-web-platform/sc-machine/sc-memory/sc-memory/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/alexey/ostis/ostis-example-app/ostis-web-platform/sc-machine/sc-memory/sc-core/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				9,
+				14,
+				16,
+				18,
+				21,
+				29,
+				31,
+				33,
+				36,
+				38,
+				40
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "sc-core::@428fc87fc28f1f00238f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sc-memory::@c353525a38c69b9df4fb"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sc-config::@9b3bf69f4badfd335cf7"
+		}
+	],
+	"id" : "sc-server-lib::@e5bb130d82629c59e91d",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/alexey/ostis/ostis-example-app/bin",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../../../../bin/libsc-config.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../../../../bin/libsc-memory.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../../../../bin/libsc-core.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "sc-server-lib",
+	"nameOnDisk" : "libsc-server-lib.so",
+	"paths" : 
+	{
+		"build" : "ostis-web-platform/sc-machine/sc-tools/sc-server",
+		"source" : "ostis-web-platform/sc-machine/sc-tools/sc-server"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				10,
+				11,
+				12,
+				13,
+				15,
+				17,
+				19,
+				20,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				30,
+				32,
+				34,
+				35,
+				37,
+				39,
+				41
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				9,
+				14,
+				16,
+				18,
+				21,
+				29,
+				31,
+				33,
+				36,
+				38,
+				40
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-action/sc_memory_check_elements_json_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-action/sc_memory_connection_info_json_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-action/sc_memory_erase_elements_json_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-action/sc_memory_generate_elements_by_scs_json_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-action/sc_memory_generate_elements_json_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-action/sc_memory_handle_keynodes_json_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-action/sc_memory_handle_link_content_json_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-action/sc_memory_json_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-action/sc_memory_json_action_defines.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-action/sc_memory_json_actions_handler.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-action/sc_memory_json_actions_handler.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-action/sc_memory_make_template_json_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-action/sc_memory_template_generate_json_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-action/sc_memory_template_search_json_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-event/sc_memory_json_events_handler.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-event/sc_memory_json_events_handler.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-event/sc_memory_json_events_manager.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc-memory-json-event/sc_memory_json_events_manager.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc_memory_json_handler.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc_memory_json_handler.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc-memory-json/sc_memory_json_payload.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc_server.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc_server.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc_server_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc_server_action_defines.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc_server_connect_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc_server_defines.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc_server_disconnect_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc_server_event_callback_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc_server_impl.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc_server_impl.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc_server_logger.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc_server_logger.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc_server_logger_impl.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc_server_logger_impl.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc-server-impl/sc_server_message_action.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc_server_factory.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc_server_factory.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc_server_module.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc_server_module.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc_server_setup.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ostis-web-platform/sc-machine/sc-tools/sc-server/src/sc_server_setup.hpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

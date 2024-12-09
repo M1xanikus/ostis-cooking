@@ -1,0 +1,1 @@
+/usr/bin/clang++  -fcolor-diagnostics -std=c++17 -pthread -O3 -DNDEBUG -DNDEBUG -O3 CMakeFiles/sc-machine.dir/src/main.cpp.o -o ../../../../../bin/sc-machine  -Wl,-rpath,/home/alexey/ostis/ostis-example-app/bin ../../../../../bin/libsc-machine-runner.so ../../../../../bin/libsc-config.so ../../../../../bin/libsc-memory.so ../../../../../bin/libsc-core.so 

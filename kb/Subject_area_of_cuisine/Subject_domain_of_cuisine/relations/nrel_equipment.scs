@@ -1,6 +1,0 @@
-nrel_equipment
-    <- sc_node_norole_relation;
-    => nrel_system_idtf:[equipment] (* <- lang_en;; *);
-    => nrel_idtf: [equipment](*<- lang_en;;*);
-    => nrel_idtf: [оборудование](*<- lang_ru;;*);
-    => nrel_main_idtf: [оборудование](*<- lang_ru;;*);;

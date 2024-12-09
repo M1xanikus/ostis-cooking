@@ -1,0 +1,42 @@
+{
+    "Calories": "213 kcal",
+    "Carbohydrates": "16 g",
+    "Cookwares": [
+        "pot"
+    ],
+    "Dish Name": "boiled egg",
+    "Fats": "20 g",
+    "Ingredients": [
+        {
+            "Name": "egg",
+            "Quantity": 1.0,
+            "Unit": "None"
+        },
+        {
+            "Name": "water",
+            "Quantity": 0.0,
+            "Unit": "None"
+        }
+    ],
+    "Preparation Steps": [
+        {
+            "Action": "fill water",
+            "Condition": "1 liters",
+            "Cookware": "pot",
+            "Ingredients": [
+                "water"
+            ]
+        },
+        {
+            "Action": "fire upp",
+            "Condition": "None",
+            "Cookware": "pot",
+            "Ingredients": [
+                "None"
+            ]
+        }
+    ],
+    "Proteins": "30 g",
+    "Servings": "1 portion",
+    "Total Cooking Time": "15 min"
+}

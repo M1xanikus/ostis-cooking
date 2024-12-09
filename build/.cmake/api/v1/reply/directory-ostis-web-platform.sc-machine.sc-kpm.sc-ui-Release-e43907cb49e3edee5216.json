@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ostis-web-platform/sc-machine/sc-kpm/sc-ui",
+		"source" : "ostis-web-platform/sc-machine/sc-kpm/sc-ui"
+	}
+}

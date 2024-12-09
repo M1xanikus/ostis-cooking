@@ -1,0 +1,53 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"ostis-web-platform/sc-machine/sc-tools/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "sc-config::@9b3bf69f4badfd335cf7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sc-builder::@92fc64b5b3bf702ea597"
+		}
+	],
+	"id" : "sc-tools::@038a407dcf0a323affaf",
+	"name" : "sc-tools",
+	"paths" : 
+	{
+		"build" : "ostis-web-platform/sc-machine/sc-tools",
+		"source" : "ostis-web-platform/sc-machine/sc-tools"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

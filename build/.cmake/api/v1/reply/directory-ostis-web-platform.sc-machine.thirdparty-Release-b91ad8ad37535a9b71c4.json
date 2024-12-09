@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ostis-web-platform/sc-machine/thirdparty",
+		"source" : "ostis-web-platform/sc-machine/thirdparty"
+	}
+}
