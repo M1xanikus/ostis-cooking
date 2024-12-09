@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "problem-solver/cxx/exampleModule",
+		"source" : "problem-solver/cxx/exampleModule"
+	}
+}

@@ -1,0 +1,213 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "/home/denis/ostis/ostis-example-app/bin/extensions/libexampleModule.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"problem-solver/cxx/exampleModule/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "exampleModule_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/denis/ostis/ostis-example-app/problem-solver/cxx/exampleModule"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/denis/ostis/ostis-example-app/ostis-web-platform/sc-machine/sc-memory/sc-memory/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/denis/ostis/ostis-example-app/ostis-web-platform/sc-machine/sc-memory/sc-core/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/denis/ostis/ostis-example-app/ostis-web-platform/sc-machine/sc-kpm/sc-agents-common/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "sc-core::@428fc87fc28f1f00238f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sc-memory::@c353525a38c69b9df4fb"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sc-agents-common::@72285dab184baf4956fe"
+		}
+	],
+	"id" : "exampleModule::@dedf1571352be3dba80e",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/denis/ostis/ostis-example-app/bin",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../../../bin/libsc-agents-common.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../../../bin/libsc-memory.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../../../bin/libsc-core.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "exampleModule",
+	"nameOnDisk" : "libexampleModule.so",
+	"paths" : 
+	{
+		"build" : "problem-solver/cxx/exampleModule",
+		"source" : "problem-solver/cxx/exampleModule"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				3,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "problem-solver/cxx/exampleModule/agents/IsomorphicSearchAgent.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "problem-solver/cxx/exampleModule/agents/IsomorphicSearchAgent.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "problem-solver/cxx/exampleModule/agents/SubdividingSearchAgent.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "problem-solver/cxx/exampleModule/agents/SubdividingSearchAgent.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "problem-solver/cxx/exampleModule/exampleModule.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "problem-solver/cxx/exampleModule/exampleModule.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "problem-solver/cxx/exampleModule/keynodes/keynodes.hpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

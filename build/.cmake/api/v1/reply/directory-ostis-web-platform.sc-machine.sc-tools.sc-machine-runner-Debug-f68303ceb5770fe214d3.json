@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ostis-web-platform/sc-machine/sc-tools/sc-machine-runner",
+		"source" : "ostis-web-platform/sc-machine/sc-tools/sc-machine-runner"
+	}
+}

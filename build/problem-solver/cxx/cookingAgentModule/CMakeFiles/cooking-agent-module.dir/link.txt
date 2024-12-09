@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -g -shared -Wl,-soname,libcooking-agent-module.so -o ../../../../bin/extensions/libcooking-agent-module.so CMakeFiles/cooking-agent-module.dir/agents/edit_recipe_agent.cpp.o CMakeFiles/cooking-agent-module.dir/cooking_module.cpp.o  -Wl,-rpath,/home/denis/ostis/ostis-example-app/bin ../../../../bin/libsc-memory.so ../../../../bin/libsc-core.so 

@@ -1,0 +1,1 @@
+/usr/bin/gcc -fPIC -g -DSC_DEBUG -DSC_PROFILE -shared -Wl,-soname,libsc-kpm-common.so -o ../../../../../bin/libsc-kpm-common.so CMakeFiles/sc-kpm-common.dir/src/sc_keynodes.c.o CMakeFiles/sc-kpm-common.dir/src/sc_utils.c.o  -Wl,-rpath,/home/denis/ostis/ostis-example-app/bin ../../../../../bin/libsc-core.so 
