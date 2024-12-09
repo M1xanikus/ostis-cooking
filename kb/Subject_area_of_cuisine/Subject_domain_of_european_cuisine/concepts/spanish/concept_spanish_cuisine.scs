@@ -14,6 +14,11 @@ subject_domain_of_spanish_cuisine
     ->rrel_maximum_studied_object_class:
         concept_spanish_cuisine;
     ->rrel_not_maximum_studied_object_class:
+    	concept_flan;
+    	concept_seabass_baked_in_foil;
+    	concept_churros;
+    	concept_pan_con_tomate;
+    	concept_crema_catalana;
 	concept_chicken_picasso;
 	concept_hake_in_green_garlic_sauce;
 	concept_tortilla_with_cilantro;

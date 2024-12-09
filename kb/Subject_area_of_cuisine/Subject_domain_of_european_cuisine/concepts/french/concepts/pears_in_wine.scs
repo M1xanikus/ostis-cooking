@@ -1,0 +1,67 @@
+concept_pears_in_wine
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [pears in wine] (*<-lang_en;;*);
+	=> nrel_main_idtf: [груши в вине] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (Груши в вине)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Груши в вине — традиционный десерт винодельческого региона Божоле, принадлежащий к кухне Бургундии и Лиона. Груши томятся в специях и вине, приобретая просто фантастический вкус и аромат. ] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			->concept_pears;;
+			->concept_dry_red_wine;;
+			->concept_sugar;;
+			->concept_cinnamon;;
+			->concept_carnation;;
+			->concept_anise;;
+			->concept_orange;;
+			->concept_black_peppercorns;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (картофель фри)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/pears_in_wine.txt";;*);;
+	*);;
+	*);
+	=> nrel_portion_number: 6_portion 
+	(*
+		=>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+	=> nrel_cooking_time: 40_min 
+	(*
+		=>nrel_main_idtf: [40 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+
+	=> nrel_kkal: 286_kk
+	(*
+		=>nrel_main_idtf: [286 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 1_g
+	(*
+		=>nrel_main_idtf: [1 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 51_g
+	(*
+		=>nrel_main_idtf: [51 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 2_g
+	(*
+		=>nrel_main_idtf: [2 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/pears_in_wine.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

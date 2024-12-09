@@ -1,0 +1,63 @@
+concept_jolof
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Jolof ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Джолоф ] (*<-lang_ru;;*);;
+
+concept_jolof
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_chicken;;
+            -> concept_rice;;
+            -> concept_onion;;
+            -> concept_tomato;;
+            -> concept_sweet_pepper;;
+            -> concept_garlic;; 
+            -> concept_bouillon_cube;; 
+            -> concept_zira;; 
+            -> concept_curry;;
+            -> concept_hot_pepper;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Джолоф ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/jolof.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_jolof
+     => nrel_cooking_time: 40_min (*
+        =>nrel_main_idtf: [40 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 2728_kk(*
+        =>nrel_main_idtf:[2728 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:43_g(*
+        =>nrel_main_idtf:[43 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:413_g(*
+        =>nrel_main_idtf:[413 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:180_g(*
+        =>nrel_main_idtf:[180 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_jolof
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/jolof.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

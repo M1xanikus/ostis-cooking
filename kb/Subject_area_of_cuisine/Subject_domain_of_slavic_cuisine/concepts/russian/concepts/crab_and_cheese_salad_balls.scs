@@ -1,0 +1,55 @@
+  
+concept_rus_crab_and_cheese_salad_balls
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [crab and cheese salad balls] (*<-lang_en;;*);
+    => nrel_main_idtf: [крабово-сырный салат шариками] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (крабово-сырный салат шариками) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [крабово-сырный салат шариками - вкусный русский салат.] (* <-lang_ru;; *);;
+        *);;
+        
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                ->concept_cheese;;
+                ->concept_crab_sticks;;
+                ->concept_egg;;
+                ->concept_garlic;;
+                ->concept_mayonnaise;;
+                
+            *);;
+            -> rrel_instruction: ... (*
+            => nrel_idtf: [Рецепт (крабово-сырный салат шариками)] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/crab_and_cheese_salad_balls.txt" (*  => nrel_format: format_txt;;  *);;  *);;
+        *);;
+        *);
+    => nrel_cooking_time: 25_min (*
+        =>nrel_main_idtf: [25 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 177_kk(*
+        =>nrel_main_idtf:[177 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:11_g(*
+        =>nrel_main_idtf:[11 грамма](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:6_g(*
+        =>nrel_main_idtf:[6 грамм](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:13_g(*
+        =>nrel_main_idtf:[13 грамм](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/crab_and_cheese_salad_balls.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

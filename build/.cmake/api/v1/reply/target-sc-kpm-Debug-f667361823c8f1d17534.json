@@ -1,0 +1,53 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"ostis-web-platform/sc-machine/sc-kpm/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "sc-kpm-common::@0b5239678f541168dbf7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sc-agents-common::@72285dab184baf4956fe"
+		}
+	],
+	"id" : "sc-kpm::@9b08127520b03a20ff8a",
+	"name" : "sc-kpm",
+	"paths" : 
+	{
+		"build" : "ostis-web-platform/sc-machine/sc-kpm",
+		"source" : "ostis-web-platform/sc-machine/sc-kpm"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

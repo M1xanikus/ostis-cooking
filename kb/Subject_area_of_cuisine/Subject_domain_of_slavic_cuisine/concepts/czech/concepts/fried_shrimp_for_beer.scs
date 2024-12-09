@@ -1,0 +1,56 @@
+concept_czech_fried_shrimp_for_beer
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [fried shrimp for beer] (*<-lang_en;;*);
+    => nrel_main_idtf: [жареные креветки к пиву] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (жареные креветки к пиву)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [жареные креветки к пиву - чешская горячая закуска.] (* <-lang_ru;; *);;
+        *);; 
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                -> concept_dill;;
+                -> concept_finely_chopped_garlic;;
+                -> concept_frozen_shrimp;;
+                -> concept_celery_root;;
+                -> concept_soy_sauce;;
+                -> concept_vegetable_oil;;
+                
+                
+            *);;
+             -> rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (жареные креветки к пиву)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/fried_shrimp_for_beer.txt";;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        =>nrel_main_idtf: [30 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 1_portion (*
+        =>nrel_main_idtf: [1 порция](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 946_kk(*
+        =>nrel_main_idtf:[946 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:60_g(*
+        =>nrel_main_idtf:[60 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:16_g(*
+        =>nrel_main_idtf:[16 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:89_g(*
+        =>nrel_main_idtf:[89 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);     
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/fried_shrimp_for_beer.png"  (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+    

@@ -1,0 +1,63 @@
+concept_kung_pao
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Гунбао ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Kung pao ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Гунбао) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Гунбао - это китайское блюдо из кусочков куриного филе, обжаренных с арахисом и красным перцем чили. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_chicken_fillet;;
+                -> concept_soy_sauce;;
+                -> concept_chinese_rice_wine;;
+                -> concept_corn_starch;;
+                -> concept_peanut_butter;;
+                -> concept_sichuan_pepper;;
+                -> concept_green_onions;;
+                -> concept_peanuts;;
+                -> concept_garlic;;
+                -> concept_ginger;;
+                -> concept_black_rice_vinegar;;
+                -> concept_chile_paste;;
+                -> concept_dried_chili_pepper;;
+                -> concept_leek;;
+                -> concept_sugar;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Гунбао)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kung_pao.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 601_kk(*
+        =>nrel_main_idtf:[601 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:50_g(*
+        =>nrel_main_idtf:[50 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:33_g(*
+        =>nrel_main_idtf:[33 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:25_g(*
+        =>nrel_main_idtf:[25 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/kung_pao.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

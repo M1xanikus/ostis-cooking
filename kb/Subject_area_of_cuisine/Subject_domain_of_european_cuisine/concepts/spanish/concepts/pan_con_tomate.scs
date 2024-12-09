@@ -1,0 +1,64 @@
+concept_pan_con_tomate
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [pan con tomate] (*<-lang_en;;*);
+	=> nrel_main_idtf: [пан кон томате] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (пан кон томате)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Пан кон томате, а по-русски — хлеб с помидорами. Испанский рецепт, проще которого — и вкуснее — мало что бывает.] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			-> concept_baguette;;
+                	-> concept_tomato;;
+                	-> concept_garlic;;
+                	-> concept_olive_oil;;
+                	-> concept_salt;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (пан кон томате)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/pan_con_tomate.txt";;*);;
+	*);;
+	*);
+	=> nrel_portion_number: 4_portion 
+	(*
+		=>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+	=> nrel_cooking_time: 15_min 
+	(*
+		=>nrel_main_idtf: [15 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+
+	=> nrel_kkal: 436_kk
+	(*
+		=>nrel_main_idtf: [436 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 27_g
+	(*
+		=>nrel_main_idtf: [27 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 42_g
+	(*
+		=>nrel_main_idtf: [42 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 6_g
+	(*
+		=>nrel_main_idtf: [6 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/pan_con_tomate.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

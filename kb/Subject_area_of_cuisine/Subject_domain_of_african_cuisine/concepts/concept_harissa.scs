@@ -1,0 +1,59 @@
+concept_harissa
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Harissa ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Харисса ] (*<-lang_ru;;*);;
+
+concept_harissa
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_chilli;;
+            -> concept_garlic;;
+            -> concept_coriander;;
+            -> concept_zira;;
+            -> concept_olive_oil;;
+            -> concept_salt;; 
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Харисса ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/harissa.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_harissa
+     => nrel_cooking_time: 35_min (*
+        =>nrel_main_idtf: [35 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 87_kk(*
+        =>nrel_main_idtf:[87 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:6_g(*
+        =>nrel_main_idtf:[6 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:8_g(*
+        =>nrel_main_idtf:[8 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:6_g(*
+        =>nrel_main_idtf:[6 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_harissa
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/harissa.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

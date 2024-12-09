@@ -1,0 +1,57 @@
+concept_arm_zhengyalov_khats
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [zhengyalov_khats] (*<-lang_en;;*);
+    => nrel_main_idtf: [женгялов хац] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (женгялов хац)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Женгялов хац — хлебная лепёшка с начинкой из мелко нарезанной зелени различных растений, традиционное блюдо в кухне армян.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_coriander;;
+                <-concept_wheat_flour;;
+                <-concept_water;;
+                <-concept_parsley;;
+                <-concept_beet_greens;;
+                <-concept_green_onion;;
+                <-concept_sorrel;;
+                <-concept_lettuce;;
+                <-concept_spinach;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (женгялов хац)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/zhengyalov_khats.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 45_min (*
+        =>nrel_main_idtf: [45 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 10_portion (*
+        =>nrel_main_idtf: [10 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 353_kk(*
+        =>nrel_main_idtf:[353 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:1_g(*
+        =>nrel_main_idtf:[1 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:76_g(*
+        =>nrel_main_idtf:[76 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:10_g(*
+        =>nrel_main_idtf:[10 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/zhengyalov_khats.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

@@ -1,0 +1,60 @@
+concept_unagi_yanagawa 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Унаги-янагава ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Unagi yanagawa ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Унаги-янагава) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Унаги-янагава - это традиционный японский суп-соус с копченым угрем и шиитаке. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_egg;;
+                -> concept_smoked_eel;;
+                -> concept_frise_salad;;
+                -> concept_shiitake_mushrooms;;
+                -> concept_green_onions;;
+                -> concept_soy_sauce;;
+                -> concept_mirin;;
+                -> concept_sugar;;
+                -> concept_algae;;
+                -> concept_tuna_shavings;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Унаги-янагава)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/unagi_yanagawa.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 15_min (*
+        => nrel_main_idtf: [15 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 1_portion (*
+        =>nrel_main_idtf: [1 порция](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 535_kk(*
+        =>nrel_main_idtf:[535 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:31_g(*
+        =>nrel_main_idtf:[31 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:36_g(*
+        =>nrel_main_idtf:[36 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:21_g(*
+        =>nrel_main_idtf:[21 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/unagi_yanagawa.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

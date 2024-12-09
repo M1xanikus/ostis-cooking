@@ -1,0 +1,60 @@
+concept_tori_karaage 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Тори-карааге ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Tori karaage ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Тори-карааге) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Тори-карааге - это куриное филе в хрустящей панировке по-японски. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_sake;;
+                -> concept_chicken_hips;;
+                -> concept_mirin;;
+                -> concept_soy_sauce;;
+                -> concept_garlic;;
+                -> concept_ginger;;
+                -> concept_starch;;
+                -> concept_frying_oil;;
+                -> concept_salt;;
+                -> concept_ground_black_pepper;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Тори-карааге)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/tori_karaage.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 1_portion (*
+        =>nrel_main_idtf: [1 порция](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 13954_kk(*
+        =>nrel_main_idtf:[13954 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:27_g(*
+        =>nrel_main_idtf:[27 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:1514_g(*
+        =>nrel_main_idtf:[1514 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:51_g(*
+        =>nrel_main_idtf:[51 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/tori_karaage.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

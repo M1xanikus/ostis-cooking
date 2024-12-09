@@ -1,0 +1,67 @@
+concept_tillilikha
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [tillilikha] (*<-lang_en;;*);
+	=> nrel_main_idtf: [тиллилиха] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (тиллилиха)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [тиллилиха - финское мясное рагу из телятины] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			->concept_veal;;
+			->concept_carrot;;
+			->concept_celery_root;;
+			->concept_onion;;
+			->concept_bay_leaf;;
+			->concept_dill;;
+			->concept_black_peppercorns;;
+			->concept_cream;;
+			->concept_sugar;;
+			->concept_vinegar;;
+			->concept_salt;;
+			->concept_ground_black_pepper;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (тиллилиха)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/tillilikha.txt";;*);;
+	*);;
+	*);
+
+	=> nrel_cooking_time: 150_min 
+	(*
+		=>nrel_main_idtf: [150 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+
+	=> nrel_kkal: 569_kk
+	(*
+		=>nrel_main_idtf: [569 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 33_g
+	(*
+		=>nrel_main_idtf: [33 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 14_g
+	(*
+		=>nrel_main_idtf: [14 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 55_g
+	(*
+		=>nrel_main_idtf: [55 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/tillilikha.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

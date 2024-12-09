@@ -1,0 +1,56 @@
+concept_apple_envelopes
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Яблочные конвертики ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Apple envelopes ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Яблочные конвертики) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Сладкие, ароматные и очень вкусные слоеные конвертики с яблоками. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_dough;;
+                -> concept_apple;;
+                -> concept_marzipan;;
+                -> concept_nuts;;
+                -> concept_cinnamon;;
+                -> concept_raisins;;
+                -> concept_egg_yolk;;
+                -> concept_powdered_sugar;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Яблочные конвертики)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/apple_envelopes.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 45_min (*
+        => nrel_main_idtf: [45 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 428_kk(*
+        =>nrel_main_idtf:[428 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:8_g(*
+        =>nrel_main_idtf:[8 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:22_g(*
+        =>nrel_main_idtf:[22 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:51_g(*
+        =>nrel_main_idtf:[51 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/apple_envelopes.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

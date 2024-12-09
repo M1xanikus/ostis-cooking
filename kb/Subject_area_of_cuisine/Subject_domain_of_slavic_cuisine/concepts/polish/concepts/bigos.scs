@@ -1,0 +1,73 @@
+
+concept_pol_bigos
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [bigos] (*<-lang_en;;*);
+    => nrel_main_idtf: [бигос] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (бигос)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [бигос - блюдо из капусты и мяса.] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                    -> concept_bacon;;
+                    -> concept_onion;;
+                    -> concept_krakov_sausage;;
+                    -> concept_pork;;
+                    -> concept_fresh_mushrooms;;
+                    -> concept_garlic;;
+                    -> concept_carrot;;
+                    -> concept_sauerkraut;;
+                    -> concept_white_cabbage;;
+                    -> concept_dried_thyme;;
+                    -> concept_dried_marjoram;;
+                    -> concept_laurel_leaf;;
+                    -> concept_peppercorns;;
+                    -> concept_sweet_paprika;;
+                    -> concept_ground_cumin;;
+                    -> concept_spicy_paprika;;
+                    -> concept_red_dry_wine;;
+                    -> concept_beef_broth;;
+                    -> concept_chopped_tomatoes;;
+                    -> concept_prunes;;
+                    -> concept_salt;;
+                    -> concept_ground_black_pepper;;
+                    
+                    
+                *);;
+            ->rrel_instruction:...(*
+                    => nrel_idtf: [Рецепт (бигос)] (* <-lang_ru;; *);;
+                    <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/bigos.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+                *);;
+            *);
+    => nrel_cooking_time: 90_min (*
+        =>nrel_main_idtf: [90 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 10_portion (*
+        =>nrel_main_idtf: [10 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 442_kk(*
+        =>nrel_main_idtf:[442 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:27_g(*
+        =>nrel_main_idtf:[27 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:24_g(*
+        =>nrel_main_idtf:[24 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:24_g(*
+        =>nrel_main_idtf:[24 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);     
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/bigos.png"  (*  => nrel_format: format_png;;  *);; *);;
+    *);;
+    
+

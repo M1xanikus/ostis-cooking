@@ -1,0 +1,67 @@
+concept_paneer_masala
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Панир масала ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Paneer masala ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Панир масала) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Панир масала - это маринованный и запеченный домашний сыр кусочками в пряном соусе по-индийски. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_melted_oil;;
+                -> concept_cardamom;;
+                -> concept_onion;;
+                -> concept_tomato;;
+                -> concept_sugar;;
+                -> concept_cashew;;
+                -> concept_ground_chili_pepper;;
+                -> concept_garam_masala;;
+                -> concept_ground_coriander;;
+                -> concept_laurel_leaf;;
+                -> concept_cinnamon_sticks;;
+                -> concept_carnation;;
+                -> concept_ginger_paste;;
+                -> concept_garlic_paste;;
+                -> concept_adyghe_cheese;;
+                -> concept_fenugreek_leaves;;
+                -> concept_cream;;
+                -> concept_cilantro;;
+                -> concept_salt;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Панир масала)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/paneer_masala.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 2_h (*
+        => nrel_main_idtf: [2 часа](* <- lang_ru;; *);;
+        <- concept_hour;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 487_kk(*
+        =>nrel_main_idtf:[487 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:19_g(*
+        =>nrel_main_idtf:[19 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:32_g(*
+        =>nrel_main_idtf:[32 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:27_g(*
+        =>nrel_main_idtf:[27 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/paneer_masala.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

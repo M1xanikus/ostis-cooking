@@ -1,0 +1,90 @@
+concept_sashimi 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Сашими ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Sashimi ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Сашими) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Сашими - это национальное японское блюдо, которое включает сорта разной рыбы (преимущественно лосося) и морепродуктов. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_salmon_fillet;; // филе лосося
+                -> concept_garlic;;
+                -> concept_soy_sauce;; // соевый соус
+                -> concept_olive_oil;; // оливковое масло
+                -> concept_sesame_oil;; // кунжутное масло
+                -> concept_ginger;;
+                -> concept_green_onions;;
+                -> concept_sesame_seeds;;
+                -> concept_lemon_juice;;
+                -> concept_lime_juice;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Сашими)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/sashimi.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 5_min (*
+        => nrel_main_idtf: [5 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 1_portion (*
+        =>nrel_main_idtf: [1 порция](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 712_kk(*
+        =>nrel_main_idtf:[712 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:26_g(*
+        =>nrel_main_idtf:[26 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:64_g(*
+        =>nrel_main_idtf:[64 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:8_g(*
+        =>nrel_main_idtf:[8 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/sashimi.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
+
+
+    /*<- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение ( Сашими ) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Сашими - это национальное японское блюдо, которое включает сорта разной рыбы (преимущественно лосося) и морепродуктов ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            -> concept_salmon_fillet;; // филе лосося
+            -> concept_garlic;;
+            -> concept_soy_sauce;; // соевый соус
+            -> concept_olive_oil;; // оливковое масло
+            -> concept_sesame_oil;; // кунжутное масло
+            -> concept_ginger;;
+            -> concept_green_onions;;
+            -> concept_sesame_seeds;;
+            -> concept_lemon_juice;;
+            -> concept_lime_juice;;
+        *);;
+    *);
+
+    -> rrel_instruction: ... (*
+        => nrel_idtf: [Рецепт (Сашими)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/sashimi.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/sashimi.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;*/
+
+

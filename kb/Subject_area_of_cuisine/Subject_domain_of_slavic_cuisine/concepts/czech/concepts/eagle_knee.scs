@@ -1,0 +1,63 @@
+concept_czech_eagle_knee
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [eagle knee] (*<-lang_en;;*);
+    => nrel_main_idtf: [вепрево колено] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (вепрево колено)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [вепрево колено - это самостоятельное блюдо традиционной чешской кухни.] (* <-lang_ru;; *);;
+        *);; 
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                -> concept_pork_knuckle;;
+                -> concept_dark_beer;;
+                -> concept_carrot;;
+                -> concept_celery_root;;
+                -> concept_onion;;
+                -> concept_laurel_leaf;;
+                -> concept_carnation;;
+                -> concept_peppercorns;;
+                -> concept_caraway;;
+                -> concept_mustard;;
+                -> concept_honey;;
+                -> concept_salt;;
+                -> concept_mustard;;
+                -> concept_ground_black_pepper;;
+                
+            *);;
+             -> rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (вепрево колено)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/eagle_knee.txt";;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 180_min (*
+        =>nrel_main_idtf: [180 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 2_portion (*
+        =>nrel_main_idtf: [2 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 2136_kk(*
+        =>nrel_main_idtf:[2136 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:127_g(*
+        =>nrel_main_idtf:[127 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:93_g(*
+        =>nrel_main_idtf:[93 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:101_g(*
+        =>nrel_main_idtf:[101 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);     
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/eagle_knee.png"  (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+    

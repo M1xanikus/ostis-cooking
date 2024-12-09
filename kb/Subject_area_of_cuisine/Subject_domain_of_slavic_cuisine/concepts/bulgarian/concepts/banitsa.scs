@@ -36,7 +36,7 @@
         <-concept_kkal;;
     *);
     => nrel_fats_content:10_g(*
-        =>nrel_main_idtf:[10гр](* <-lang_ru;; *);;
+        =>nrel_main_idtf:[10 гр](* <-lang_ru;; *);;
         <-concept_g;;
     *);
     => nrel_carbohydrates_content:6_g(*

@@ -1,0 +1,58 @@
+concept_uzb_shurpa
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [shurpa] (*<-lang_en;;*);
+    => nrel_main_idtf: [шурпа] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (шурпа)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Шурпа — заправочный суп или мясной бульон у тюркских народов и таджиков, получивший распространение на мусульманском Востоке и у народов, соседних с тюрками и таджиками.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_lamb_on_the_bone;;
+                <-concept_onion;;
+                <-concept_red_bell_pepper;;
+                <-concept_carrot;;
+                <-concept_tomatoes;;
+                <-concept_potato;;
+                <-concept_parsley;;
+                <-concept_vegetable_oil;;
+                <-concept_salt;;
+                <-concept_ground_black_pepper;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (шурпа)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/shurpa.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 180_min (*
+        =>nrel_main_idtf: [180 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 526_kk(*
+        =>nrel_main_idtf:[526 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:36_g(*
+        =>nrel_main_idtf:[36 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:23_g(*
+        =>nrel_main_idtf:[23 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:29_g(*
+        =>nrel_main_idtf:[29 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/shurpa.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

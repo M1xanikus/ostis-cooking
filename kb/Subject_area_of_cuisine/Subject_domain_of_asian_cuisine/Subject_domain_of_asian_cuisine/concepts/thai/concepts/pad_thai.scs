@@ -1,0 +1,65 @@
+concept_pad_thai
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Пад-тай ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Pad thai ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Пад-тай) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Пад-тай - классическое блюдо тайской кухни из обжаренной рисовой вермишели с овощами и ароматным соусом. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_fish_sauce;;
+                -> concept_cane_sugar;;
+                -> concept_tamarinda_pasta;;
+                -> concept_garlic;;
+                -> concept_rice_noodles;;
+                -> concept_vegetable_oil;;
+                -> concept_red_onion;;
+                -> concept_chicken_fillet;;
+                -> concept_egg;;
+                -> concept_green_onions;;
+                -> concept_soybean_sprouts;;
+                -> concept_cilantro_leaves;;
+                -> concept_fried_peanuts;;
+                -> concept_lime;;
+                -> concept_salt;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Пад-тай)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/pad_thai.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 552_kk(*
+        =>nrel_main_idtf:[552 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:27_g(*
+        =>nrel_main_idtf:[27 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:31_g(*
+        =>nrel_main_idtf:[31 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:42_g(*
+        =>nrel_main_idtf:[42 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/pad_thai.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

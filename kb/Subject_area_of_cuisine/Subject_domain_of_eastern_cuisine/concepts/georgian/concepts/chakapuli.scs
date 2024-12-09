@@ -1,0 +1,56 @@
+concept_grn_chakapuli
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [chakapuli] (*<-lang_en;;*);
+    => nrel_main_idtf: [чакапули] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (чакапули)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Чакапули — национальное грузинское блюдо, представляющее собой молодое мясо, тушённое с зеленью и специями.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_fresh_cilantro;;
+                <-concept_tarragon;;
+                <-concept_lamb_shoulder;;
+                <-concept_green_onions;;
+                <-concept_parsley;;
+                <-concept_dry_white_wine;;
+                <-concept_green_tkemali;;
+                <-concept_salt;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (чакапули)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/chakapuli.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 90_min (*
+        =>nrel_main_idtf: [90 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 1119_kk(*
+        =>nrel_main_idtf:[1119 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:94_g(*
+        =>nrel_main_idtf:[94 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:3_g(*
+        =>nrel_main_idtf:[3 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:60_g(*
+        =>nrel_main_idtf:[60 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/chakapuli.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

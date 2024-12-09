@@ -1,0 +1,52 @@
+  concept_bul_roast_pork_with_paprika
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [roast pork with paprika] (*<-lang_en;;*);
+    => nrel_main_idtf: [запеченная свинина с паприкой] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (запеченная свинина с паприкой)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [запеченная свинина с паприкой - традиционное болгарское праздничное блюдо из свинины.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                ->concept_garlic;;
+                ->concept_pork;; 
+                ->concept_paprika;;
+                ->concept_salt;;
+                ->concept_ground_black_pepper;;
+            *);;
+            -> rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (запеченная свинина с паприкой)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/roast_pork_with_paprika.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 40_min (*
+        =>nrel_main_idtf: [40 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 208_kk(*
+        =>nrel_main_idtf:[208 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:10_g(*
+        =>nrel_main_idtf:[10 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:4_g(*
+        =>nrel_main_idtf:[4 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:27_g(*
+        =>nrel_main_idtf:[27 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/roast_pork_with_paprika.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

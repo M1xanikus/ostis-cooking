@@ -1,0 +1,1 @@
+/usr/bin/g++  -std=c++17 -Wall -pthread -g -DSC_DEBUG -DSC_PROFILE CMakeFiles/sc-builder.dir/src/main.cpp.o -o ../../../../../bin/sc-builder  -Wl,-rpath,/home/mixanikus/KUrsach2/ostis-example-app/bin ../../../../../bin/libsc-builder-lib.so ../../../../../bin/libsc-config.so ../../../../../bin/libsc-memory.so ../../../../../bin/libsc-core.so /usr/lib/x86_64-linux-gnu/libxml2.so 

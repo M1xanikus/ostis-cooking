@@ -1,0 +1,60 @@
+concept_chicken_yassa
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Chicken yassa ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Ясса из цыплят ] (*<-lang_ru;;*);;
+
+concept_chicken_yassa
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_chicken;;
+            -> concept_bulb_onion;;
+            -> concept_lemon;;
+            -> concept_black_pepper;;
+            -> concept_olive_oil;;
+            -> concept_water;; 
+            -> concept_salt;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Ясса из цыплят ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/chicken_yassa.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_chicken_yassa
+     => nrel_cooking_time: 60_min (*
+        =>nrel_main_idtf: [60 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 2628_kk(*
+        =>nrel_main_idtf:[2628 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:192_g(*
+        =>nrel_main_idtf:[192 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:56_g(*
+        =>nrel_main_idtf:[56 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:228_g(*
+        =>nrel_main_idtf:[228 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_chicken_yassa
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/chicken_yassa.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

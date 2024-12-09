@@ -1,0 +1,66 @@
+concept_tom_yam_kung
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Том ям кунг ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Tom Yam Kung ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Том ям кунг) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Том ям кунг - это тайский суп на курином бульоне с креветками, поражающий своим кисло-сладко-острым вкусом. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_red_chili_pepper;;
+                -> concept_galangal;;
+                -> concept_cherry_tomato;;
+                -> concept_lemon_grass;;
+                -> concept_fresh_mushrooms;;
+                -> concept_kaffir_lime_leaves;;
+                -> concept_tom_yam_pepper_paste;;
+                -> concept_fish_sauce;;
+                -> concept_lime;;
+                -> concept_tiger_shrimps;;
+                -> concept_chicken_broth;;
+                -> concept_sea_salt;;
+                -> concept_cane_sugar;;
+                -> concept_coconut_milk;;
+                -> concept_cilantro;;
+                -> concept_vegetable_oil;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Том ям кунг)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/tom_yam_kung.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 2_portion (*
+        =>nrel_main_idtf: [2 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 541_kk(*
+        =>nrel_main_idtf:[541 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:29_g(*
+        =>nrel_main_idtf:[29 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:39_g(*
+        =>nrel_main_idtf:[39 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:16_g(*
+        =>nrel_main_idtf:[16 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/tom_yam_kung.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

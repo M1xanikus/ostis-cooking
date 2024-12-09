@@ -1,0 +1,58 @@
+concept_taiyaki 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Тайяки ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Taiyaki ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Тайяки) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Тайяки - это японское печенье в форме рыбки. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_wheat_flour;;
+                -> concept_baking_powder;;
+                -> concept_soda;;
+                -> concept_egg;;
+                -> concept_milk;;
+                -> concept_sugar;;
+                -> concept_vegetable_oil;;
+                -> concept_pasta_anko;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Тайяки)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/taiyaki.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 20_min (*
+        => nrel_main_idtf: [20 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 324_kk(*
+        =>nrel_main_idtf:[324 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:9_g(*
+        =>nrel_main_idtf:[9 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:9_g(*
+        =>nrel_main_idtf:[9 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:52_g(*
+        =>nrel_main_idtf:[52 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/taiyaki.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

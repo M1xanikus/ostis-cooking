@@ -1,0 +1,56 @@
+concept_plst_tabbouleh
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [tabbouleh] (*<-lang_en;;*);
+    => nrel_main_idtf: [табуле] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (табуле)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Табуле – известный арабский холодный салат, основой которого является запаренный кускус или булгур, сочные спелые помидоры и ароматная петрушка.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_salt;;
+                <-concept_parsley;;
+                <-concept_lemon;;
+                <-concept_tomatoes;;
+                <-concept_olive_oil;;
+                <-concept_fresh_mint;;
+                <-concept_bulgur;;
+                <-concept_green_onion_with_bulb;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (табуле)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/tabbouleh.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 40_min (*
+        =>nrel_main_idtf: [40 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 243_kk(*
+        =>nrel_main_idtf:[243 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:17_g(*
+        =>nrel_main_idtf:[17 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:18_g(*
+        =>nrel_main_idtf:[18 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:5_g(*
+        =>nrel_main_idtf:[5 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/tabbouleh.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

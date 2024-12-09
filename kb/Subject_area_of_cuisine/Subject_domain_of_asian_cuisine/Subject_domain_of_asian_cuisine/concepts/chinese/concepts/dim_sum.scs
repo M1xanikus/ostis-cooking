@@ -1,0 +1,57 @@
+concept_dim_sum
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Димсам ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Dim sum ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Димсам) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Димсам - это лёгкие блюда, которые в китайской традиции чаепития подают к столу вместе с чашкой китайского чая сорта пуэр, как правило, до обеда. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_ground_black_pepper;;
+                -> concept_rice_sweet_wine;;
+                -> concept_soy_sauce;;
+                -> concept_sugar;;
+                -> concept_bamboo_sprouts;;
+                -> concept_shrimps;;
+                -> concept_corn_flour;;
+                -> concept_wheat_flour;;
+                -> concept_vegetable_oil;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Димсам)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/dim_sum.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 40_min (*
+        => nrel_main_idtf: [40 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 494_kk(*
+        =>nrel_main_idtf:[494 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:24_g(*
+        =>nrel_main_idtf:[24 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:8_g(*
+        =>nrel_main_idtf:[8 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:82_g(*
+        =>nrel_main_idtf:[82 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/dim_sum.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

@@ -1,0 +1,56 @@
+concept_boracay_cocktail
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Коктейль «Боракай» ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Boracay Cocktail ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Коктейль «Боракай») ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Это освежающий тропический коктейль с ромом, кокосовым ликером и соком лайма. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_white_rum;;
+		-> concept_coconut_liqueur;;
+		-> concept_lime_juice;;
+		-> concept_pineapple_juice;;
+		-> concept_coconut_water;;
+		-> concept_ice_cubes;;
+		-> concept_pineapple;;
+		-> concept_lime;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Коктейль «Боракай»)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/boracay_cocktail.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 5_min (*
+        => nrel_main_idtf: [5 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 1_portion (*
+        =>nrel_main_idtf: [1 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 180_kk(*
+        =>nrel_main_idtf:[180 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:0_g(*
+        =>nrel_main_idtf:[0 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:0_g(*
+        =>nrel_main_idtf:[0 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:20_g(*
+        =>nrel_main_idtf:[20 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/boracay_cocktail.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

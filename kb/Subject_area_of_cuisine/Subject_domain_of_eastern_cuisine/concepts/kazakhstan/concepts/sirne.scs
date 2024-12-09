@@ -1,0 +1,56 @@
+concept_kzh_sirne
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [sirne] (*<-lang_en;;*);
+    => nrel_main_idtf: [сырне] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (сырне)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Сырне — блюдо, пришедшее в казахскую кухню из глубины веков.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_mutton_on_bone;;
+                <-concept_onion;;
+                <-concept_sweet_pepper;;
+                <-concept_cream;;
+                <-concept_garlic;;
+                <-concept_salt;;
+                <-concept_ground_black_pepper;;
+                <-concept_carrot;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (сырне)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/sirne.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 315_min (*
+        =>nrel_main_idtf: [315 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 464_kk(*
+        =>nrel_main_idtf:[464 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:32_g(*
+        =>nrel_main_idtf:[32 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:14_g(*
+        =>nrel_main_idtf:[14 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:30_g(*
+        =>nrel_main_idtf:[30 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/sirne.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

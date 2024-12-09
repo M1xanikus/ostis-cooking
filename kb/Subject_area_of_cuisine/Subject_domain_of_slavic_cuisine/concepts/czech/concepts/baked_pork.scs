@@ -1,0 +1,54 @@
+concept_czech_baked_pork
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [baked pork] (*<-lang_en;;*);
+    => nrel_main_idtf: [печеная свинина] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (печеная свинина)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [печеная свинина - это основное чешское блюдо.] (* <-lang_ru;; *);;
+        *);; 
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                -> concept_pork_ham;;
+                -> concept_fat;;
+                -> concept_sugar;;
+                -> concept_garlic;;
+                -> concept_caraway;;
+                -> concept_salt;;
+            *);;
+             -> rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (печеная свинина)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/baked_pork.txt";;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 34_min (*
+        =>nrel_main_idtf: [34 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 673_kk(*
+        =>nrel_main_idtf:[673 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:53_g(*
+        =>nrel_main_idtf:[53 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:10_g(*
+        =>nrel_main_idtf:[10 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:41_g(*
+        =>nrel_main_idtf:[41 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);     
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/baked_pork.png"  (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+    

@@ -13,6 +13,10 @@ subject_domain_of_german_cuisine
 	<-subject_domain; 
     ->rrel_maximum_studied_object_class:  concept_german_cuisine;
     ->rrel_not_maximum_studied_object_class:
+    	concept_sauerkraut;
+    	concept_liver_with_apples;
+    	concept_meat_in_beer;
+    	concept_marzipan;
 	concept_baked_pork_ham;
 	concept_gingerbread;
 	concept_apple_strudel;

@@ -1,0 +1,67 @@
+concept_ramen 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Рамен ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Ramen ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Рамен) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Рамен - это японский суп с пшеничной лапшой. ] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+        -> rrel_ingredients: ... (*
+            -> concept_pork_belly;; // свиная грудинка
+            -> concept_ginger;; // имбирь
+            -> concept_soy_sauce;; // соевый соус
+            -> concept_rice_wine;; // рисовое вино
+            -> concept_green_onions;; // зеленый лук (chive)
+            -> concept_garlic;; // чеснок
+            -> concept_anise;; // анис
+            -> concept_miso_pasta;; // мисо-паста
+            -> concept_ramen_noodles;; // лапша рамен
+            -> concept_egg;; // куриное яйцо
+            -> concept_soybean;; // ростки сои
+            -> concept_sugar;;
+            -> concept_cilantro;; // кинза
+            -> concept_chicken_broth;; // куриный бульон
+        *);;
+
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Рамен)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/ramen.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+
+    => nrel_cooking_time: 2_h (*
+        => nrel_main_idtf: [2 часа](* <- lang_ru;; *);;
+        <- concept_hour;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 1132_kk(*
+        =>nrel_main_idtf:[1132 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:41_g(*
+        =>nrel_main_idtf:[41 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:78_g(*
+        =>nrel_main_idtf:[78 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:66_g(*
+        =>nrel_main_idtf:[66 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/ramen.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
+
+

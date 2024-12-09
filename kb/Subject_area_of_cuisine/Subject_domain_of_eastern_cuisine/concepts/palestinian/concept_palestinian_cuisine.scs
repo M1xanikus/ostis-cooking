@@ -1,0 +1,28 @@
+section_subject_domain_of_palestinian_cuisine
+    =>nrel_main_idtf:[Раздел. Предметная область палестинской кухни] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Section. Subject domain of palestinian cuisine] (* <-lang_en;;*);
+    =>nrel_idtf:[Раздел базы знаний OSTIS, описывающий палестинскую кухню] (* <-lang_ru;;*);
+    =>nrel_idtf:[Section of the OSTIS knowledge base, that describes palestinian cuisine] (* <-lang_en;;*);
+    
+    ->rrel_key_sc_element: subject_domain_of_palestinian_cuisine;;  
+
+
+subject_domain_of_palestinian_cuisine
+    =>nrel_main_idtf:[Предметная область палестинской кухни] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Subject domain of palestinian cuisine] (* <-lang_en;;*);
+	<-subject_domain; 
+    ->rrel_maximum_studied_object_class:
+        concept_palestinian_cuisine;
+    ->rrel_not_maximum_studied_object_class:
+        concept_plst_blackcurrant_sorbet;
+        concept_plst_falafel;
+        concept_plst_tahini;
+        concept_plst_tabbouleh;
+        concept_plst_baba_ganoush;;
+
+concept_palestinian_cuisine
+    <-sc_node_not_relation;
+    =>nrel_main_idtf:[палестинская кухня](*<-lang_ru;;*);
+    =>nrel_main_idtf:[palestinian cuisine](*<-lang_en;;*);
+    =>nrel_specifics: [использование овощей и специй в большом количестве.](* <-lang_ru;; *);
+    <-concept_cuisine;;

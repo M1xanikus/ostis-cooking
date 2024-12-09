@@ -1,0 +1,65 @@
+concept_salmon_soup 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Лососевый суп ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Salmon soup ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Лососевый суп) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Лососевый суп - это один из деликатесных рыбных супов. ] (* <-lang_ru;; *);;
+        *);;
+    *);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_salmon_bones;;
+                -> concept_salmon_fillet;;
+                -> concept_milk;;
+                -> concept_cream;;
+                -> concept_dill;;
+                -> concept_chili_pepper;;
+                -> concept_black_bread;;
+                -> concept_laurel_leaf;;
+                -> concept_potato;;
+                -> concept_carrot;;
+                -> concept_onion;;
+                -> concept_lemon_oil;;   
+                -> concept_dill_oil;;   
+                -> concept_salt;;   
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Лососевый суп)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/salmon_soup.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 120_min (*
+        => nrel_main_idtf: [120 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порция](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 703_kk(*
+        =>nrel_main_idtf:[703 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:29_g(*
+        =>nrel_main_idtf:[29 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:53_g(*
+        =>nrel_main_idtf:[53 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:26_g(*
+        =>nrel_main_idtf:[26 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/salmon_soup.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
+
+

@@ -1,0 +1,64 @@
+concept_ebi_satoyimo_shinjo
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Эби-сатоимо-синдзё ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Ebi-satoyimo-shinjo ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Эби-сатоимо-синдзё) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Блюдо японской кухни, представляет собой креветочные котлеты с японским корнеплодом сатоимо. ] (* <-lang_ru;; *);;
+        *);;
+    *);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_shrimp;;
+                -> concept_satoimo;;
+                -> concept_asparagus;;
+                -> concept_garlic;;
+                -> concept_ginger_root;;
+                -> concept_salt;;
+                -> concept_white_egg;;
+                -> concept_starch;;
+                -> concept_pine_nuts;; 
+                -> concept_myrin;;  
+                -> concept_daikon;;  
+                -> concept_tuna_shavings;;
+                -> concept_soy_sauce;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Эби-сатоимо-синдзё)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/ebi_satoyimo_shinjo.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 40_min (*
+        => nrel_main_idtf: [40 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 3_portion (*
+        =>nrel_main_idtf: [3 порция](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 292_kk(*
+        =>nrel_main_idtf:[292 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:22_g(*
+        =>nrel_main_idtf:[22 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:11_g(*
+        =>nrel_main_idtf:[11 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:24_g(*
+        =>nrel_main_idtf:[24 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/ebi_satoyimo_shinjo.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
+
+

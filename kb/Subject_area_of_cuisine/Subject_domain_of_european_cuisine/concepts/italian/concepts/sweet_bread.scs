@@ -1,0 +1,69 @@
+concept_sweet_bread
+	<-sc_node_not_relation;
+	=> nrel_main_idtf: [sweet bread] (*<-lang_en;;*);
+	=> nrel_main_idtf: [сладкий хлеб] (*<-lang_ru;;*);
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		=> nrel_idtf: [Опр. (сладкий хлеб)] (* <-lang_ru;; *);;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Сладкий хлеб — это вкусное и ароматное кондитерское изделие] (* <-lang_ru;; *);;
+        	*);;
+	*);
+
+	=> nrel_recipe: ... (*
+		-> rrel_ingredients: ... (*
+			->concept_salt;;
+			->concept_milk;;
+			->concept_flour;;
+			->concept_sugar;;
+			->concept_marzipan;;
+			->concept_butter;;
+			->concept_egg;;
+			->concept_rum;;
+			->concept_lemon_zest;;
+			->concept_yeast;;
+        		*);;
+		-> rrel_instruction: ... (*
+			=> nrel_idtf: [Рецепт (сладкий хлеб)] (* <-lang_ru;; *);;
+       			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/sweet_bread.txt";;*);;
+	*);;
+	*);
+	=> nrel_portion_number: 8_portion 
+	(*
+		=>nrel_main_idtf: [8 порций](* <-lang_ru;; *);;
+		<-concept_portion;;
+	*);
+	=> nrel_cooking_time: 240_min 
+	(*
+		=>nrel_main_idtf: [240 минут](* <-lang_ru;; *);;
+		<-concept_min;;
+	*);
+
+	=> nrel_kkal: 470_kk
+	(*
+		=>nrel_main_idtf: [470 ккал](* <-lang_ru;; *);;
+		<-concept_kkal;;
+	*);
+
+	=> nrel_fats_content: 12_g
+	(*
+		=>nrel_main_idtf: [12 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_carbohydrates_content: 79_g
+	(*
+		=>nrel_main_idtf: [79 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+	=> nrel_protein_content: 11_g
+	(*
+		=>nrel_main_idtf: [11 грамм](* <-lang_ru;; *);;
+		<-concept_g;;
+	*);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/sweet_bread.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

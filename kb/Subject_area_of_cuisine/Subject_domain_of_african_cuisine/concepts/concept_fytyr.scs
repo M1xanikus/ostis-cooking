@@ -1,0 +1,62 @@
+concept_fytyr
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Fytyr ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Фытыр ] (*<-lang_ru;;*);;
+
+concept_fytyr
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_flour;;
+            -> concept_yeast;;
+            -> concept_salt;;
+            -> concept_milk;;
+            -> concept_egg;;
+            -> concept_butter;; 
+            -> concept_sugar;; 
+            -> concept_vanilla_sugar;; 
+            -> concept_starch;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Фытыр ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/fytyr.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_fytyr
+     => nrel_cooking_time: 40_min (*
+        =>nrel_main_idtf: [40 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 1311_kk(*
+        =>nrel_main_idtf:[1311 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:55_g(*
+        =>nrel_main_idtf:[55 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:181_g(*
+        =>nrel_main_idtf:[181 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:29_g(*
+        =>nrel_main_idtf:[29 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_fytyr
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/fytyr.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

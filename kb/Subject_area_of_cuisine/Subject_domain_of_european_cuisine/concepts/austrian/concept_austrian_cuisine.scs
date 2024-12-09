@@ -17,7 +17,12 @@ subject_domain_of_austrian_cuisine
 	concept_sacher;
 	concept_viennese_strudel;
 	concept_chicken_chop_in_batter;
+	concept_viennese_schnitzel;
+	concept_carrot_cupcakes;
+	concept_chicken_in_bear;
+	concept_viennese_waffles;
 	concept_viennese_chicken;;
+	
 
 concept_austrian_cuisine
     <-sc_node_not_relation;

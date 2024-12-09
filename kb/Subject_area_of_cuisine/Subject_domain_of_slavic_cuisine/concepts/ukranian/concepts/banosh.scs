@@ -1,0 +1,52 @@
+  concept_ukr_banosh
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [banosh] (*<-lang_en;;*);
+    => nrel_main_idtf: [банош] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (банош)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [банош - украинская кукурузная каша, похожая по смыслу на мамалыгу.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                ->concept_corn_flour;;
+                ->concept_cream;; 
+                ->concept_smoked_lard;;
+                ->concept_onion;;
+                ->concept_water;;
+            *);;
+            -> rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (банош)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/banosh.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 40_min (*
+        =>nrel_main_idtf: [40 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 1114_kk(*
+        =>nrel_main_idtf:[1114 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:98_g(*
+        =>nrel_main_idtf:[98 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:50_g(*
+        =>nrel_main_idtf:[50 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:10_g(*
+        =>nrel_main_idtf:[10 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/banosh.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

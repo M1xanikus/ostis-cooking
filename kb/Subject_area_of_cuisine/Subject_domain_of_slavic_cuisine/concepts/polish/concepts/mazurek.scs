@@ -1,0 +1,61 @@
+
+concept_pol_mazurek
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [mazurek] (*<-lang_en;;*);
+    => nrel_main_idtf: [мазурек] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (мазурек)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [мазурек - традиционный польский торт.] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                    -> concept_butter;;
+                    -> concept_wheat_flour;;
+                    -> concept_sugar;;
+                    -> concept_egg;;
+                    -> concept_powdered_sugar;;
+                    -> concept_water;;
+                    -> concept_lemon_juice;;
+                    -> concept_almond;;
+                    -> concept_dark_chocolate;;
+                    -> concept_cream;;
+                    -> concept_vanilla_extract;;
+                    
+                *);;
+            ->rrel_instruction:...(*
+                    => nrel_idtf: [Рецепт (мазурек)] (* <-lang_ru;; *);;
+                    <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/mazurek.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+                *);;
+            *);
+    => nrel_cooking_time: 180_min (*
+        =>nrel_main_idtf: [180 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 641_kk(*
+        =>nrel_main_idtf:[641 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:38_g(*
+        =>nrel_main_idtf:[38 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:68_g(*
+        =>nrel_main_idtf:[68 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:8_g(*
+        =>nrel_main_idtf:[8 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);     
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/mazurek.png"  (*  => nrel_format: format_png;;  *);; *);;
+    *);;
+    
+

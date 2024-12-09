@@ -1,0 +1,67 @@
+concept_sinabawang
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Филиппинский овощной суп утан ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Filipino vegetable soup Utan ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Филиппинский овощной суп утан) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Филиппинский овощной суп утан - это филиппинский овощной суп, приготовленный из листовых овощей и различных других овощей в бульоне, приправленном бульоном из морепродуктов или пати ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_water;;
+                -> concept_ginger;;
+                -> concept_celery_root;;
+                -> concept_eggplant;;
+                -> concept_zucchini;;
+                -> concept_beijing_cabbage;;
+                -> concept_green_beans;;
+                -> concept_frozen_spinach;;
+                -> concept_garlic;;
+                -> concept_vegetable_oil;;
+                -> concept_egg;;
+                -> concept_soy_sauce;;
+                -> concept_rice_vinegar;;
+                -> concept_fried_onions;;
+                -> concept_cilantro;;
+                -> concept_salt;;
+                -> concept_green_onions;;
+                -> concept_green_part_of_leek;;
+                -> concept_green;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Филиппинский овощной суп утан)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/sinabawang.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 60_min (*
+        => nrel_main_idtf: [60 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 150_kk(*
+        =>nrel_main_idtf:[150 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:8_g(*
+        =>nrel_main_idtf:[8 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:7_g(*
+        =>nrel_main_idtf:[7 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:14_g(*
+        =>nrel_main_idtf:[14 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/sinabawang.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

@@ -1,0 +1,66 @@
+concept_curry_laksa
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Карри-лакса ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Curry laksa ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Карри-лакса) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Карри-лакса - это блюдо, представляющее из себя лапшу в пряном бульоне с добавлением кокосового молока, гарнированную креветками, рыбой, курицей или мясом (всем вместе или в различных сочетаниях), зеленью и другими ингредиентами. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_cilantro_leaves;;
+                -> concept_tiger_shrimps;;
+                -> concept_egg_noodles;;
+                -> concept_chicken_broth_cube;;
+                -> concept_garlic;;
+                -> concept_lime;;
+                -> concept_grated_ginger_root;;
+                -> concept_onion;;
+                -> concept_tomato;;
+                -> concept_red_curry_paste;;
+                -> concept_ground_coriander;;
+                -> concept_coconut_milk;;
+                -> concept_cayenne_pepper;;
+                -> concept_red_chili_pepper;;
+                -> concept_shallots;;
+                -> concept_vegetable_oil;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Карри-лакса)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/curry_laksa.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 60_min (*
+        => nrel_main_idtf: [60 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 2_portion (*
+        =>nrel_main_idtf: [2 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 736_kk(*
+        =>nrel_main_idtf:[736 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:49_g(*
+        =>nrel_main_idtf:[49 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:33_g(*
+        =>nrel_main_idtf:[33 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:58_g(*
+        =>nrel_main_idtf:[58 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/curry_laksa.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

@@ -1,0 +1,63 @@
+concept_he_dopab
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Хе Допаб ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ He Dopab ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Хе Допаб) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Гибрид традиционного хе с сашими и поке: довольно объемная плошка, сверху — подмаринованная рыба и овощи, снизу — рис, и все заправлено соусом. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_rice;;
+                -> concept_honey;;
+                -> concept_garlic;;
+                -> concept_ketchup;;
+                -> concept_rice_vinegar;;
+                -> concept_lettuce;;
+                -> concept_iceberg_lettuce;;
+                -> concept_cucumber;;
+                -> concept_tobiko_caviar;;
+                -> concept_pasta_kochudian;;
+                -> concept_nori_seaweed;;
+                -> concept_honey_mustard_sauce;;
+                -> concept_sesame_oil;;
+                -> concept_sesame;;
+                -> concept_daikon;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Хе Допаб)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/he_dopab.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 20_min (*
+        => nrel_main_idtf: [20 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 2_portion (*
+        =>nrel_main_idtf: [2 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 368_kk(*
+        =>nrel_main_idtf:[368 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:11_g(*
+        =>nrel_main_idtf:[11 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:13_g(*
+        =>nrel_main_idtf:[13 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:53_g(*
+        =>nrel_main_idtf:[53 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/he_dopab.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

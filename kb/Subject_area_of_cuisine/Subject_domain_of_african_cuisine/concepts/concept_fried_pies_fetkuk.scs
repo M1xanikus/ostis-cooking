@@ -1,0 +1,65 @@
+concept_fried_pies_fetkuk
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Fried pies Fetkuk ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Жареные пирожки Феткук ] (*<-lang_ru;;*);;
+
+concept_fried_pies_fetkuk
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_flour;;
+            -> concept_salt;;
+            -> concept_sugar;;
+            -> concept_water;;
+            -> concept_yeast;;
+            -> concept_tuna;; 
+            -> concept_tomato;; 
+            -> concept_onion;; 
+            -> concept_carrot;;
+            -> concept_lemon;; 
+            -> concept_mustard;;
+            -> concept_black_pepper;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Жареные пирожки Феткук ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/fried_pies_fetkuk.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_fried_pies_fetkuk
+     => nrel_cooking_time: 90_min (*
+        =>nrel_main_idtf: [90 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 128_kk(*
+        =>nrel_main_idtf:[128 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:1_g(*
+        =>nrel_main_idtf:[1 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:23_g(*
+        =>nrel_main_idtf:[23 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:7_g(*
+        =>nrel_main_idtf:[7 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_fried_pies_fetkuk
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/fried_pies_fetkuk.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

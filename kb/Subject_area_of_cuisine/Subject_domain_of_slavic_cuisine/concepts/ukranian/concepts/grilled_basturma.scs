@@ -1,0 +1,54 @@
+  concept_ukr_grilled_basturma
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [grilled basturma] (*<-lang_en;;*);
+    => nrel_main_idtf: [бастурма на гриле] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (бастурма на гриле)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [бастурма на гриле - котлетки с фаршем украинско-белорусского происхождения.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                ->concept_brown_sugar;;
+                ->concept_ground_black_pepper;; 
+                ->concept_ground_coriander;;
+                ->concept_ground_dried_garlic;;
+                ->concept_ground_cloves;;
+                ->concept_laurel_leaf;;
+                ->concept_pork_loin;;
+            *);;
+            -> rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (бастурма на гриле)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/grilled_basturma.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 480_min (*
+        =>nrel_main_idtf: [480 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 12_portion (*
+        =>nrel_main_idtf: [12 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 1006_kk(*
+        =>nrel_main_idtf:[1006 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:92_g(*
+        =>nrel_main_idtf:[92 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:8_g(*
+        =>nrel_main_idtf:[8 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:36_g(*
+        =>nrel_main_idtf:[36 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/grilled_basturma.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

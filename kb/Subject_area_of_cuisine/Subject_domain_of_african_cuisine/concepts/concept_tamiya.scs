@@ -1,0 +1,62 @@
+concept_tamiya
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Tamiya ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Тамия ] (*<-lang_ru;;*);;
+
+concept_tamiya
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_beans;;
+            -> concept_onion;;
+            -> concept_garlic;;
+            -> concept_parsley;;
+            -> concept_egg;;
+            -> concept_salt;; 
+            -> concept_black_pepper;; 
+            -> concept_red_pepper;; 
+            -> concept_vegetable_oil;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Тамия ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/tamiya.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_tamiya
+     => nrel_cooking_time: 30_min (*
+        =>nrel_main_idtf: [30 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 22_kk(*
+        =>nrel_main_idtf:[22 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:1_g(*
+        =>nrel_main_idtf:[1 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:3_g(*
+        =>nrel_main_idtf:[3 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:1_g(*
+        =>nrel_main_idtf:[1 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_tamiya
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/tamiya.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

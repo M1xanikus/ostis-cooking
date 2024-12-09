@@ -1,0 +1,57 @@
+concept_uzb_samsa
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [samsa] (*<-lang_en;;*);
+    => nrel_main_idtf: [самса] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (самса)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Самса – разновидность пирожка, приготовляемого из пресного теста с начинкой преимущественно из бараньего мяса, лука и курдючного сала.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients: ...(*
+                <-concept_wheat_flour;;
+                <-concept_melted_butter;;
+                <-concept_lamb;;
+                <-concept_onion;;
+                <-concept_ground_cumin;;
+                <-concept_salt;;
+                <-concept_ground_black_pepper;;
+                <-concept_sesame;;
+                <-concept_egg_yolk;;*);;
+
+            ->rrel_instruction:...(*  
+                => nrel_idtf: [Рецепт (самса)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/samsa.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 120_min (*
+        =>nrel_main_idtf: [120 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 18_portion (*
+        =>nrel_main_idtf: [18 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 217_kk(*
+        =>nrel_main_idtf:[217 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:11_g(*
+        =>nrel_main_idtf:[11 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:24_g(*
+        =>nrel_main_idtf:[24 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:8_g(*
+        =>nrel_main_idtf:[8 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/samsa.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

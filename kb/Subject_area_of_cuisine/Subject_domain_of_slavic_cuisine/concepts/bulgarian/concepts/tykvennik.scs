@@ -1,0 +1,54 @@
+  concept_bul_tykvennik
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [tykvennik pie] (*<-lang_en;;*);
+    => nrel_main_idtf: [пирог тыквенник] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (пирог тыквенник)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [пирог тыквенник - традиционное болгарское блюдо из тыквы.] (* <-lang_ru;; *);;
+        *);;
+    *);
+    => nrel_recipe: ... (*
+            ->rrel_ingredients:...(*
+                ->concept_pumpkin;;
+                ->concept_filo_dough;; 
+                ->concept_sugar;;
+                ->concept_ground_cinnamon;;
+                ->concept_walnut;;
+                ->concept_butter;;
+                ->concept_egg_yolk;;
+            *);;
+            -> rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (пирог тыквенник)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/tykvennik.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 90_min (*
+        =>nrel_main_idtf: [90 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 686_kk(*
+        =>nrel_main_idtf:[686 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:42_g(*
+        =>nrel_main_idtf:[42 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:66_g(*
+        =>nrel_main_idtf:[66 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:8_g(*
+        =>nrel_main_idtf:[8 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/tykvennik.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

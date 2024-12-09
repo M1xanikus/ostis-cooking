@@ -1,0 +1,1 @@
+/usr/bin/g++  -std=c++17 -Wall -pthread -g -DSC_DEBUG -DSC_PROFILE CMakeFiles/sc-machine.dir/src/main.cpp.o -o ../../../../../bin/sc-machine  -Wl,-rpath,/home/mixanikus/KUrsach2/ostis-example-app/bin ../../../../../bin/libsc-machine-runner.so ../../../../../bin/libsc-config.so ../../../../../bin/libsc-memory.so ../../../../../bin/libsc-core.so 

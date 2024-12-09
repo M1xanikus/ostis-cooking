@@ -1,0 +1,61 @@
+concept_date_bread_jamila
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Date bread jamila ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Финиковый хлеб Джамила ] (*<-lang_ru;;*);;
+
+concept_date_bread_jamila
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_date;;
+            -> concept_almond;;
+            -> concept_egg;;
+            -> concept_powdered_sugar;;
+            -> concept_vanilla_sugar;;
+            -> concept_potato_starch;; 
+            -> concept_butter;;
+            -> concept_salt;; 
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Финиковый хлеб Джамила ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/date_bread_jamila.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_date_bread_jamila
+     => nrel_cooking_time: 60_min (*
+        =>nrel_main_idtf: [60 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 330_kk(*
+        =>nrel_main_idtf:[330 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:8_g(*
+        =>nrel_main_idtf:[8 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:57_g(*
+        =>nrel_main_idtf:[57 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:12_g(*
+        =>nrel_main_idtf:[12 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_date_bread_jamila
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/date_bread_jamila.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

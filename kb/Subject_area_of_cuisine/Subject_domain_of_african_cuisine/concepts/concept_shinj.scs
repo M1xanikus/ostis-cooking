@@ -1,0 +1,58 @@
+concept_shinj
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Shinj ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Сфиндж ] (*<-lang_ru;;*);;
+
+concept_shinj
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_yeast;;
+            -> concept_sugar;;
+            -> concept_flour;;
+            -> concept_water;;
+            -> concept_vegetable_oil;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Сфиндж ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/shinj.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_shinj
+     => nrel_cooking_time: 20_min (*
+        =>nrel_main_idtf: [20 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 351_kk(*
+        =>nrel_main_idtf:[351 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:19_g(*
+        =>nrel_main_idtf:[19 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:55_g(*
+        =>nrel_main_idtf:[55 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:5_g(*
+        =>nrel_main_idtf:[5 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_shinj
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/shinj.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

@@ -1,0 +1,65 @@
+concept_vindaloo
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Виндалу ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Vindaloo ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Виндалу) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Виндалу - это популярное индийское блюдо, завезённое в Гоа португальскими моряками. Представляет собой карри с уксусом и специями. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_dried_chili_pepper;;
+                -> concept_cumin;;
+                -> concept_carnation;;
+                -> concept_cinnamon;;
+                -> concept_black_pepper_peas;;
+                -> concept_anise;;
+                -> concept_poppy;;
+                -> concept_ginger;;
+                -> concept_garlic;;
+                -> concept_tamarinda_pasta;;
+                -> concept_vinegar;;
+                -> concept_pork;;
+                -> concept_vegetable_oil;;
+                -> concept_onion;;
+                -> concept_salt;;
+                -> concept_curry_leaves;;
+                -> concept_brown_sugar;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Виндалу)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/vindaloo.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 2_h (*
+        => nrel_main_idtf: [2 часа](* <- lang_ru;; *);;
+        <- concept_hour;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 628_kk(*
+        =>nrel_main_idtf:[628 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:43_g(*
+        =>nrel_main_idtf:[43 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:41_g(*
+        =>nrel_main_idtf:[41 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:25_g(*
+        =>nrel_main_idtf:[25 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/vindaloo.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

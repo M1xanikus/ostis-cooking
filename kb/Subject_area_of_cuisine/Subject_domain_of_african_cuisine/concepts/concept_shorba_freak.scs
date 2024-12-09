@@ -1,0 +1,70 @@
+concept_shorba_freak
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Shorba freak ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Шорба фрик ] (*<-lang_ru;;*);;
+
+concept_shorba_freak
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_ground_meat;;
+            -> concept_egg;;
+            -> concept_tomato;;
+            -> concept_onion;;
+            -> concept_potatoes;;
+            -> concept_zucchini;; 
+            -> concept_carrot;; 
+            -> concept_garlic;; 
+            -> concept_tomato_paste;;
+            -> concept_black_pepper;; 
+            -> concept_cumin;;
+            -> concept_salt;;
+            -> concept_sugar;;
+            -> concept_harissa;;
+            -> concept_sunflower_oil;;
+            -> concept_barley_groats;;
+            -> concept_cilantro;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Шорба фрик ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/shorba_freak.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_shorba_freak
+     => nrel_cooking_time: 60_min (*
+        =>nrel_main_idtf: [60 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 250_kk(*
+        =>nrel_main_idtf:[250 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:10_g(*
+        =>nrel_main_idtf:[10 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:19_g(*
+        =>nrel_main_idtf:[19 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:4_g(*
+        =>nrel_main_idtf:[4 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_shorba_freak
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/shorba_freak.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

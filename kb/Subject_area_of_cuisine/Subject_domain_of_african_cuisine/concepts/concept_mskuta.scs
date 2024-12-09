@@ -1,0 +1,62 @@
+concept_mskuta
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Mskuta ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Мскута ] (*<-lang_ru;;*);;
+
+concept_mskuta
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_egg;;
+            -> concept_powdered_sugar;;
+            -> concept_sugar;;
+            -> concept_salt;;
+            -> concept_vanilla_sugar;;
+            -> concept_orange;; 
+            -> concept_milk;; 
+            -> concept_flour;; 
+            -> concept_baking_powder;;
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Мскута ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/mskuta.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_mskuta
+     => nrel_cooking_time: 75_min (*
+        =>nrel_main_idtf: [75 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 206_kk(*
+        =>nrel_main_idtf:[206 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:4_g(*
+        =>nrel_main_idtf:[4 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:39_g(*
+        =>nrel_main_idtf:[39 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:5_g(*
+        =>nrel_main_idtf:[5 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_mskuta
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/mskuta.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

@@ -1,0 +1,62 @@
+concept_nasi_goreng 
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Наси-горенг ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Nasi goreng ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Наси-горенг) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Наси-горенг - это блюдо, которое представляет собой обжаренную в растительном масле смесь риса с измельчёнными продуктами животного или растительного происхождения. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_boiled_jasmine_rice;;
+                -> concept_chicken_fillet;;
+                -> concept_vegetable_oil;;
+                -> concept_kesap_manis_sauce;;
+                -> concept_garlic;;
+                -> concept_onion;;
+                -> concept_egg;;
+                -> concept_chili_pepper;;
+                -> concept_cherry_tomato;;
+                -> concept_cucumber;;
+                -> concept_lime;;
+                -> concept_green_onions;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Наси-горенг)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/nasi_goreng.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 25_min (*
+        => nrel_main_idtf: [25 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 912_kk(*
+        =>nrel_main_idtf:[912 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:25_g(*
+        =>nrel_main_idtf:[25 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:28_g(*
+        =>nrel_main_idtf:[28 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:139_g(*
+        =>nrel_main_idtf:[139 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/nasi_goreng.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+

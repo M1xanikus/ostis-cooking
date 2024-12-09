@@ -1,0 +1,61 @@
+concept_mezelmen
+    <-sc_node_not_relation;
+    <-concept_dish;
+    => nrel_main_idtf: [ Mezelmen ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ Мезельмен ] (*<-lang_ru;;*);;
+
+concept_mezelmen
+    => nrel_recipe: ... (*
+        ->rrel_ingredients: ...(*
+            -> concept_flour;;
+            -> concept_water;;
+            -> concept_sugar;;
+            -> concept_vegetable_oil;; 
+            -> concept_vanilla_sugar;;
+            -> concept_salt;; 
+            -> concept_honey;;
+            -> concept_almond;; 
+        *);;
+        ->rrel_instruction: ...(*
+            => nrel_idtf: [ Рецепт ( Мезельмен ) ] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (*
+                -> rrel_example: "file://../figures/html/mezelmen.txt"
+                (*
+                => nrel_format: format_txt;;
+                *);;
+            *);;
+        *);;     
+    *);;
+
+concept_mezelmen
+     => nrel_cooking_time: 50_min (*
+        =>nrel_main_idtf: [50 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 4166_kk(*
+        =>nrel_main_idtf:[4166 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:171_g(*
+        =>nrel_main_idtf:[171 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:608_g(*
+        =>nrel_main_idtf:[608 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:57_g(*
+        =>nrel_main_idtf:[57 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);;
+
+concept_mezelmen
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://../figures/images/mezelmen.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;

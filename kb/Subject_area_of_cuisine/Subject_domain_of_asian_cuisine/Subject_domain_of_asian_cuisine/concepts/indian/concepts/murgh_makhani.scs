@@ -1,0 +1,68 @@
+concept_murgh_makhani
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Мург-макхани ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Murgh makhani ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Мург-макхани) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Мург-макхани - это индийское блюдо, а именно слегка запеченная курица в соусе из томатов и с большим количеством специй. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_chicken;;
+                -> concept_yogurt;;
+                -> concept_fellite_leaves;;
+                -> concept_turmeric;;
+                -> concept_garam_masala;;
+                -> concept_ginger;;
+                -> concept_garlic;;
+                -> concept_green_chili_pepper;;
+                -> concept_melted_oil;;
+                -> concept_tomato;;
+                -> concept_ground_chili_pepper;;
+                -> concept_fenugreek;;
+                -> concept_cardamom;;
+                -> concept_carnation;;
+                -> concept_cinnamon_sticks;;
+                -> concept_cream;;
+                -> concept_black_cardamom_seeds;;
+                -> concept_salt;;
+                -> concept_sugar;;
+                -> concept_cilantro;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Мург-макхани)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/murgh_makhani.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 1_h (*
+        => nrel_main_idtf: [1 час](* <- lang_ru;; *);;
+        <- concept_hour;;
+    *);
+
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 1034_kk(*
+        =>nrel_main_idtf:[1034 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:69_g(*
+        =>nrel_main_idtf:[69 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:74_g(*
+        =>nrel_main_idtf:[74 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:24_g(*
+        =>nrel_main_idtf:[24 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);    
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/murgh_makhani.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

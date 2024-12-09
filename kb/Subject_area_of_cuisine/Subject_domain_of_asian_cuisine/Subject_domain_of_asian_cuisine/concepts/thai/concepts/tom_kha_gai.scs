@@ -1,0 +1,62 @@
+concept_tom_kha_gai
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [ Том кха гай ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Tom Kha Gai ] (*<-lang_en;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (Том кха гай) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Том кха гай - это острый и кисловатый острый суп на кокосовом молоке в тайской кухне. ] (* <-lang_ru;; *);;
+        *);;*);
+        => nrel_recipe: ... (*
+            -> rrel_ingredients: ... (*
+                -> concept_coconut_milk;;
+                -> concept_chicken_breast;;
+                -> concept_galangal;;
+                -> concept_lemon_grass;;
+                -> concept_onion;;
+                -> concept_tomato;;
+                -> concept_lime_leaves;;
+                -> concept_veshenki;;
+                -> concept_hot_pepper;;
+                -> concept_salt;;
+                -> concept_lime_juice;;
+                -> concept_cilantro;;
+            *);;
+            -> rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (Том кха гай)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/tom_kha_gai.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
+    => nrel_cooking_time: 30_min (*
+        => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
+        <- concept_min;;
+    *);
+
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
+    => nrel_kkal: 442_kk(*
+        =>nrel_main_idtf:[442 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_protein_content:22_g(*
+        =>nrel_main_idtf:[22 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *); 
+    => nrel_fats_content:32_g(*
+        =>nrel_main_idtf:[32 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:18_g(*
+        =>nrel_main_idtf:[18 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/tom_kha_gai.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;
+
+
