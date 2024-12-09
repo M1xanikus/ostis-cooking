@@ -8,3 +8,4 @@ target_link_libraries(cooking-agent-module
 target_include_directories(cooking-agent-module
     PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}
 )
+

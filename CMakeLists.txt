@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.11)
+<<<<<<< HEAD
 set(CMAKE_CXX_STANDARD 17) 
+=======
+set(CMAKE_CXX_STANDARD 17)
+>>>>>>> origin/Дзик_Никита
 project(ostis-example-app)
 
 set(SC_MACHINE_PATH "${CMAKE_CURRENT_LIST_DIR}/ostis-web-platform/sc-machine")
