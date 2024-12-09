@@ -1,2 +1,2 @@
 add_subdirectory(exampleModule)
-add_subdirectory(searchModule)
+add_subdirectory(cookingAgentModule)
